@@ -1,0 +1,1289 @@
+{
+  "scope": "agent initialization through final AC validation; excludes launcher and summary gather",
+  "phase_semantics": {
+    "vt_exchange": "neighbor V/theta exchange before the x-step (only when not cached)",
+    "x_solve": "local x-step incl. state bookkeeping and optional solve batching barriers",
+    "solve_status": "bus mode: global strict solve-status reduction = waiting for the slowest local solve; 0 in partition mode",
+    "consensus_exchange": "neighbor-only exchange of consensus rows; includes waiting for slower neighbors",
+    "zu_update": "z- and u-updates and residuals",
+    "convergence": "local residual/tolerance computation of the convergence check (excl. reductions and console)",
+    "convergence_mpi": "the two global reductions of the convergence check (MAX, SUM), incl. waiting",
+    "console": "rank-0 console line of the convergence check (only when log_every > 0)",
+    "monitor": "periodic and gate-triggered global AC validation (observation, not an ADMM step)",
+    "io": "agent logs and periodic checkpoints"
+  },
+  "mpi_wall_semantics": "blocking call elapsed time including waiting; not pure transfer time",
+  "byte_semantics": "user buffer extents only; excludes object serialization, MPI protocol and physical network traffic",
+  "ranks": [
+    {
+      "rank": 0,
+      "bus_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        15,
+        116
+      ],
+      "cpu_s": 86.427427001,
+      "peak_rss_kib": 77824,
+      "solver": {
+        "calls": 2960,
+        "optimize_wall_s": 47.70579572598308,
+        "reported_runtime_s": 47.54186749458313,
+        "exceptions": 0,
+        "statuses": {
+          "18": 2960
+        }
+      },
+      "neighbor_ranks": 1,
+      "consensus_edges": 4,
+      "phases": {
+        "vt_exchange": {
+          "total_s": 0.010437768029987637,
+          "count": 2960,
+          "mean_s": 3.5262729831039317e-06,
+          "p50_s": 3.2399993870058097e-06,
+          "p95_s": 3.7030503790447253e-06,
+          "max_s": 0.0007856689999243827
+        },
+        "x_solve": {
+          "total_s": 52.588105978956264,
+          "count": 2960,
+          "mean_s": 0.017766252019917658,
+          "p50_s": 0.01798625550009092,
+          "p95_s": 0.018918336000342605,
+          "max_s": 0.03191329799938103
+        },
+        "solve_status": {
+          "total_s": 0.0,
+          "count": 2960,
+          "mean_s": 0.0,
+          "p50_s": 0.0,
+          "p95_s": 0.0,
+          "max_s": 0.0
+        },
+        "consensus_exchange": {
+          "total_s": 31.549187167019227,
+          "count": 2960,
+          "mean_s": 0.010658509178047035,
+          "p50_s": 0.010740544000327645,
+          "p95_s": 0.01241057219981485,
+          "max_s": 0.025883968999551143
+        },
+        "zu_update": {
+          "total_s": 0.2673236319806165,
+          "count": 2960,
+          "mean_s": 9.031203783128936e-05,
+          "p50_s": 8.962950005297898e-05,
+          "p95_s": 9.531600016998709e-05,
+          "max_s": 0.00019429699932516087
+        },
+        "convergence": {
+          "total_s": 0.04335351298595924,
+          "count": 2960,
+          "mean_s": 1.4646457089851095e-05,
+          "p50_s": 1.9079998310189694e-06,
+          "p95_s": 0.00012826179922740264,
+          "max_s": 0.00018490900038159452
+        },
+        "monitor": {
+          "total_s": 0.015045914011352579,
+          "count": 2960,
+          "mean_s": 5.083079057889385e-06,
+          "p50_s": 3.851000656140968e-06,
+          "p95_s": 4.313999897931353e-06,
+          "max_s": 0.003450491999501537
+        },
+        "io": {
+          "total_s": 0.07988405898231576,
+          "count": 2960,
+          "mean_s": 2.6987857764295865e-05,
+          "p50_s": 9.25899985304568e-06,
+          "p95_s": 1.03150005088537e-05,
+          "max_s": 0.012424270000337856
+        },
+        "convergence_mpi": {
+          "total_s": 1.0683015409977088,
+          "count": 2960,
+          "mean_s": 0.00036091268276949623,
+          "p50_s": 0.0,
+          "p95_s": 0.003371563999644422,
+          "max_s": 0.006841997999799787
+        },
+        "console": {
+          "total_s": 0.00013346200194064295,
+          "count": 2960,
+          "mean_s": 4.508851416913613e-08,
+          "p50_s": 0.0,
+          "p95_s": 4.260000423528254e-07,
+          "max_s": 1.0369994924985804e-06
+        }
+      },
+      "mpi": {
+        "Barrier": {
+          "calls": 8,
+          "wall_s": 0.10973737499989511,
+          "input_buffer_bytes": 0,
+          "output_buffer_bytes": 0
+        },
+        "Neighbor_alltoallv": {
+          "calls": 2962,
+          "wall_s": 31.295805277010913,
+          "input_buffer_bytes": 757952,
+          "output_buffer_bytes": 757952
+        },
+        "Allreduce": {
+          "calls": 592,
+          "wall_s": 1.0623027139881742,
+          "input_buffer_bytes": 0,
+          "output_buffer_bytes": 52096
+        },
+        "gather": {
+          "calls": 2,
+          "wall_s": 0.0024435149989585625,
+          "input_buffer_bytes": 0,
+          "output_buffer_bytes": 0
+        },
+        "bcast": {
+          "calls": 2,
+          "wall_s": 0.00018761399951472413,
+          "input_buffer_bytes": 0,
+          "output_buffer_bytes": 0
+        },
+        "Bcast": {
+          "calls": 2,
+          "wall_s": 5.7777999245445244e-05,
+          "input_buffer_bytes": 32,
+          "output_buffer_bytes": 0
+        },
+        "allreduce": {
+          "calls": 3,
+          "wall_s": 0.011918090999643027,
+          "input_buffer_bytes": 0,
+          "output_buffer_bytes": 0
+        }
+      }
+    },
+    {
+      "rank": 1,
+      "bus_ids": [
+        14,
+        16,
+        17,
+        18,
+        19,
+        20,
+        29,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        42,
+        112
+      ],
+      "cpu_s": 86.41170972200001,
+      "peak_rss_kib": 77312,
+      "solver": {
+        "calls": 2960,
+        "optimize_wall_s": 68.34069850798915,
+        "reported_runtime_s": 68.12687611579895,
+        "exceptions": 0,
+        "statuses": {
+          "18": 2960
+        }
+      },
+      "neighbor_ranks": 4,
+      "consensus_edges": 12,
+      "phases": {
+        "vt_exchange": {
+          "total_s": 0.018168692993640434,
+          "count": 2960,
+          "mean_s": 6.138071957310957e-06,
+          "p50_s": 5.926000085310079e-06,
+          "p95_s": 7.147999895096291e-06,
+          "max_s": 0.00030887200045981444
+        },
+        "x_solve": {
+          "total_s": 75.52668957699552,
+          "count": 2960,
+          "mean_s": 0.025515773505741732,
+          "p50_s": 0.02582284449999861,
+          "p95_s": 0.026447519249859396,
+          "max_s": 0.034226471999318164
+        },
+        "solve_status": {
+          "total_s": 0.0,
+          "count": 2960,
+          "mean_s": 0.0,
+          "p50_s": 0.0,
+          "p95_s": 0.0,
+          "max_s": 0.0
+        },
+        "consensus_exchange": {
+          "total_s": 8.987170372988658,
+          "count": 2960,
+          "mean_s": 0.0030362062070907626,
+          "p50_s": 0.002844314000412851,
+          "p95_s": 0.004822800150077455,
+          "max_s": 0.019433936000496033
+        },
+        "zu_update": {
+          "total_s": 0.5873620880165618,
+          "count": 2960,
+          "mean_s": 0.00019843313784343301,
+          "p50_s": 0.0001974920000975544,
+          "p95_s": 0.0002065274005872197,
+          "max_s": 0.001063691999661387
+        },
+        "convergence": {
+          "total_s": 0.055347130983136594,
+          "count": 2960,
+          "mean_s": 1.8698355061870472e-05,
+          "p50_s": 1.889000486698933e-06,
+          "p95_s": 0.00016885389923118054,
+          "max_s": 0.00024387200028286316
+        },
+        "monitor": {
+          "total_s": 0.01657428798989713,
+          "count": 2960,
+          "mean_s": 5.59942161820849e-06,
+          "p50_s": 4.333999640948605e-06,
+          "p95_s": 4.851000085182022e-06,
+          "max_s": 0.003456743001152063
+        },
+        "io": {
+          "total_s": 0.09096609801690647,
+          "count": 2960,
+          "mean_s": 3.073178987057651e-05,
+          "p50_s": 1.1500000255182385e-05,
+          "p95_s": 1.2704000255325809e-05,
+          "max_s": 0.012170279000201845
+        },
+        "convergence_mpi": {
+          "total_s": 0.25346829000045545,
+          "count": 2960,
+          "mean_s": 8.563117905420792e-05,
+          "p50_s": 0.0,
+          "p95_s": 0.0008477099504943908,
+          "max_s": 0.0021428099998956895
+        },
+        "console": {
+          "total_s": 0.00011088499468314694,
+          "count": 2960,
+          "mean_s": 3.7461146852414506e-08,
+          "p50_s": 0.0,
+          "p95_s": 3.5199991543777287e-07,
+          "max_s": 7.959997674333863e-07
+        }
+      },
+      "mpi": {
+        "Barrier": {
+          "calls": 8,
+          "wall_s": 0.0983793319983306,
+          "input_buffer_bytes": 0,
+          "output_buffer_bytes": 0
+        },
+        "Neighbor_alltoallv": {
+          "calls": 2962,
+          "wall_s": 8.645683925989943,
+          "input_buffer_bytes": 2273856,
+          "output_buffer_bytes": 2273856
+        },
+        "Allreduce": {
+          "calls": 592,
+          "wall_s": 0.2470631839996713,
+          "input_buffer_bytes": 0,
+          "output_buffer_bytes": 52096
+        },
+        "gather": {
+          "calls": 2,
+          "wall_s": 0.00015351899946836056,
+          "input_buffer_bytes": 0,
+          "output_buffer_bytes": 0
+        },
+        "bcast": {
+          "calls": 2,
+          "wall_s": 0.005852128000697121,
+          "input_buffer_bytes": 0,
+          "output_buffer_bytes": 0
+        },
+        "Bcast": {
+          "calls": 2,
+          "wall_s": 6.11120003668475e-05,
+          "input_buffer_bytes": 32,
+          "output_buffer_bytes": 0
+        },
+        "allreduce": {
+          "calls": 3,
+          "wall_s": 0.005672978999427869,
+          "input_buffer_bytes": 0,
+          "output_buffer_bytes": 0
+        }
+      }
+    },
+    {
+      "rank": 2,
+      "bus_ids": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        30,
+        31,
+        113,
+        114
+      ],
+      "cpu_s": 86.436108762,
+      "peak_rss_kib": 78720,
+      "solver": {
+        "calls": 2960,
+        "optimize_wall_s": 40.771592897044684,
+        "reported_runtime_s": 40.631484270095825,
+        "exceptions": 0,
+        "statuses": {
+          "18": 2960
+        }
+      },
+      "neighbor_ranks": 2,
+      "consensus_edges": 6,
+      "phases": {
+        "vt_exchange": {
+          "total_s": 0.012835697002628876,
+          "count": 2960,
+          "mean_s": 4.336384122509756e-06,
+          "p50_s": 4.110999725526199e-06,
+          "p95_s": 4.869999429502059e-06,
+          "max_s": 0.0004152980000071693
+        },
+        "x_solve": {
+          "total_s": 45.1562776660021,
+          "count": 2960,
+          "mean_s": 0.015255499211487195,
+          "p50_s": 0.015963272999670153,
+          "p95_s": 0.016117808649914876,
+          "max_s": 0.034138945000449894
+        },
+        "solve_status": {
+          "total_s": 0.0,
+          "count": 2960,
+          "mean_s": 0.0,
+          "p50_s": 0.0,
+          "p95_s": 0.0,
+          "max_s": 0.0
+        },
+        "consensus_exchange": {
+          "total_s": 39.77326296098636,
+          "count": 2960,
+          "mean_s": 0.01343691316249539,
+          "p50_s": 0.013126519500474387,
+          "p95_s": 0.015334495749448252,
+          "max_s": 0.020336384999609436
+        },
+        "zu_update": {
+          "total_s": 0.33065014103704016,
+          "count": 2960,
+          "mean_s": 0.00011170612872872979,
+          "p50_s": 0.00011094499996033846,
+          "p95_s": 0.00011666699992929352,
+          "max_s": 0.00017064900021068752
+        },
+        "convergence": {
+          "total_s": 0.04301923101866123,
+          "count": 2960,
+          "mean_s": 1.4533523992790956e-05,
+          "p50_s": 1.7399997886968777e-06,
+          "p95_s": 0.0001279487006286217,
+          "max_s": 0.00017885199940792518
+        },
+        "monitor": {
+          "total_s": 0.014813507948929328,
+          "count": 2960,
+          "mean_s": 5.004563496259908e-06,
+          "p50_s": 3.741000000445638e-06,
+          "p95_s": 4.167000042798463e-06,
+          "max_s": 0.0035173490005036
+        },
+        "io": {
+          "total_s": 0.07822101103465684,
+          "count": 2960,
+          "mean_s": 2.6426017241438123e-05,
+          "p50_s": 9.925999620463699e-06,
+          "p95_s": 1.0944999348794227e-05,
+          "max_s": 0.012209627000629553
+        },
+        "convergence_mpi": {
+          "total_s": 0.26302075900366617,
+          "count": 2960,
+          "mean_s": 8.88583645282656e-05,
+          "p50_s": 0.0,
+          "p95_s": 0.0008470151496567264,
+          "max_s": 0.005211893000705459
+        },
+        "console": {
+          "total_s": 0.00011485600316518685,
+          "count": 2960,
+          "mean_s": 3.880270377202258e-08,
+          "p50_s": 0.0,
+          "p95_s": 3.710001692525111e-07,
+          "max_s": 1.2780001270584762e-06
+        }
+      },
+      "mpi": {
+        "Barrier": {
+          "calls": 8,
+          "wall_s": 0.12370322300102998,
+          "input_buffer_bytes": 0,
+          "output_buffer_bytes": 0
+        },
+        "Neighbor_alltoallv": {
+          "calls": 2962,
+          "wall_s": 39.529865154976505,
+          "input_buffer_bytes": 1136928,
+          "output_buffer_bytes": 1136928
+        },
+        "Allreduce": {
+          "calls": 592,
+          "wall_s": 0.25686804999804735,
+          "input_buffer_bytes": 0,
+          "output_buffer_bytes": 52096
+        },
+        "gather": {
+          "calls": 2,
+          "wall_s": 0.0006101509989093756,
+          "input_buffer_bytes": 0,
+          "output_buffer_bytes": 0
+        },
+        "bcast": {
+          "calls": 2,
+          "wall_s": 0.005453691000184335,
+          "input_buffer_bytes": 0,
+          "output_buffer_bytes": 0
+        },
+        "Bcast": {
+          "calls": 2,
+          "wall_s": 6.388900055753766e-05,
+          "input_buffer_bytes": 32,
+          "output_buffer_bytes": 0
+        },
+        "allreduce": {
+          "calls": 3,
+          "wall_s": 0.018680322000363958,
+          "input_buffer_bytes": 0,
+          "output_buffer_bytes": 0
+        }
+      }
+    },
+    {
+      "rank": 3,
+      "bus_ids": [
+        41,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        65,
+        66
+      ],
+      "cpu_s": 86.49140928599999,
+      "peak_rss_kib": 78720,
+      "solver": {
+        "calls": 2960,
+        "optimize_wall_s": 68.35352345499177,
+        "reported_runtime_s": 68.14366316795349,
+        "exceptions": 0,
+        "statuses": {
+          "18": 2960
+        }
+      },
+      "neighbor_ranks": 2,
+      "consensus_edges": 11,
+      "phases": {
+        "vt_exchange": {
+          "total_s": 0.013161402985133464,
+          "count": 2960,
+          "mean_s": 4.446419927409954e-06,
+          "p50_s": 4.223000360070728e-06,
+          "p95_s": 5.018999263484147e-06,
+          "max_s": 0.0004150019994995091
+        },
+        "x_solve": {
+          "total_s": 75.42640909999409,
+          "count": 2960,
+          "mean_s": 0.025481894966214218,
+          "p50_s": 0.02527641000051517,
+          "p95_s": 0.02660788479970506,
+          "max_s": 0.048117567999725
+        },
+        "solve_status": {
+          "total_s": 0.0,
+          "count": 2960,
+          "mean_s": 0.0,
+          "p50_s": 0.0,
+          "p95_s": 0.0,
+          "max_s": 0.0
+        },
+        "consensus_exchange": {
+          "total_s": 9.16858458502611,
+          "count": 2960,
+          "mean_s": 0.003097494792238551,
+          "p50_s": 0.003305450999960158,
+          "p95_s": 0.004142380400253386,
+          "max_s": 0.008414763000473613
+        },
+        "zu_update": {
+          "total_s": 0.5245603539624426,
+          "count": 2960,
+          "mean_s": 0.0001772163357981225,
+          "p50_s": 0.00017714900013743318,
+          "p95_s": 0.00018746770019788527,
+          "max_s": 0.00029268700018292293
+        },
+        "convergence": {
+          "total_s": 0.04991033202804829,
+          "count": 2960,
+          "mean_s": 1.6861598658124423e-05,
+          "p50_s": 1.7399997886968777e-06,
+          "p95_s": 0.00015368964996014255,
+          "max_s": 0.0001892789996418287
+        },
+        "monitor": {
+          "total_s": 0.015099113997166569,
+          "count": 2960,
+          "mean_s": 5.101052026069787e-06,
+          "p50_s": 3.833999471680727e-06,
+          "p95_s": 4.203000571578741e-06,
+          "max_s": 0.0035729060000448953
+        },
+        "io": {
+          "total_s": 0.08574053400570847,
+          "count": 2960,
+          "mean_s": 2.896639662355016e-05,
+          "p50_s": 1.1425999218772631e-05,
+          "p95_s": 1.2482899865062787e-05,
+          "max_s": 0.011933206000321661
+        },
+        "convergence_mpi": {
+          "total_s": 0.262739462983518,
+          "count": 2960,
+          "mean_s": 8.876333208902635e-05,
+          "p50_s": 0.0,
+          "p95_s": 0.0008687088998613035,
+          "max_s": 0.0036432019996937015
+        },
+        "console": {
+          "total_s": 0.00011804899804701563,
+          "count": 2960,
+          "mean_s": 3.98814182591269e-08,
+          "p50_s": 0.0,
+          "p95_s": 3.710001692525111e-07,
+          "max_s": 1.0740004654508084e-06
+        }
+      },
+      "mpi": {
+        "Barrier": {
+          "calls": 8,
+          "wall_s": 0.18663157700120792,
+          "input_buffer_bytes": 0,
+          "output_buffer_bytes": 0
+        },
+        "Neighbor_alltoallv": {
+          "calls": 2962,
+          "wall_s": 8.865825935986322,
+          "input_buffer_bytes": 2084368,
+          "output_buffer_bytes": 2084368
+        },
+        "Allreduce": {
+          "calls": 592,
+          "wall_s": 0.25703803699161654,
+          "input_buffer_bytes": 0,
+          "output_buffer_bytes": 52096
+        },
+        "gather": {
+          "calls": 2,
+          "wall_s": 0.0011523570001372718,
+          "input_buffer_bytes": 0,
+          "output_buffer_bytes": 0
+        },
+        "bcast": {
+          "calls": 2,
+          "wall_s": 0.005000303000997519,
+          "input_buffer_bytes": 0,
+          "output_buffer_bytes": 0
+        },
+        "Bcast": {
+          "calls": 2,
+          "wall_s": 4.122300015296787e-05,
+          "input_buffer_bytes": 32,
+          "output_buffer_bytes": 0
+        },
+        "allreduce": {
+          "calls": 3,
+          "wall_s": 0.012295041000470519,
+          "input_buffer_bytes": 0,
+          "output_buffer_bytes": 0
+        }
+      }
+    },
+    {
+      "rank": 4,
+      "bus_ids": [
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        80,
+        115,
+        117
+      ],
+      "cpu_s": 86.491342117,
+      "peak_rss_kib": 76800,
+      "solver": {
+        "calls": 2960,
+        "optimize_wall_s": 75.81124724499387,
+        "reported_runtime_s": 75.58955907821655,
+        "exceptions": 0,
+        "statuses": {
+          "18": 2960
+        }
+      },
+      "neighbor_ranks": 4,
+      "consensus_edges": 15,
+      "phases": {
+        "vt_exchange": {
+          "total_s": 0.018494875011128897,
+          "count": 2960,
+          "mean_s": 6.248268584840844e-06,
+          "p50_s": 6.000000212225132e-06,
+          "p95_s": 7.1480507358501195e-06,
+          "max_s": 0.00022005700066074496
+        },
+        "x_solve": {
+          "total_s": 83.49965823596449,
+          "count": 2960,
+          "mean_s": 0.02820934399863665,
+          "p50_s": 0.02826159549977092,
+          "p95_s": 0.02893694635004067,
+          "max_s": 0.0532903269995586
+        },
+        "solve_status": {
+          "total_s": 0.0,
+          "count": 2960,
+          "mean_s": 0.0,
+          "p50_s": 0.0,
+          "p95_s": 0.0,
+          "max_s": 0.0
+        },
+        "consensus_exchange": {
+          "total_s": 0.9120472950398835,
+          "count": 2960,
+          "mean_s": 0.0003081240861621228,
+          "p50_s": 0.00028877899967483245,
+          "p95_s": 0.00029996490006851674,
+          "max_s": 0.004812130000573234
+        },
+        "zu_update": {
+          "total_s": 0.6716971209734766,
+          "count": 2960,
+          "mean_s": 0.00022692470303157993,
+          "p50_s": 0.00022368600002664607,
+          "p95_s": 0.00024296860074173306,
+          "max_s": 0.0003323159999126801
+        },
+        "convergence": {
+          "total_s": 0.05773755297650496,
+          "count": 2960,
+          "mean_s": 1.9505930059630053e-05,
+          "p50_s": 2.2220001483219676e-06,
+          "p95_s": 0.00016972300009001628,
+          "max_s": 0.00023464899913960835
+        },
+        "monitor": {
+          "total_s": 0.01648991400270461,
+          "count": 2960,
+          "mean_s": 5.570916892805611e-06,
+          "p50_s": 4.000000444648322e-06,
+          "p95_s": 4.462999640963972e-06,
+          "max_s": 0.004318756999964535
+        },
+        "io": {
+          "total_s": 0.09626703100548184,
+          "count": 2960,
+          "mean_s": 3.252264560996008e-05,
+          "p50_s": 1.2018500001431676e-05,
+          "p95_s": 1.3203999560573721e-05,
+          "max_s": 0.0131184050005686
+        },
+        "convergence_mpi": {
+          "total_s": 0.2554878009896129,
+          "count": 2960,
+          "mean_s": 8.631344628027462e-05,
+          "p50_s": 0.0,
+          "p95_s": 0.000868176500125628,
+          "max_s": 0.001163300999905914
+        },
+        "console": {
+          "total_s": 0.00010566800301603507,
+          "count": 2960,
+          "mean_s": 3.5698649667579414e-08,
+          "p50_s": 0.0,
+          "p95_s": 3.3305054785159857e-07,
+          "max_s": 1.0929998097708449e-06
+        }
+      },
+      "mpi": {
+        "Barrier": {
+          "calls": 8,
+          "wall_s": 0.17394600300121965,
+          "input_buffer_bytes": 0,
+          "output_buffer_bytes": 0
+        },
+        "Neighbor_alltoallv": {
+          "calls": 2962,
+          "wall_s": 0.5303739440269055,
+          "input_buffer_bytes": 2842320,
+          "output_buffer_bytes": 2842320
+        },
+        "Allreduce": {
+          "calls": 592,
+          "wall_s": 0.24947775700820785,
+          "input_buffer_bytes": 0,
+          "output_buffer_bytes": 52096
+        },
+        "gather": {
+          "calls": 2,
+          "wall_s": 0.0007118359999367385,
+          "input_buffer_bytes": 0,
+          "output_buffer_bytes": 0
+        },
+        "bcast": {
+          "calls": 2,
+          "wall_s": 0.006160228999760875,
+          "input_buffer_bytes": 0,
+          "output_buffer_bytes": 0
+        },
+        "Bcast": {
+          "calls": 2,
+          "wall_s": 3.0093000532360747e-05,
+          "input_buffer_bytes": 32,
+          "output_buffer_bytes": 0
+        },
+        "allreduce": {
+          "calls": 3,
+          "wall_s": 0.004760537999572989,
+          "input_buffer_bytes": 0,
+          "output_buffer_bytes": 0
+        }
+      }
+    },
+    {
+      "rank": 5,
+      "bus_ids": [
+        75,
+        76,
+        77,
+        78,
+        79,
+        81,
+        82,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "cpu_s": 86.429475579,
+      "peak_rss_kib": 77312,
+      "solver": {
+        "calls": 2960,
+        "optimize_wall_s": 56.12770280500081,
+        "reported_runtime_s": 55.96608543395996,
+        "exceptions": 0,
+        "statuses": {
+          "18": 2960
+        }
+      },
+      "neighbor_ranks": 3,
+      "consensus_edges": 11,
+      "phases": {
+        "vt_exchange": {
+          "total_s": 0.014674226991701289,
+          "count": 2960,
+          "mean_s": 4.957509118818003e-06,
+          "p50_s": 4.759000148624182e-06,
+          "p95_s": 5.351999789127149e-06,
+          "max_s": 0.00036638999972637976
+        },
+        "x_solve": {
+          "total_s": 61.5797720219889,
+          "count": 2960,
+          "mean_s": 0.02080397703445571,
+          "p50_s": 0.0211257934997775,
+          "p95_s": 0.02174474905036732,
+          "max_s": 0.02907829200012202
+        },
+        "solve_status": {
+          "total_s": 0.0,
+          "count": 2960,
+          "mean_s": 0.0,
+          "p50_s": 0.0,
+          "p95_s": 0.0,
+          "max_s": 0.0
+        },
+        "consensus_exchange": {
+          "total_s": 23.114837319992148,
+          "count": 2960,
+          "mean_s": 0.0078090666621595094,
+          "p50_s": 0.007543698500285245,
+          "p95_s": 0.009549405450206905,
+          "max_s": 0.02451662900057272
+        },
+        "zu_update": {
+          "total_s": 0.5044512190252135,
+          "count": 2960,
+          "mean_s": 0.0001704227091301397,
+          "p50_s": 0.00016937100008362904,
+          "p95_s": 0.0001772599998730584,
+          "max_s": 0.00036200099930283614
+        },
+        "convergence": {
+          "total_s": 0.047929055000167864,
+          "count": 2960,
+          "mean_s": 1.619224831086752e-05,
+          "p50_s": 1.8520004232414067e-06,
+          "p95_s": 0.0001431138008229027,
+          "max_s": 0.00019637100012914743
+        },
+        "monitor": {
+          "total_s": 0.01531539598818199,
+          "count": 2960,
+          "mean_s": 5.1741202662776995e-06,
+          "p50_s": 3.852499958156841e-06,
+          "p95_s": 4.278000233171042e-06,
+          "max_s": 0.0036464549993979745
+        },
+        "io": {
+          "total_s": 0.08180365900807374,
+          "count": 2960,
+          "mean_s": 2.7636371286511397e-05,
+          "p50_s": 1.029599934554426e-05,
+          "p95_s": 1.1332999793012278e-05,
+          "max_s": 0.012316591999478987
+        },
+        "convergence_mpi": {
+          "total_s": 0.2674358900057996,
+          "count": 2960,
+          "mean_s": 9.034996283979716e-05,
+          "p50_s": 0.0,
+          "p95_s": 0.0008680066996021196,
+          "max_s": 0.0043494390001797
+        },
+        "console": {
+          "total_s": 0.0001085740013877512,
+          "count": 2960,
+          "mean_s": 3.668040587424027e-08,
+          "p50_s": 0.0,
+          "p95_s": 3.5199991543777287e-07,
+          "max_s": 7.219996405183338e-07
+        }
+      },
+      "mpi": {
+        "Barrier": {
+          "calls": 8,
+          "wall_s": 0.10338729299928673,
+          "input_buffer_bytes": 0,
+          "output_buffer_bytes": 0
+        },
+        "Neighbor_alltoallv": {
+          "calls": 2962,
+          "wall_s": 22.801533507001295,
+          "input_buffer_bytes": 2084368,
+          "output_buffer_bytes": 2084368
+        },
+        "Allreduce": {
+          "calls": 592,
+          "wall_s": 0.2617021079940969,
+          "input_buffer_bytes": 0,
+          "output_buffer_bytes": 52096
+        },
+        "gather": {
+          "calls": 2,
+          "wall_s": 0.0010692070000004605,
+          "input_buffer_bytes": 0,
+          "output_buffer_bytes": 0
+        },
+        "bcast": {
+          "calls": 2,
+          "wall_s": 0.005288034000841435,
+          "input_buffer_bytes": 0,
+          "output_buffer_bytes": 0
+        },
+        "Bcast": {
+          "calls": 2,
+          "wall_s": 1.7704000129015185e-05,
+          "input_buffer_bytes": 32,
+          "output_buffer_bytes": 0
+        },
+        "allreduce": {
+          "calls": 3,
+          "wall_s": 0.016143380999892543,
+          "input_buffer_bytes": 0,
+          "output_buffer_bytes": 0
+        }
+      }
+    },
+    {
+      "rank": 6,
+      "bus_ids": [
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        100,
+        101
+      ],
+      "cpu_s": 86.45352136599999,
+      "peak_rss_kib": 76288,
+      "solver": {
+        "calls": 2960,
+        "optimize_wall_s": 32.58134319102555,
+        "reported_runtime_s": 32.44539189338684,
+        "exceptions": 0,
+        "statuses": {
+          "18": 2960
+        }
+      },
+      "neighbor_ranks": 2,
+      "consensus_edges": 6,
+      "phases": {
+        "vt_exchange": {
+          "total_s": 0.010635840995746548,
+          "count": 2960,
+          "mean_s": 3.59318952559005e-06,
+          "p50_s": 3.4810000215657055e-06,
+          "p95_s": 3.944000127376057e-06,
+          "max_s": 0.0002237959997728467
+        },
+        "x_solve": {
+          "total_s": 36.621423751034854,
+          "count": 2960,
+          "mean_s": 0.012372102618592857,
+          "p50_s": 0.012277904999791645,
+          "p95_s": 0.0128476588002286,
+          "max_s": 0.022450939000009384
+        },
+        "solve_status": {
+          "total_s": 0.0,
+          "count": 2960,
+          "mean_s": 0.0,
+          "p50_s": 0.0,
+          "p95_s": 0.0,
+          "max_s": 0.0
+        },
+        "consensus_exchange": {
+          "total_s": 46.12651980895225,
+          "count": 2960,
+          "mean_s": 0.015583283719240625,
+          "p50_s": 0.016361380000034842,
+          "p95_s": 0.017196866299764222,
+          "max_s": 0.02579192199937097
+        },
+        "zu_update": {
+          "total_s": 0.31939538801725575,
+          "count": 2960,
+          "mean_s": 0.00010790384730312694,
+          "p50_s": 0.00010713000028772512,
+          "p95_s": 0.00011172199992870446,
+          "max_s": 0.00022935099968890427
+        },
+        "convergence": {
+          "total_s": 0.04244223198566033,
+          "count": 2960,
+          "mean_s": 1.4338591887047408e-05,
+          "p50_s": 2.092999238811899e-06,
+          "p95_s": 0.00012396575007187491,
+          "max_s": 0.00017149999894172652
+        },
+        "monitor": {
+          "total_s": 0.015288131017769047,
+          "count": 2960,
+          "mean_s": 5.1649091276246775e-06,
+          "p50_s": 3.81399968318874e-06,
+          "p95_s": 4.315000296628568e-06,
+          "max_s": 0.003799780000008468
+        },
+        "io": {
+          "total_s": 0.06286573998113454,
+          "count": 2960,
+          "mean_s": 2.1238425669302207e-05,
+          "p50_s": 8.648000402899925e-06,
+          "p95_s": 9.573999705025926e-06,
+          "max_s": 0.008778393999818945
+        },
+        "convergence_mpi": {
+          "total_s": 2.48139721100506,
+          "count": 2960,
+          "mean_s": 0.0008383098685827905,
+          "p50_s": 0.0,
+          "p95_s": 0.0080372742003874,
+          "max_s": 0.014136897000753379
+        },
+        "console": {
+          "total_s": 0.00010047000159829622,
+          "count": 2960,
+          "mean_s": 3.394256810753251e-08,
+          "p50_s": 0.0,
+          "p95_s": 3.1590070648234777e-07,
+          "max_s": 6.850004865555093e-07
+        }
+      },
+      "mpi": {
+        "Barrier": {
+          "calls": 8,
+          "wall_s": 0.10729558000093675,
+          "input_buffer_bytes": 0,
+          "output_buffer_bytes": 0
+        },
+        "Neighbor_alltoallv": {
+          "calls": 2962,
+          "wall_s": 45.87259157097833,
+          "input_buffer_bytes": 1136928,
+          "output_buffer_bytes": 1136928
+        },
+        "Allreduce": {
+          "calls": 592,
+          "wall_s": 2.4757478840074327,
+          "input_buffer_bytes": 0,
+          "output_buffer_bytes": 52096
+        },
+        "gather": {
+          "calls": 2,
+          "wall_s": 0.0015852790002099937,
+          "input_buffer_bytes": 0,
+          "output_buffer_bytes": 0
+        },
+        "bcast": {
+          "calls": 2,
+          "wall_s": 0.004900724999970407,
+          "input_buffer_bytes": 0,
+          "output_buffer_bytes": 0
+        },
+        "Bcast": {
+          "calls": 2,
+          "wall_s": 1.9518999579304364e-05,
+          "input_buffer_bytes": 32,
+          "output_buffer_bytes": 0
+        },
+        "allreduce": {
+          "calls": 3,
+          "wall_s": 0.019811326000308327,
+          "input_buffer_bytes": 0,
+          "output_buffer_bytes": 0
+        }
+      }
+    },
+    {
+      "rank": 7,
+      "bus_ids": [
+        98,
+        99,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111
+      ],
+      "cpu_s": 86.45174653299999,
+      "peak_rss_kib": 76288,
+      "solver": {
+        "calls": 2960,
+        "optimize_wall_s": 43.66137676403196,
+        "reported_runtime_s": 43.5170419216156,
+        "exceptions": 0,
+        "statuses": {
+          "18": 2960
+        }
+      },
+      "neighbor_ranks": 2,
+      "consensus_edges": 5,
+      "phases": {
+        "vt_exchange": {
+          "total_s": 0.011855076008032484,
+          "count": 2960,
+          "mean_s": 4.00509324595692e-06,
+          "p50_s": 3.7039999369881116e-06,
+          "p95_s": 4.297850455259318e-06,
+          "max_s": 0.0007218330001705908
+        },
+        "x_solve": {
+          "total_s": 47.948388470986174,
+          "count": 2960,
+          "mean_s": 0.01619877988884668,
+          "p50_s": 0.01648094600022887,
+          "p95_s": 0.016601595450038076,
+          "max_s": 0.025953966000088258
+        },
+        "solve_status": {
+          "total_s": 0.0,
+          "count": 2960,
+          "mean_s": 0.0,
+          "p50_s": 0.0,
+          "p95_s": 0.0,
+          "max_s": 0.0
+        },
+        "consensus_exchange": {
+          "total_s": 34.81770746500206,
+          "count": 2960,
+          "mean_s": 0.011762739008446642,
+          "p50_s": 0.012320649499997671,
+          "p95_s": 0.013743302250486521,
+          "max_s": 0.023911280999527662
+        },
+        "zu_update": {
+          "total_s": 0.2838932329768795,
+          "count": 2960,
+          "mean_s": 9.590987600570254e-05,
+          "p50_s": 9.511100051895482e-05,
+          "p95_s": 9.996579929065773e-05,
+          "max_s": 0.0002085920004901709
+        },
+        "convergence": {
+          "total_s": 0.04116077200797008,
+          "count": 2960,
+          "mean_s": 1.3905666218908811e-05,
+          "p50_s": 1.7040001694113016e-06,
+          "p95_s": 0.00012244499894222826,
+          "max_s": 0.00016994500037981197
+        },
+        "monitor": {
+          "total_s": 0.016766924018156715,
+          "count": 2960,
+          "mean_s": 5.6645013574853764e-06,
+          "p50_s": 4.055000317748636e-06,
+          "p95_s": 4.536999767879024e-06,
+          "max_s": 0.004589573999510321
+        },
+        "io": {
+          "total_s": 0.06769047402121942,
+          "count": 2960,
+          "mean_s": 2.28684033855471e-05,
+          "p50_s": 8.630000593257137e-06,
+          "p95_s": 9.629049600334838e-06,
+          "max_s": 0.009901889000502706
+        },
+        "convergence_mpi": {
+          "total_s": 2.485834606001845,
+          "count": 2960,
+          "mean_s": 0.0008398089885141368,
+          "p50_s": 0.0,
+          "p95_s": 0.008067859149832657,
+          "max_s": 0.013493279000613256
+        },
+        "console": {
+          "total_s": 0.00010206300794379786,
+          "count": 2960,
+          "mean_s": 3.4480745926958736e-08,
+          "p50_s": 0.0,
+          "p95_s": 3.149998519802466e-07,
+          "max_s": 3.795999873545952e-06
+        }
+      },
+      "mpi": {
+        "Barrier": {
+          "calls": 8,
+          "wall_s": 0.11123823300204094,
+          "input_buffer_bytes": 0,
+          "output_buffer_bytes": 0
+        },
+        "Neighbor_alltoallv": {
+          "calls": 2962,
+          "wall_s": 34.572566754021864,
+          "input_buffer_bytes": 947440,
+          "output_buffer_bytes": 947440
+        },
+        "Allreduce": {
+          "calls": 592,
+          "wall_s": 2.4802193789892044,
+          "input_buffer_bytes": 0,
+          "output_buffer_bytes": 52096
+        },
+        "gather": {
+          "calls": 2,
+          "wall_s": 0.0012185369996586815,
+          "input_buffer_bytes": 0,
+          "output_buffer_bytes": 0
+        },
+        "bcast": {
+          "calls": 2,
+          "wall_s": 0.005965407999610761,
+          "input_buffer_bytes": 0,
+          "output_buffer_bytes": 0
+        },
+        "Bcast": {
+          "calls": 2,
+          "wall_s": 2.0665999727498274e-05,
+          "input_buffer_bytes": 32,
+          "output_buffer_bytes": 0
+        },
+        "allreduce": {
+          "calls": 3,
+          "wall_s": 0.01721409599940671,
+          "input_buffer_bytes": 0,
+          "output_buffer_bytes": 0
+        }
+      }
+    }
+  ]
+}

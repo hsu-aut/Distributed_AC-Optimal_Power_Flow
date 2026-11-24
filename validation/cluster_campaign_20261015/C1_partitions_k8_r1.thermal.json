@@ -1,0 +1,222 @@
+{
+  "before": {
+    "time_utc": "2026-10-15T11:09:15.471710+00:00",
+    "max_temp_c": 76.3,
+    "median_temp_c": 68.6,
+    "nodes_throttled_now": [],
+    "nodes": {
+      "pi1": {
+        "throttled": "0x0",
+        "temp_c": 68.6,
+        "cur_freq_mhz": 2400
+      },
+      "pi2": {
+        "throttled": "0x0",
+        "temp_c": 74.1,
+        "cur_freq_mhz": 2400
+      },
+      "pi3": {
+        "throttled": "0x0",
+        "temp_c": 75.7,
+        "cur_freq_mhz": 2400
+      },
+      "pi4": {
+        "throttled": "0x0",
+        "temp_c": 76.3,
+        "cur_freq_mhz": 2400
+      },
+      "pi5": {
+        "throttled": "0x0",
+        "temp_c": 56.0,
+        "cur_freq_mhz": 1600
+      },
+      "pi6": {
+        "throttled": "0x80000",
+        "temp_c": 56.5,
+        "cur_freq_mhz": 1600
+      },
+      "pi7": {
+        "throttled": "0x0",
+        "temp_c": 56.5,
+        "cur_freq_mhz": 1600
+      },
+      "pi8": {
+        "throttled": "0x0",
+        "temp_c": 53.2,
+        "cur_freq_mhz": 1600
+      }
+    }
+  },
+  "during": {
+    "columns": [
+      "unix_time",
+      "temp_c",
+      "throttled",
+      "cur_freq_mhz"
+    ],
+    "max_temp_c": 77.9,
+    "nodes_throttled_during": [],
+    "samples": {
+      "pi1": [
+        [
+          1792062555,
+          68.6,
+          "0x0",
+          2400
+        ],
+        [
+          1792062585,
+          72.5,
+          "0x0",
+          2400
+        ]
+      ],
+      "pi2": [
+        [
+          1792062555,
+          73.6,
+          "0x0",
+          2400
+        ],
+        [
+          1792062585,
+          77.9,
+          "0x0",
+          2400
+        ]
+      ],
+      "pi3": [
+        [
+          1792062555,
+          75.2,
+          "0x0",
+          2400
+        ],
+        [
+          1792062585,
+          75.7,
+          "0x0",
+          2400
+        ]
+      ],
+      "pi4": [
+        [
+          1792062555,
+          76.3,
+          "0x0",
+          2400
+        ],
+        [
+          1792062585,
+          77.9,
+          "0x0",
+          2400
+        ]
+      ],
+      "pi5": [
+        [
+          1792062555,
+          56.0,
+          "0x0",
+          1600
+        ],
+        [
+          1792062585,
+          67.5,
+          "0x0",
+          2400
+        ]
+      ],
+      "pi6": [
+        [
+          1792062555,
+          57.1,
+          "0x80000",
+          1700
+        ],
+        [
+          1792062585,
+          68.6,
+          "0x80000",
+          2400
+        ]
+      ],
+      "pi7": [
+        [
+          1792062555,
+          56.5,
+          "0x0",
+          1600
+        ],
+        [
+          1792062585,
+          67.5,
+          "0x0",
+          2400
+        ]
+      ],
+      "pi8": [
+        [
+          1792062555,
+          53.2,
+          "0x0",
+          1600
+        ],
+        [
+          1792062585,
+          66.4,
+          "0x0",
+          2400
+        ]
+      ]
+    }
+  },
+  "after": {
+    "time_utc": "2026-10-15T11:10:16.060333+00:00",
+    "max_temp_c": 79.0,
+    "median_temp_c": 72.5,
+    "nodes_throttled_now": [],
+    "nodes": {
+      "pi1": {
+        "throttled": "0x0",
+        "temp_c": 72.5,
+        "cur_freq_mhz": 2400
+      },
+      "pi2": {
+        "throttled": "0x0",
+        "temp_c": 76.8,
+        "cur_freq_mhz": 2400
+      },
+      "pi3": {
+        "throttled": "0x0",
+        "temp_c": 75.2,
+        "cur_freq_mhz": 2400
+      },
+      "pi4": {
+        "throttled": "0x0",
+        "temp_c": 79.0,
+        "cur_freq_mhz": 2400
+      },
+      "pi5": {
+        "throttled": "0x0",
+        "temp_c": 71.4,
+        "cur_freq_mhz": 2400
+      },
+      "pi6": {
+        "throttled": "0x80000",
+        "temp_c": 69.2,
+        "cur_freq_mhz": 2400
+      },
+      "pi7": {
+        "throttled": "0x0",
+        "temp_c": 67.5,
+        "cur_freq_mhz": 2400
+      },
+      "pi8": {
+        "throttled": "0x0",
+        "temp_c": 68.6,
+        "cur_freq_mhz": 2400
+      }
+    }
+  }
+}

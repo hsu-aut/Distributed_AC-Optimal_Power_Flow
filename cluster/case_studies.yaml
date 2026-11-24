@@ -1,0 +1,58 @@
+# Case study: distributed nonconvex AC-OPF with ADMM on the IEEE 118-bus system.
+# Executed by tools/run_campaign.py (cluster: pi119 orchestrator, hostfiles per agent count;
+# local: same runs without hostfile). Rules: docs/MEASUREMENT_PROTOCOL.md, docs/CLUSTER_RUNBOOK.md.
+#
+# Acceptance of every ADMM run: all local solves locally optimal, ADMM converged at the
+# stated tolerance on every rank, independent AC validation passed. Budgets are 25 % above
+# the locally measured iterations for that tolerance (tools/iteration_budget.py).
+
+campaign: ieee118_ac_admm
+reference_cost: 129660.69406511678
+
+common_admm_args: [--centered-penalty, --solve-limit, "0", --threads, "1",
+                   --log-every, "0", --monitor-every, "0", --timing-trace, --checkpoint-every, "500"]
+common_central_args: [--solve-limit, "0", --timeout, "600"]
+
+# Tolerance chosen before the campaign: loosest level at which every configuration of the
+# local pre-study was independently AC-feasible (validation/iteration_budget_20260915/).
+tolerances:
+  campaign: {abs: 1.0e-4, rel: 1.0e-4}
+  strict: {abs: 1.0e-5, rel: 1.0e-5}
+
+cases:
+  - id: C0_central
+    purpose: Central reference on one worker, same formulation, 1 thread and all threads
+    kind: central
+    repeats: 5
+    variants:
+      - {name: t1, args: [--threads, "1"]}
+      - {name: tall, args: [--threads, "0"]}
+
+  - id: C1_partitions
+    purpose: Agent count / partitioning at the campaign tolerance (main scaling series)
+    kind: admm
+    tolerance: campaign
+    repeats: 3
+    # rho 3e5: fewest strict iterations of the bracket 1e5/3e5/1e6/3e6 (docs/TUNING_PROTOCOL.md T11)
+    args: [--partitioner, connected_impedance, --rho, "3e5"]
+    agents: [3, 4, 8, 16]
+    budget: {3: 1200, 4: 2500, 8: 2500, 16: 5000}
+
+  - id: C2_bus118_edge_rho
+    purpose: Node-wise distribution on 118 workers with the edge-weighted penalty variant
+    kind: admm
+    tolerance: campaign
+    repeats: 3
+    args: [--edge-rho, admittance, --edge-rho-exponent, "1", --rho, "1e6", --batch, "118"]
+    agents: [118]
+    budget: {118: 20000}
+    requires: 118 workers (pi103/pi105 in cluster/hosts.txt)
+
+  - id: C3_strict_tolerance
+    purpose: Same partitions at the strict tolerance 1e-5 for comparison with the campaign tolerance
+    kind: admm
+    tolerance: strict
+    repeats: 1
+    args: [--partitioner, connected_impedance, --rho, "3e5"]
+    agents: [3, 4, 8, 16]
+    budget: {3: 1200, 4: 3800, 8: 3700, 16: 7300}

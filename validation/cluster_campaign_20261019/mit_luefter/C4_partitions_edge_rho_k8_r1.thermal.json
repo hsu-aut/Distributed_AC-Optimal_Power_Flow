@@ -1,0 +1,222 @@
+{
+  "before": {
+    "time_utc": "2026-10-19T14:21:30.824228+00:00",
+    "max_temp_c": 63.1,
+    "median_temp_c": 48.3,
+    "nodes_throttled_now": [],
+    "nodes": {
+      "pi117": {
+        "throttled": "0x0",
+        "temp_c": 46.1,
+        "cur_freq_mhz": 1600
+      },
+      "pi5": {
+        "throttled": "0xe0000",
+        "temp_c": 63.1,
+        "cur_freq_mhz": 1600
+      },
+      "pi17": {
+        "throttled": "0x80000",
+        "temp_c": 58.2,
+        "cur_freq_mhz": 1600
+      },
+      "pi29": {
+        "throttled": "0x0",
+        "temp_c": 45.5,
+        "cur_freq_mhz": 1600
+      },
+      "pi41": {
+        "throttled": "0x0",
+        "temp_c": 42.2,
+        "cur_freq_mhz": 1600
+      },
+      "pi53": {
+        "throttled": "0x0",
+        "temp_c": 48.3,
+        "cur_freq_mhz": 1600
+      },
+      "pi65": {
+        "throttled": "0x0",
+        "temp_c": 48.3,
+        "cur_freq_mhz": 1600
+      },
+      "pi77": {
+        "throttled": "0x0",
+        "temp_c": 43.9,
+        "cur_freq_mhz": 1600
+      }
+    }
+  },
+  "during": {
+    "columns": [
+      "unix_time",
+      "temp_c",
+      "throttled",
+      "cur_freq_mhz"
+    ],
+    "max_temp_c": 71.9,
+    "nodes_throttled_during": [],
+    "samples": {
+      "pi117": [
+        [
+          1792419691,
+          45.5,
+          "0x0",
+          1600
+        ],
+        [
+          1792419721,
+          57.1,
+          "0x0",
+          2400
+        ]
+      ],
+      "pi5": [
+        [
+          1792419691,
+          61.5,
+          "0xe0000",
+          1600
+        ],
+        [
+          1792419721,
+          71.9,
+          "0xe0000",
+          2400
+        ]
+      ],
+      "pi17": [
+        [
+          1792419691,
+          57.6,
+          "0x80000",
+          1600
+        ],
+        [
+          1792419721,
+          68.6,
+          "0x80000",
+          2400
+        ]
+      ],
+      "pi29": [
+        [
+          1792419691,
+          45.5,
+          "0x0",
+          1600
+        ],
+        [
+          1792419721,
+          57.1,
+          "0x0",
+          2400
+        ]
+      ],
+      "pi41": [
+        [
+          1792419691,
+          42.8,
+          "0x0",
+          1600
+        ],
+        [
+          1792419721,
+          53.8,
+          "0x0",
+          2400
+        ]
+      ],
+      "pi53": [
+        [
+          1792419691,
+          48.3,
+          "0x0",
+          1500
+        ],
+        [
+          1792419721,
+          58.7,
+          "0x0",
+          2400
+        ]
+      ],
+      "pi65": [
+        [
+          1792419691,
+          48.8,
+          "0x0",
+          1700
+        ],
+        [
+          1792419721,
+          58.7,
+          "0x0",
+          2400
+        ]
+      ],
+      "pi77": [
+        [
+          1792419691,
+          44.4,
+          "0x0",
+          1700
+        ],
+        [
+          1792419721,
+          52.7,
+          "0x0",
+          2400
+        ]
+      ]
+    }
+  },
+  "after": {
+    "time_utc": "2026-10-19T14:22:08.297306+00:00",
+    "max_temp_c": 71.4,
+    "median_temp_c": 58.2,
+    "nodes_throttled_now": [],
+    "nodes": {
+      "pi117": {
+        "throttled": "0x0",
+        "temp_c": 56.5,
+        "cur_freq_mhz": 2400
+      },
+      "pi5": {
+        "throttled": "0xe0000",
+        "temp_c": 71.4,
+        "cur_freq_mhz": 2400
+      },
+      "pi17": {
+        "throttled": "0x80000",
+        "temp_c": 67.5,
+        "cur_freq_mhz": 2400
+      },
+      "pi29": {
+        "throttled": "0x0",
+        "temp_c": 56.0,
+        "cur_freq_mhz": 2400
+      },
+      "pi41": {
+        "throttled": "0x0",
+        "temp_c": 51.6,
+        "cur_freq_mhz": 2400
+      },
+      "pi53": {
+        "throttled": "0x0",
+        "temp_c": 58.7,
+        "cur_freq_mhz": 2400
+      },
+      "pi65": {
+        "throttled": "0x0",
+        "temp_c": 58.2,
+        "cur_freq_mhz": 2400
+      },
+      "pi77": {
+        "throttled": "0x0",
+        "temp_c": 53.2,
+        "cur_freq_mhz": 2400
+      }
+    }
+  }
+}

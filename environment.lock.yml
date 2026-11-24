@@ -1,0 +1,31 @@
+# Exact versions of the environment in which all local results (September 2026) were produced.
+# Linux/WSL2 (Ubuntu), x86_64. For the Raspberry Pi cluster use the same versions on aarch64
+# where available and record deviations with tools/cluster_preflight.py.
+#
+#   conda env create -f environment.lock.yml
+#
+# Notes:
+# - Gurobi 13.0.2 requires a valid license (never commit license files).
+# - pandapower: pip metadata reports 2.14.11, the module reports __version__ 2.14.10; only the
+#   independent PYPOWER/PIPS reference (tools/run_matpower_reference.py) uses it.
+# - fastapi/uvicorn/sse-starlette are only needed for the optional live visualizer (viz/).
+name: distributed_opf
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11.15
+  - pip
+  - numpy=1.26.4
+  - pandas=2.3.3
+  - matplotlib-base=3.11.1
+  - pyyaml=6.0.3
+  - openmpi=5.0.10
+  - mpi4py=4.1.2
+  - pip:
+      - gurobipy==13.0.2
+      - scipy==1.13.1
+      - pandapower==2.14.11
+      - networkx==3.6.1
+      - fastapi>=0.110,<1.0
+      - uvicorn>=0.27,<1.0
+      - sse-starlette>=2.0,<3.0

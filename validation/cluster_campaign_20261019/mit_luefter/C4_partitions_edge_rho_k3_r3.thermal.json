@@ -1,0 +1,84 @@
+{
+  "before": {
+    "time_utc": "2026-10-19T15:01:44.065219+00:00",
+    "max_temp_c": 53.2,
+    "median_temp_c": 43.9,
+    "nodes_throttled_now": [],
+    "nodes": {
+      "pi23": {
+        "throttled": "0x0",
+        "temp_c": 43.9,
+        "cur_freq_mhz": 1600
+      },
+      "pi35": {
+        "throttled": "0x0",
+        "temp_c": 53.2,
+        "cur_freq_mhz": 1600
+      },
+      "pi47": {
+        "throttled": "0x0",
+        "temp_c": 43.9,
+        "cur_freq_mhz": 1600
+      }
+    }
+  },
+  "during": {
+    "columns": [
+      "unix_time",
+      "temp_c",
+      "throttled",
+      "cur_freq_mhz"
+    ],
+    "max_temp_c": 52.7,
+    "nodes_throttled_during": [],
+    "samples": {
+      "pi23": [
+        [
+          1792422104,
+          44.4,
+          "0x0",
+          1600
+        ]
+      ],
+      "pi35": [
+        [
+          1792422104,
+          52.7,
+          "0x0",
+          1600
+        ]
+      ],
+      "pi47": [
+        [
+          1792422104,
+          43.9,
+          "0x0",
+          1600
+        ]
+      ]
+    }
+  },
+  "after": {
+    "time_utc": "2026-10-19T15:02:11.313339+00:00",
+    "max_temp_c": 58.7,
+    "median_temp_c": 55.4,
+    "nodes_throttled_now": [],
+    "nodes": {
+      "pi23": {
+        "throttled": "0x0",
+        "temp_c": 55.4,
+        "cur_freq_mhz": 2400
+      },
+      "pi35": {
+        "throttled": "0x0",
+        "temp_c": 58.7,
+        "cur_freq_mhz": 2400
+      },
+      "pi47": {
+        "throttled": "0x0",
+        "temp_c": 47.7,
+        "cur_freq_mhz": 2400
+      }
+    }
+  }
+}

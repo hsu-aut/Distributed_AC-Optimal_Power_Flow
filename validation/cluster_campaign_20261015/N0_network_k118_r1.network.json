@@ -1,0 +1,4409 @@
+{
+  "started_at_utc": "2026-10-15T11:22:12.942325+00:00",
+  "ranks": 118,
+  "hosts": [
+    "pi1",
+    "pi2",
+    "pi3",
+    "pi4",
+    "pi5",
+    "pi6",
+    "pi7",
+    "pi8",
+    "pi9",
+    "pi10",
+    "pi11",
+    "pi12",
+    "pi13",
+    "pi14",
+    "pi15",
+    "pi16",
+    "pi17",
+    "pi18",
+    "pi19",
+    "pi20",
+    "pi21",
+    "pi22",
+    "pi23",
+    "pi24",
+    "pi25",
+    "pi26",
+    "pi27",
+    "pi28",
+    "pi29",
+    "pi30",
+    "pi31",
+    "pi32",
+    "pi33",
+    "pi34",
+    "pi35",
+    "pi36",
+    "pi37",
+    "pi38",
+    "pi39",
+    "pi40",
+    "pi41",
+    "pi42",
+    "pi43",
+    "pi44",
+    "pi45",
+    "pi46",
+    "pi47",
+    "pi48",
+    "pi49",
+    "pi50",
+    "pi51",
+    "pi52",
+    "pi53",
+    "pi54",
+    "pi55",
+    "pi56",
+    "pi57",
+    "pi58",
+    "pi59",
+    "pi60",
+    "pi61",
+    "pi62",
+    "pi63",
+    "pi64",
+    "pi65",
+    "pi66",
+    "pi67",
+    "pi68",
+    "pi69",
+    "pi70",
+    "pi71",
+    "pi72",
+    "pi73",
+    "pi74",
+    "pi75",
+    "pi76",
+    "pi77",
+    "pi78",
+    "pi79",
+    "pi80",
+    "pi81",
+    "pi82",
+    "pi83",
+    "pi84",
+    "pi85",
+    "pi86",
+    "pi87",
+    "pi88",
+    "pi89",
+    "pi90",
+    "pi91",
+    "pi92",
+    "pi93",
+    "pi94",
+    "pi95",
+    "pi96",
+    "pi97",
+    "pi98",
+    "pi99",
+    "pi100",
+    "pi101",
+    "pi102",
+    "pi103",
+    "pi104",
+    "pi105",
+    "pi106",
+    "pi107",
+    "pi108",
+    "pi109",
+    "pi110",
+    "pi111",
+    "pi112",
+    "pi113",
+    "pi114",
+    "pi115",
+    "pi116",
+    "pi117",
+    "pi118"
+  ],
+  "launcher": "pi1",
+  "mpi_library": "Open MPI v4.1.4, package: Debian OpenMPI, ident: 4.1.4, repo rev: v4.1.4, May 26, 2022\u0000",
+  "repeats": 50,
+  "warmup": 5,
+  "summary": {
+    "8": {
+      "one_way_s": {
+        "median": 0.00015900975000171513,
+        "min": 0.00011561625000011677,
+        "max": 0.00016825024999889138
+      },
+      "bandwidth_MBps": {
+        "median": 0.05031138027645292,
+        "min": 0.04754822058245211,
+        "max": 0.06919442552402383
+      }
+    },
+    "1024": {
+      "one_way_s": {
+        "median": 0.0002081252500003572,
+        "min": 0.0001433290000000002,
+        "max": 0.00021893574999864995
+      },
+      "bandwidth_MBps": {
+        "median": 4.920114210064577,
+        "min": 4.677171270595664,
+        "max": 7.144402040061666
+      }
+    },
+    "8192": {
+      "one_way_s": {
+        "median": 0.00020525499999735075,
+        "min": 0.00015407425000000044,
+        "max": 0.00022460250000122528
+      },
+      "bandwidth_MBps": {
+        "median": 39.91132980977679,
+        "min": 36.473325096360504,
+        "max": 53.16917005924076
+      }
+    },
+    "65536": {
+      "one_way_s": {
+        "median": 0.0009191642500034902,
+        "min": 0.0008286780000000271,
+        "max": 0.0009904929999962064
+      },
+      "bandwidth_MBps": {
+        "median": 71.29955282720269,
+        "min": 66.16503094948779,
+        "max": 79.0850004464917
+      }
+    },
+    "1048576": {
+      "one_way_s": {
+        "median": 0.00939472950000031,
+        "min": 0.00925774774999999,
+        "max": 0.009432785249998688
+      },
+      "bandwidth_MBps": {
+        "median": 111.61321887979484,
+        "min": 111.16292507561813,
+        "max": 113.26469766904172
+      }
+    }
+  },
+  "allreduce_double_median_s": {
+    "max_over_ranks": 0.0009944474999999953,
+    "median_over_ranks": 0.0007928702499999662
+  },
+  "pairs": [
+    {
+      "peer_rank": 1,
+      "peer_host": "pi2",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00011615299999999992,
+          "one_way_min_s": 0.0001142134999999999,
+          "one_way_max_s": 0.0001222039999999999,
+          "bandwidth_median_MBps": 0.06887467392146569
+        },
+        "1024": {
+          "one_way_median_s": 0.0001433290000000002,
+          "one_way_min_s": 0.0001400464999999993,
+          "one_way_max_s": 0.00014897250000000042,
+          "bandwidth_median_MBps": 7.144402040061666
+        },
+        "8192": {
+          "one_way_median_s": 0.00015407425000000044,
+          "one_way_min_s": 0.00014726849999999875,
+          "one_way_max_s": 0.00016583349999999865,
+          "bandwidth_median_MBps": 53.16917005924076
+        },
+        "65536": {
+          "one_way_median_s": 0.0008503259999999985,
+          "one_way_min_s": 0.0008207514999999978,
+          "one_way_max_s": 0.0008745480000000028,
+          "bandwidth_median_MBps": 77.07161723856511
+        },
+        "1048576": {
+          "one_way_median_s": 0.00925774774999999,
+          "one_way_min_s": 0.009227928499999982,
+          "one_way_max_s": 0.009289724999999971,
+          "bandwidth_median_MBps": 113.26469766904172
+        }
+      }
+    },
+    {
+      "peer_rank": 2,
+      "peer_host": "pi3",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00011943100000000317,
+          "one_way_min_s": 0.0001151394999999722,
+          "one_way_max_s": 0.000123019000000002,
+          "bandwidth_median_MBps": 0.06698428381240873
+        },
+        "1024": {
+          "one_way_median_s": 0.00014618099999996748,
+          "one_way_min_s": 0.00014236099999997975,
+          "one_way_max_s": 0.00014982450000000647,
+          "bandwidth_median_MBps": 7.005014331549434
+        },
+        "8192": {
+          "one_way_median_s": 0.00015692625000002236,
+          "one_way_min_s": 0.0001499169999999994,
+          "one_way_max_s": 0.00016769500000002324,
+          "bandwidth_median_MBps": 52.20286599596201
+        },
+        "65536": {
+          "one_way_median_s": 0.0008286780000000271,
+          "one_way_min_s": 0.00082080700000009,
+          "one_way_max_s": 0.0008627520000000777,
+          "bandwidth_median_MBps": 79.0850004464917
+        },
+        "1048576": {
+          "one_way_median_s": 0.00925978950000006,
+          "one_way_min_s": 0.009223289000000023,
+          "one_way_max_s": 0.009294150499999931,
+          "bandwidth_median_MBps": 113.2397232140097
+        }
+      }
+    },
+    {
+      "peer_rank": 3,
+      "peer_host": "pi4",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00011561625000011677,
+          "one_way_min_s": 0.0001147969999999443,
+          "one_way_max_s": 0.00012154649999995826,
+          "bandwidth_median_MBps": 0.06919442552402383
+        },
+        "1024": {
+          "one_way_median_s": 0.00014372750000002377,
+          "one_way_min_s": 0.0001389075000000073,
+          "one_way_max_s": 0.00014910249999999792,
+          "bandwidth_median_MBps": 7.124593414620241
+        },
+        "8192": {
+          "one_way_median_s": 0.00015428750000001656,
+          "one_way_min_s": 0.00014943550000001693,
+          "one_way_max_s": 0.00015711150000008445,
+          "bandwidth_median_MBps": 53.09568176293686
+        },
+        "65536": {
+          "one_way_median_s": 0.0008300435000000439,
+          "one_way_min_s": 0.0008207150000001384,
+          "one_way_max_s": 0.0008576504999999734,
+          "bandwidth_median_MBps": 78.95489814690018
+        },
+        "1048576": {
+          "one_way_median_s": 0.009263442499999885,
+          "one_way_min_s": 0.009237076500000052,
+          "one_way_max_s": 0.009304872500000005,
+          "bandwidth_median_MBps": 113.19506760041021
+        }
+      }
+    },
+    {
+      "peer_rank": 4,
+      "peer_host": "pi5",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.0001360742499999512,
+          "one_way_min_s": 0.00013188000000008415,
+          "one_way_max_s": 0.00014015749999995997,
+          "bandwidth_median_MBps": 0.058791431883716924
+        },
+        "1024": {
+          "one_way_median_s": 0.00016050950000001674,
+          "one_way_min_s": 0.00015718549999998999,
+          "one_way_max_s": 0.00016537049999998388,
+          "bandwidth_median_MBps": 6.379684691559647
+        },
+        "8192": {
+          "one_way_median_s": 0.00017100974999995078,
+          "one_way_min_s": 0.00016357449999993,
+          "one_way_max_s": 0.00017524099999999265,
+          "bandwidth_median_MBps": 47.90370139715635
+        },
+        "65536": {
+          "one_way_median_s": 0.000902728999999991,
+          "one_way_min_s": 0.0008587149999998989,
+          "one_way_max_s": 0.0009137150000000371,
+          "bandwidth_median_MBps": 72.59764558355901
+        },
+        "1048576": {
+          "one_way_median_s": 0.009318451749999901,
+          "one_way_min_s": 0.009299049000000004,
+          "one_way_max_s": 0.00934287300000003,
+          "bandwidth_median_MBps": 112.52684760641822
+        }
+      }
+    },
+    {
+      "peer_rank": 5,
+      "peer_host": "pi6",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00013260200000031475,
+          "one_way_min_s": 0.00013160199999973088,
+          "one_way_max_s": 0.0001366205000001841,
+          "bandwidth_median_MBps": 0.06033091506901111
+        },
+        "1024": {
+          "one_way_median_s": 0.00015950049999990945,
+          "one_way_min_s": 0.0001562410000000014,
+          "one_way_max_s": 0.00016399099999997446,
+          "bandwidth_median_MBps": 6.42004257040311
+        },
+        "8192": {
+          "one_way_median_s": 0.00016778749999990517,
+          "one_way_min_s": 0.00016439849999994038,
+          "one_way_max_s": 0.00017553750000010027,
+          "bandwidth_median_MBps": 48.82366088060571
+        },
+        "65536": {
+          "one_way_median_s": 0.0009014324999998546,
+          "one_way_min_s": 0.0008642425000000564,
+          "one_way_max_s": 0.0009065760000002143,
+          "bandwidth_median_MBps": 72.70206033176146
+        },
+        "1048576": {
+          "one_way_median_s": 0.009313150500000145,
+          "one_way_min_s": 0.009292418999999885,
+          "one_way_max_s": 0.00934826150000001,
+          "bandwidth_median_MBps": 112.59090036180385
+        }
+      }
+    },
+    {
+      "peer_rank": 6,
+      "peer_host": "pi7",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.0001338940000001898,
+          "one_way_min_s": 0.00013148200000001609,
+          "one_way_max_s": 0.0001383335000002539,
+          "bandwidth_median_MBps": 0.05974875647892108
+        },
+        "1024": {
+          "one_way_median_s": 0.0001606347500000549,
+          "one_way_min_s": 0.00015673199999977072,
+          "one_way_max_s": 0.00016401850000002938,
+          "bandwidth_median_MBps": 6.374710328865019
+        },
+        "8192": {
+          "one_way_median_s": 0.0001703200000000571,
+          "one_way_min_s": 0.00016599999999966641,
+          "one_way_max_s": 0.00017844499999997154,
+          "bandwidth_median_MBps": 48.0976984499604
+        },
+        "65536": {
+          "one_way_median_s": 0.0009021594999998328,
+          "one_way_min_s": 0.0008956595000002565,
+          "one_way_max_s": 0.0009071869999996984,
+          "bandwidth_median_MBps": 72.64347379816114
+        },
+        "1048576": {
+          "one_way_median_s": 0.009311655250000106,
+          "one_way_min_s": 0.009305354499999918,
+          "one_way_max_s": 0.009323937500000046,
+          "bandwidth_median_MBps": 112.60898001995811
+        }
+      }
+    },
+    {
+      "peer_rank": 7,
+      "peer_host": "pi8",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00012992149999990765,
+          "one_way_min_s": 0.00012737050000000139,
+          "one_way_max_s": 0.00013381500000031465,
+          "bandwidth_median_MBps": 0.061575643754156834
+        },
+        "1024": {
+          "one_way_median_s": 0.00015655624999988405,
+          "one_way_min_s": 0.00015409299999991077,
+          "one_way_max_s": 0.00016015799999991032,
+          "bandwidth_median_MBps": 6.540780071065566
+        },
+        "8192": {
+          "one_way_median_s": 0.00016778275000017828,
+          "one_way_min_s": 0.00016236150000015215,
+          "one_way_max_s": 0.00017400949999979431,
+          "bandwidth_median_MBps": 48.82504309883642
+        },
+        "65536": {
+          "one_way_median_s": 0.0008978540000001978,
+          "one_way_min_s": 0.0008915019999999885,
+          "one_way_max_s": 0.0009054279999998194,
+          "bandwidth_median_MBps": 72.99182272394572
+        },
+        "1048576": {
+          "one_way_median_s": 0.00931178024999979,
+          "one_way_min_s": 0.00930144650000031,
+          "one_way_max_s": 0.009329233999999964,
+          "bandwidth_median_MBps": 112.60746837319573
+        }
+      }
+    },
+    {
+      "peer_rank": 8,
+      "peer_host": "pi9",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00013340799999950193,
+          "one_way_min_s": 0.00013022249999927737,
+          "one_way_max_s": 0.000138055999999942,
+          "bandwidth_median_MBps": 0.05996641880569282
+        },
+        "1024": {
+          "one_way_median_s": 0.00016047700000054732,
+          "one_way_min_s": 0.00015683349999928708,
+          "one_way_max_s": 0.00016400049999987232,
+          "bandwidth_median_MBps": 6.380976713152087
+        },
+        "8192": {
+          "one_way_median_s": 0.00017159775000008537,
+          "one_way_min_s": 0.0001653890000001823,
+          "one_way_max_s": 0.00017418550000058985,
+          "bandwidth_median_MBps": 47.73955369459055
+        },
+        "65536": {
+          "one_way_median_s": 0.0009031454999997024,
+          "one_way_min_s": 0.0008947799999994288,
+          "one_way_max_s": 0.000910215000000214,
+          "bandwidth_median_MBps": 72.56416601757036
+        },
+        "1048576": {
+          "one_way_median_s": 0.009314808250000084,
+          "one_way_min_s": 0.009306326499999962,
+          "one_way_max_s": 0.009380447499999889,
+          "bandwidth_median_MBps": 112.57086263691909
+        }
+      }
+    },
+    {
+      "peer_rank": 9,
+      "peer_host": "pi10",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.0001327087500002655,
+          "one_way_min_s": 0.00012861150000009758,
+          "one_way_max_s": 0.00014039850000013843,
+          "bandwidth_median_MBps": 0.06028238529851269
+        },
+        "1024": {
+          "one_way_median_s": 0.00015684775000002205,
+          "one_way_min_s": 0.00015524099999986163,
+          "one_way_max_s": 0.00016065750000038292,
+          "bandwidth_median_MBps": 6.528624095658727
+        },
+        "8192": {
+          "one_way_median_s": 0.00016796799999951872,
+          "one_way_min_s": 0.0001612135000002013,
+          "one_way_max_s": 0.00017786150000009826,
+          "bandwidth_median_MBps": 48.771194513380365
+        },
+        "65536": {
+          "one_way_median_s": 0.0008978260000001015,
+          "one_way_min_s": 0.0008916690000004834,
+          "one_way_max_s": 0.0009061689999994016,
+          "bandwidth_median_MBps": 72.99409907932338
+        },
+        "1048576": {
+          "one_way_median_s": 0.009309868249999909,
+          "one_way_min_s": 0.009304678499999497,
+          "one_way_max_s": 0.009317382000000762,
+          "bandwidth_median_MBps": 112.63059496035406
+        }
+      }
+    },
+    {
+      "peer_rank": 10,
+      "peer_host": "pi11",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00013241250000017857,
+          "one_way_min_s": 0.00013128750000035438,
+          "one_way_max_s": 0.0001389725000002784,
+          "bandwidth_median_MBps": 0.060417256678857445
+        },
+        "1024": {
+          "one_way_median_s": 0.00015912074999979708,
+          "one_way_min_s": 0.000155824500000179,
+          "one_way_max_s": 0.00016416699999943773,
+          "bandwidth_median_MBps": 6.4353643380973615
+        },
+        "8192": {
+          "one_way_median_s": 0.00016889875000014598,
+          "one_way_min_s": 0.0001636950000003523,
+          "one_way_max_s": 0.00017831549999947072,
+          "bandwidth_median_MBps": 48.5024311902422
+        },
+        "65536": {
+          "one_way_median_s": 0.0009000482500005624,
+          "one_way_min_s": 0.0008931964999998598,
+          "one_way_max_s": 0.0009059095000001349,
+          "bandwidth_median_MBps": 72.81387414503506
+        },
+        "1048576": {
+          "one_way_median_s": 0.009314025749999733,
+          "one_way_min_s": 0.009283733999999377,
+          "one_way_max_s": 0.0093433730000001,
+          "bandwidth_median_MBps": 112.58032006192705
+        }
+      }
+    },
+    {
+      "peer_rank": 11,
+      "peer_host": "pi12",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.0001418845000000779,
+          "one_way_min_s": 0.00013715800000024814,
+          "one_way_max_s": 0.00014436150000030068,
+          "bandwidth_median_MBps": 0.05638388971308076
+        },
+        "1024": {
+          "one_way_median_s": 0.0001665050000005941,
+          "one_way_min_s": 0.0001628985000001748,
+          "one_way_max_s": 0.0001708525000001515,
+          "bandwidth_median_MBps": 6.149965466480564
+        },
+        "8192": {
+          "one_way_median_s": 0.00016866700000006674,
+          "one_way_min_s": 0.0001653704999995398,
+          "one_way_max_s": 0.00017783399999959926,
+          "bandwidth_median_MBps": 48.56907397414289
+        },
+        "65536": {
+          "one_way_median_s": 0.0009099140000001782,
+          "one_way_min_s": 0.0009026315000006946,
+          "one_way_max_s": 0.0009202149999998355,
+          "bandwidth_median_MBps": 72.02438911807837
+        },
+        "1048576": {
+          "one_way_median_s": 0.009320187749999764,
+          "one_way_min_s": 0.00930729900000049,
+          "one_way_max_s": 0.009378623000000808,
+          "bandwidth_median_MBps": 112.50588809222502
+        }
+      }
+    },
+    {
+      "peer_rank": 12,
+      "peer_host": "pi13",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00015993549999970824,
+          "one_way_min_s": 0.00015666699999972167,
+          "one_way_max_s": 0.00016412999999992905,
+          "bandwidth_median_MBps": 0.05002016437885644
+        },
+        "1024": {
+          "one_way_median_s": 0.00020841725000009248,
+          "one_way_min_s": 0.00020515799999998308,
+          "one_way_max_s": 0.00021382449999940434,
+          "bandwidth_median_MBps": 4.913220954597308
+        },
+        "8192": {
+          "one_way_median_s": 0.0002037970000001721,
+          "one_way_min_s": 0.00019850999999970753,
+          "one_way_max_s": 0.0002258524999998457,
+          "bandwidth_median_MBps": 40.19686256418438
+        },
+        "65536": {
+          "one_way_median_s": 0.00091128925000028,
+          "one_way_min_s": 0.0008990020000005927,
+          "one_way_max_s": 0.0009483909999996598,
+          "bandwidth_median_MBps": 71.91569526358383
+        },
+        "1048576": {
+          "one_way_median_s": 0.009396359249999708,
+          "one_way_min_s": 0.009354327000000495,
+          "one_way_max_s": 0.009480863999999478,
+          "bandwidth_median_MBps": 111.59386014322862
+        }
+      }
+    },
+    {
+      "peer_rank": 13,
+      "peer_host": "pi14",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00015949574999973848,
+          "one_way_min_s": 0.0001553889999996727,
+          "one_way_max_s": 0.0001634074999996571,
+          "bandwidth_median_MBps": 0.05015807631246047
+        },
+        "1024": {
+          "one_way_median_s": 0.00020773175000021737,
+          "one_way_min_s": 0.00020099999999967366,
+          "one_way_max_s": 0.00021287100000044745,
+          "bandwidth_median_MBps": 4.929434234289792
+        },
+        "8192": {
+          "one_way_median_s": 0.00020337550000038007,
+          "one_way_min_s": 0.0001976394999996245,
+          "one_way_max_s": 0.00022333350000014462,
+          "bandwidth_median_MBps": 40.28017140700178
+        },
+        "65536": {
+          "one_way_median_s": 0.0009049142499999441,
+          "one_way_min_s": 0.0008963074999996934,
+          "one_way_max_s": 0.0009496685000005556,
+          "bandwidth_median_MBps": 72.42233172922633
+        },
+        "1048576": {
+          "one_way_median_s": 0.009393173750000372,
+          "one_way_min_s": 0.009382456500000025,
+          "one_way_max_s": 0.009484539499999833,
+          "bandwidth_median_MBps": 111.6317048856845
+        }
+      }
+    },
+    {
+      "peer_rank": 14,
+      "peer_host": "pi15",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.0001590512499998198,
+          "one_way_min_s": 0.0001535285000002773,
+          "one_way_max_s": 0.00016446349999998944,
+          "bandwidth_median_MBps": 0.05029825292167816
+        },
+        "1024": {
+          "one_way_median_s": 0.00020769024999989227,
+          "one_way_min_s": 0.00020422249999985098,
+          "one_way_max_s": 0.00021160200000025498,
+          "bandwidth_median_MBps": 4.93041921804481
+        },
+        "8192": {
+          "one_way_median_s": 0.0002049495000000512,
+          "one_way_min_s": 0.00019716749999965089,
+          "one_way_max_s": 0.00023078749999960735,
+          "bandwidth_median_MBps": 39.97082208055133
+        },
+        "65536": {
+          "one_way_median_s": 0.0009157704999998018,
+          "one_way_min_s": 0.0008956595000002565,
+          "one_way_max_s": 0.0009587984999992472,
+          "bandwidth_median_MBps": 71.56378153698356
+        },
+        "1048576": {
+          "one_way_median_s": 0.009392590750000096,
+          "one_way_min_s": 0.009363057999999924,
+          "one_way_max_s": 0.009438373500000097,
+          "bandwidth_median_MBps": 111.63863388809837
+        }
+      }
+    },
+    {
+      "peer_rank": 15,
+      "peer_host": "pi16",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.0001573707500002186,
+          "one_way_min_s": 0.00015287999999991086,
+          "one_way_max_s": 0.00016072249999865562,
+          "bandwidth_median_MBps": 0.0508353680718233
+        },
+        "1024": {
+          "one_way_median_s": 0.00020754674999956535,
+          "one_way_min_s": 0.00020444500000138532,
+          "one_way_max_s": 0.0002120285000000166,
+          "bandwidth_median_MBps": 4.933828161617296
+        },
+        "8192": {
+          "one_way_median_s": 0.0001984770000005298,
+          "one_way_min_s": 0.00019103750000049047,
+          "one_way_max_s": 0.00022103749999935474,
+          "bandwidth_median_MBps": 41.27430382350667
+        },
+        "65536": {
+          "one_way_median_s": 0.000909668749999426,
+          "one_way_min_s": 0.0008964465000005362,
+          "one_way_max_s": 0.001095650499999934,
+          "bandwidth_median_MBps": 72.04380715512251
+        },
+        "1048576": {
+          "one_way_median_s": 0.009389664749999582,
+          "one_way_min_s": 0.009381002999999666,
+          "one_way_max_s": 0.009454984499999597,
+          "bandwidth_median_MBps": 111.67342263205367
+        }
+      }
+    },
+    {
+      "peer_rank": 16,
+      "peer_host": "pi17",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00015661125000043796,
+          "one_way_min_s": 0.0001538984999989168,
+          "one_way_max_s": 0.00016123199999995563,
+          "bandwidth_median_MBps": 0.05108189865017761
+        },
+        "1024": {
+          "one_way_median_s": 0.00020656099999971644,
+          "one_way_min_s": 0.00020266700000171056,
+          "one_way_max_s": 0.0002088059999998393,
+          "bandwidth_median_MBps": 4.95737336671204
+        },
+        "8192": {
+          "one_way_median_s": 0.00020228774999964116,
+          "one_way_min_s": 0.0001961115000010949,
+          "one_way_max_s": 0.00022881549999986817,
+          "bandwidth_median_MBps": 40.49676759969168
+        },
+        "65536": {
+          "one_way_median_s": 0.0009022195000003563,
+          "one_way_min_s": 0.0008930110000004987,
+          "one_way_max_s": 0.0009545390000003096,
+          "bandwidth_median_MBps": 72.63864281361035
+        },
+        "1048576": {
+          "one_way_median_s": 0.00940275274999891,
+          "one_way_min_s": 0.009380511999999896,
+          "one_way_max_s": 0.009433873499999024,
+          "bandwidth_median_MBps": 111.51798073177257
+        }
+      }
+    },
+    {
+      "peer_rank": 17,
+      "peer_host": "pi18",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.0001567549999998974,
+          "one_way_min_s": 0.00015435199999913607,
+          "one_way_max_s": 0.00016288900000027695,
+          "bandwidth_median_MBps": 0.05103505470323266
+        },
+        "1024": {
+          "one_way_median_s": 0.0002061347499999755,
+          "one_way_min_s": 0.0002034910000006107,
+          "one_way_max_s": 0.00021126000000037948,
+          "bandwidth_median_MBps": 4.9676243331127905
+        },
+        "8192": {
+          "one_way_median_s": 0.00020273675000037628,
+          "one_way_min_s": 0.0002010840000004066,
+          "one_way_max_s": 0.00021988000000128238,
+          "bandwidth_median_MBps": 40.407079624117465
+        },
+        "65536": {
+          "one_way_median_s": 0.000915279749999165,
+          "one_way_min_s": 0.0008956135000008913,
+          "one_way_max_s": 0.0009566965000011862,
+          "bandwidth_median_MBps": 71.60215223821984
+        },
+        "1048576": {
+          "one_way_median_s": 0.009394835999999351,
+          "one_way_min_s": 0.00937007699999981,
+          "one_way_max_s": 0.00943506749999834,
+          "bandwidth_median_MBps": 111.6119536307044
+        }
+      }
+    },
+    {
+      "peer_rank": 18,
+      "peer_host": "pi19",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00015972724999979704,
+          "one_way_min_s": 0.00015602800000102945,
+          "one_way_max_s": 0.00016406549999992137,
+          "bandwidth_median_MBps": 0.050085379921147866
+        },
+        "1024": {
+          "one_way_median_s": 0.000207769000001079,
+          "one_way_min_s": 0.00020520400000023642,
+          "one_way_max_s": 0.0002124450000007272,
+          "bandwidth_median_MBps": 4.928550457453625
+        },
+        "8192": {
+          "one_way_median_s": 0.00020482475000083156,
+          "one_way_min_s": 0.00019797300000057305,
+          "one_way_max_s": 0.0002249079999998571,
+          "bandwidth_median_MBps": 39.99516659957716
+        },
+        "65536": {
+          "one_way_median_s": 0.0009290250000004718,
+          "one_way_min_s": 0.0008991315000006495,
+          "one_way_max_s": 0.0009857149999987769,
+          "bandwidth_median_MBps": 70.5427733376031
+        },
+        "1048576": {
+          "one_way_median_s": 0.009397567249999739,
+          "one_way_min_s": 0.00938475299999908,
+          "one_way_max_s": 0.009505160499999832,
+          "bandwidth_median_MBps": 111.57951543257423
+        }
+      }
+    },
+    {
+      "peer_rank": 19,
+      "peer_host": "pi20",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00015713425000019043,
+          "one_way_min_s": 0.000154176499998826,
+          "one_way_max_s": 0.00016362999999941508,
+          "bandwidth_median_MBps": 0.05091187949151954
+        },
+        "1024": {
+          "one_way_median_s": 0.00020717625000088447,
+          "one_way_min_s": 0.00019781549999997594,
+          "one_way_max_s": 0.00020957449999947642,
+          "bandwidth_median_MBps": 4.942651486334116
+        },
+        "8192": {
+          "one_way_median_s": 0.00020489400000034408,
+          "one_way_min_s": 0.00019976899999996078,
+          "one_way_max_s": 0.00022125949999995953,
+          "bandwidth_median_MBps": 39.981649047733185
+        },
+        "65536": {
+          "one_way_median_s": 0.0009078725000000176,
+          "one_way_min_s": 0.0008989189999990543,
+          "one_way_max_s": 0.0009524650000010126,
+          "bandwidth_median_MBps": 72.18634775257398
+        },
+        "1048576": {
+          "one_way_median_s": 0.00939524824999971,
+          "one_way_min_s": 0.009383975000000433,
+          "one_way_max_s": 0.009442382499999624,
+          "bandwidth_median_MBps": 111.60705625846899
+        }
+      }
+    },
+    {
+      "peer_rank": 20,
+      "peer_host": "pi21",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00016024574999917718,
+          "one_way_min_s": 0.00015501899999925683,
+          "one_way_max_s": 0.00016653750000017453,
+          "bandwidth_median_MBps": 0.04992332089956257
+        },
+        "1024": {
+          "one_way_median_s": 0.00020817650000015675,
+          "one_way_min_s": 0.00020469500000075413,
+          "one_way_max_s": 0.0002162964999996575,
+          "bandwidth_median_MBps": 4.918902950137163
+        },
+        "8192": {
+          "one_way_median_s": 0.00020551450000017013,
+          "one_way_min_s": 0.00020080600000049742,
+          "one_way_max_s": 0.00023033349999934671,
+          "bandwidth_median_MBps": 39.860934386591794
+        },
+        "65536": {
+          "one_way_median_s": 0.00091562224999997,
+          "one_way_min_s": 0.0008997334999989448,
+          "one_way_max_s": 0.0009529095000004872,
+          "bandwidth_median_MBps": 71.57536855401028
+        },
+        "1048576": {
+          "one_way_median_s": 0.0093981417500002,
+          "one_way_min_s": 0.009378067500000142,
+          "one_way_max_s": 0.009461123000001237,
+          "bandwidth_median_MBps": 111.57269467658091
+        }
+      }
+    },
+    {
+      "peer_rank": 21,
+      "peer_host": "pi22",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00015754200000017704,
+          "one_way_min_s": 0.00015514849999931357,
+          "one_way_max_s": 0.00016035199999997474,
+          "bandwidth_median_MBps": 0.05078010943107876
+        },
+        "1024": {
+          "one_way_median_s": 0.0002077087500005348,
+          "one_way_min_s": 0.00020420399999920846,
+          "one_way_max_s": 0.00021217649999982768,
+          "bandwidth_median_MBps": 4.929980080267988
+        },
+        "8192": {
+          "one_way_median_s": 0.00020475049999912898,
+          "one_way_min_s": 0.00019782449999894425,
+          "one_way_max_s": 0.00023034350000017412,
+          "bandwidth_median_MBps": 40.00967030622562
+        },
+        "65536": {
+          "one_way_median_s": 0.0009147287499997603,
+          "one_way_min_s": 0.00089622399999989,
+          "one_way_max_s": 0.000959530000001152,
+          "bandwidth_median_MBps": 71.64528282293213
+        },
+        "1048576": {
+          "one_way_median_s": 0.009393169250000888,
+          "one_way_min_s": 0.009382151000000505,
+          "one_way_max_s": 0.009454910000000538,
+          "bandwidth_median_MBps": 111.63175836525045
+        }
+      }
+    },
+    {
+      "peer_rank": 22,
+      "peer_host": "pi23",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00015958824999984245,
+          "one_way_min_s": 0.00015538949999971408,
+          "one_way_max_s": 0.00016415799999869307,
+          "bandwidth_median_MBps": 0.05012900385841625
+        },
+        "1024": {
+          "one_way_median_s": 0.0002081252500003572,
+          "one_way_min_s": 0.00020488950000085993,
+          "one_way_max_s": 0.00021242650000097285,
+          "bandwidth_median_MBps": 4.920114210064577
+        },
+        "8192": {
+          "one_way_median_s": 0.0002051439999997129,
+          "one_way_min_s": 0.00019831500000044855,
+          "one_way_max_s": 0.00022746349999991367,
+          "bandwidth_median_MBps": 39.93292516481821
+        },
+        "65536": {
+          "one_way_median_s": 0.0009189837500001019,
+          "one_way_min_s": 0.0008996410000001731,
+          "one_way_max_s": 0.0009631965000007625,
+          "bandwidth_median_MBps": 71.31355695896988
+        },
+        "1048576": {
+          "one_way_median_s": 0.00939785924999903,
+          "one_way_min_s": 0.00938671549999981,
+          "one_way_max_s": 0.009432392000000789,
+          "bandwidth_median_MBps": 111.57604855596324
+        }
+      }
+    },
+    {
+      "peer_rank": 23,
+      "peer_host": "pi24",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00015748650000002584,
+          "one_way_min_s": 0.00015406500000025858,
+          "one_way_max_s": 0.00016365749999991408,
+          "bandwidth_median_MBps": 0.05079800490834889
+        },
+        "1024": {
+          "one_way_median_s": 0.00020767175000013793,
+          "one_way_min_s": 0.000204527999999371,
+          "one_way_max_s": 0.0002117039999998127,
+          "bandwidth_median_MBps": 4.930858434039872
+        },
+        "8192": {
+          "one_way_median_s": 0.00020512549999995855,
+          "one_way_min_s": 0.00019796349999978702,
+          "one_way_max_s": 0.00022774099999978148,
+          "bandwidth_median_MBps": 39.93652666295343
+        },
+        "65536": {
+          "one_way_median_s": 0.0009079927500001972,
+          "one_way_min_s": 0.0008948534999984048,
+          "one_way_max_s": 0.0009489280000014588,
+          "bandwidth_median_MBps": 72.1767877551729
+        },
+        "1048576": {
+          "one_way_median_s": 0.009394780500000088,
+          "one_way_min_s": 0.009379428499999065,
+          "one_way_max_s": 0.009472206499999913,
+          "bandwidth_median_MBps": 111.61261298228204
+        }
+      }
+    },
+    {
+      "peer_rank": 24,
+      "peer_host": "pi25",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00016091724999967028,
+          "one_way_min_s": 0.00015870400000039808,
+          "one_way_max_s": 0.00016763950000076022,
+          "bandwidth_median_MBps": 0.04971499326527387
+        },
+        "1024": {
+          "one_way_median_s": 0.00021031524999948203,
+          "one_way_min_s": 0.00020692599999883043,
+          "one_way_max_s": 0.00021141700000093522,
+          "bandwidth_median_MBps": 4.868881357878337
+        },
+        "8192": {
+          "one_way_median_s": 0.00020532899999992082,
+          "one_way_min_s": 0.00020061150000039163,
+          "one_way_max_s": 0.00022967650000005335,
+          "bandwidth_median_MBps": 39.89694587711993
+        },
+        "65536": {
+          "one_way_median_s": 0.0009160345000003289,
+          "one_way_min_s": 0.0009015110000003546,
+          "one_way_max_s": 0.0009579835000010917,
+          "bandwidth_median_MBps": 71.5431569443907
+        },
+        "1048576": {
+          "one_way_median_s": 0.009393882249999486,
+          "one_way_min_s": 0.009384642000000554,
+          "one_way_max_s": 0.009431113999999852,
+          "bandwidth_median_MBps": 111.62328546326599
+        }
+      }
+    },
+    {
+      "peer_rank": 25,
+      "peer_host": "pi26",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00015896825000005776,
+          "one_way_min_s": 0.00015551849999972944,
+          "one_way_max_s": 0.0001640560000009117,
+          "bandwidth_median_MBps": 0.050324514486365
+        },
+        "1024": {
+          "one_way_median_s": 0.0002099632499996673,
+          "one_way_min_s": 0.00020541700000009655,
+          "one_way_max_s": 0.0002119544999992229,
+          "bandwidth_median_MBps": 4.877043958891008
+        },
+        "8192": {
+          "one_way_median_s": 0.000206107000000344,
+          "one_way_min_s": 0.00019794500000003268,
+          "one_way_max_s": 0.00023058349999871552,
+          "bandwidth_median_MBps": 39.74634534482734
+        },
+        "65536": {
+          "one_way_median_s": 0.000910358500000541,
+          "one_way_min_s": 0.0009032149999992356,
+          "one_way_max_s": 0.0009515300000000337,
+          "bandwidth_median_MBps": 71.9892218285006
+        },
+        "1048576": {
+          "one_way_median_s": 0.009397868500000683,
+          "one_way_min_s": 0.009390335999999166,
+          "one_way_max_s": 0.009510549499999854,
+          "bandwidth_median_MBps": 111.57593873546153
+        }
+      }
+    },
+    {
+      "peer_rank": 26,
+      "peer_host": "pi27",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.0001606667500002601,
+          "one_way_min_s": 0.00015736149999945326,
+          "one_way_max_s": 0.00016406500000165636,
+          "bandwidth_median_MBps": 0.04979250529426312
+        },
+        "1024": {
+          "one_way_median_s": 0.00021017625000041562,
+          "one_way_min_s": 0.00020665749999970728,
+          "one_way_max_s": 0.0002145749999993285,
+          "bandwidth_median_MBps": 4.872101391084745
+        },
+        "8192": {
+          "one_way_median_s": 0.00020810699999973536,
+          "one_way_min_s": 0.0002017869999999533,
+          "one_way_max_s": 0.00021897300000084385,
+          "bandwidth_median_MBps": 39.36436544667127
+        },
+        "65536": {
+          "one_way_median_s": 0.0009340852499999386,
+          "one_way_min_s": 0.0009052890000003089,
+          "one_way_max_s": 0.0009971409999991465,
+          "bandwidth_median_MBps": 70.1606197078953
+        },
+        "1048576": {
+          "one_way_median_s": 0.009401062999999432,
+          "one_way_min_s": 0.009360243499999754,
+          "one_way_max_s": 0.009479679000000019,
+          "bandwidth_median_MBps": 111.53802500845525
+        }
+      }
+    },
+    {
+      "peer_rank": 27,
+      "peer_host": "pi28",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00016064825000050575,
+          "one_way_min_s": 0.00015772249999912447,
+          "one_way_max_s": 0.00016447249999984592,
+          "bandwidth_median_MBps": 0.04979823932084423
+        },
+        "1024": {
+          "one_way_median_s": 0.00021109775000027753,
+          "one_way_min_s": 0.00020728750000031937,
+          "one_way_max_s": 0.00021512050000005445,
+          "bandwidth_median_MBps": 4.850833322471006
+        },
+        "8192": {
+          "one_way_median_s": 0.0002052042500002571,
+          "one_way_min_s": 0.0001972779999999119,
+          "one_way_max_s": 0.00022418549999869697,
+          "bandwidth_median_MBps": 39.92120046241604
+        },
+        "65536": {
+          "one_way_median_s": 0.0009102519999988345,
+          "one_way_min_s": 0.000904391000000615,
+          "one_way_max_s": 0.0009533355000002075,
+          "bandwidth_median_MBps": 71.99764460839845
+        },
+        "1048576": {
+          "one_way_median_s": 0.009407632500000318,
+          "one_way_min_s": 0.00939519699999991,
+          "one_way_max_s": 0.009446289999999635,
+          "bandwidth_median_MBps": 111.46013622449267
+        }
+      }
+    },
+    {
+      "peer_rank": 28,
+      "peer_host": "pi29",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00015710700000148847,
+          "one_way_min_s": 0.00015398200000049656,
+          "one_way_max_s": 0.00016208350000113114,
+          "bandwidth_median_MBps": 0.05092071008881976
+        },
+        "1024": {
+          "one_way_median_s": 0.00020769474999937643,
+          "one_way_min_s": 0.0002031489999971825,
+          "one_way_max_s": 0.00021231499999885273,
+          "bandwidth_median_MBps": 4.930312393563508
+        },
+        "8192": {
+          "one_way_median_s": 0.00020488924999995106,
+          "one_way_min_s": 0.0001970094999990124,
+          "one_way_max_s": 0.0002227230000002578,
+          "bandwidth_median_MBps": 39.982575952627855
+        },
+        "65536": {
+          "one_way_median_s": 0.0009309369999996875,
+          "one_way_min_s": 0.0008986225000029435,
+          "one_way_max_s": 0.0009535579999990773,
+          "bandwidth_median_MBps": 70.39788943829927
+        },
+        "1048576": {
+          "one_way_median_s": 0.00939384075000227,
+          "one_way_min_s": 0.009357224500000427,
+          "one_way_max_s": 0.009424530500002248,
+          "bandwidth_median_MBps": 111.62377859128033
+        }
+      }
+    },
+    {
+      "peer_rank": 29,
+      "peer_host": "pi30",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00015634299999867096,
+          "one_way_min_s": 0.00015278750000291552,
+          "one_way_max_s": 0.0001614355000008061,
+          "bandwidth_median_MBps": 0.05116954388791316
+        },
+        "1024": {
+          "one_way_median_s": 0.0002045884999990477,
+          "one_way_min_s": 0.0002021574999986342,
+          "one_way_max_s": 0.0002081674999985239,
+          "bandwidth_median_MBps": 5.005168912254434
+        },
+        "8192": {
+          "one_way_median_s": 0.00020486600000069188,
+          "one_way_min_s": 0.00020072250000069403,
+          "one_way_max_s": 0.000217092999999835,
+          "bandwidth_median_MBps": 39.98711352773195
+        },
+        "65536": {
+          "one_way_median_s": 0.0009042289999996456,
+          "one_way_min_s": 0.0008949744999995346,
+          "one_way_max_s": 0.000955816999997694,
+          "bandwidth_median_MBps": 72.47721539568593
+        },
+        "1048576": {
+          "one_way_median_s": 0.009388900750000317,
+          "one_way_min_s": 0.00935375249999737,
+          "one_way_max_s": 0.009436011999998328,
+          "bandwidth_median_MBps": 111.68250979753563
+        }
+      }
+    },
+    {
+      "peer_rank": 30,
+      "peer_host": "pi31",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00015683850000236532,
+          "one_way_min_s": 0.00015545449999976313,
+          "one_way_max_s": 0.00016157449999809614,
+          "bandwidth_median_MBps": 0.05100788390528697
+        },
+        "1024": {
+          "one_way_median_s": 0.00020523225000168566,
+          "one_way_min_s": 0.00020288950000235673,
+          "one_way_max_s": 0.00021025050000034184,
+          "bandwidth_median_MBps": 4.989469247604066
+        },
+        "8192": {
+          "one_way_median_s": 0.0002046717499997186,
+          "one_way_min_s": 0.00020102799999932586,
+          "one_way_max_s": 0.0002347225000001174,
+          "bandwidth_median_MBps": 40.025064524103904
+        },
+        "65536": {
+          "one_way_median_s": 0.0009176454999995087,
+          "one_way_min_s": 0.000898483499998548,
+          "one_way_max_s": 0.0009471135000005404,
+          "bandwidth_median_MBps": 71.41755721576043
+        },
+        "1048576": {
+          "one_way_median_s": 0.00939472950000031,
+          "one_way_min_s": 0.009382159999997697,
+          "one_way_max_s": 0.009458613999999699,
+          "bandwidth_median_MBps": 111.61321887979484
+        }
+      }
+    },
+    {
+      "peer_rank": 31,
+      "peer_host": "pi32",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00016126424999995947,
+          "one_way_min_s": 0.00015829699999869717,
+          "one_way_max_s": 0.00016685199999955103,
+          "bandwidth_median_MBps": 0.049608019136305845
+        },
+        "1024": {
+          "one_way_median_s": 0.00021070425000146997,
+          "one_way_min_s": 0.00020642650000013418,
+          "one_way_max_s": 0.0002172599999994418,
+          "bandwidth_median_MBps": 4.859892479590972
+        },
+        "8192": {
+          "one_way_median_s": 0.0002083754999997467,
+          "one_way_min_s": 0.00020077849999822206,
+          "one_way_max_s": 0.00022680600000057893,
+          "bandwidth_median_MBps": 39.31364291872105
+        },
+        "65536": {
+          "one_way_median_s": 0.0009181362500001455,
+          "one_way_min_s": 0.00090167749999992,
+          "one_way_max_s": 0.0009809929999988753,
+          "bandwidth_median_MBps": 71.3793840511031
+        },
+        "1048576": {
+          "one_way_median_s": 0.009398803749999018,
+          "one_way_min_s": 0.009390271000000894,
+          "one_way_max_s": 0.009434428499996983,
+          "bandwidth_median_MBps": 111.56483611013897
+        }
+      }
+    },
+    {
+      "peer_rank": 32,
+      "peer_host": "pi33",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00015614850000034153,
+          "one_way_min_s": 0.00015388950000172485,
+          "one_way_max_s": 0.00015881500000247684,
+          "bandwidth_median_MBps": 0.05123328113931612
+        },
+        "1024": {
+          "one_way_median_s": 0.0002054680000007636,
+          "one_way_min_s": 0.00020185200000000236,
+          "one_way_max_s": 0.0002090559999992081,
+          "bandwidth_median_MBps": 4.983744427337563
+        },
+        "8192": {
+          "one_way_median_s": 0.0002029402500021149,
+          "one_way_min_s": 0.00019960250000039537,
+          "one_way_max_s": 0.00022185250000106294,
+          "bandwidth_median_MBps": 40.36656109330026
+        },
+        "65536": {
+          "one_way_median_s": 0.0009025207499995247,
+          "one_way_min_s": 0.000896039500002388,
+          "one_way_max_s": 0.0009494839999995008,
+          "bandwidth_median_MBps": 72.61439695434649
+        },
+        "1048576": {
+          "one_way_median_s": 0.00939241000000024,
+          "one_way_min_s": 0.009374132499999632,
+          "one_way_max_s": 0.009454437999998788,
+          "bandwidth_median_MBps": 111.64078229123017
+        }
+      }
+    },
+    {
+      "peer_rank": 33,
+      "peer_host": "pi34",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00015684299999918494,
+          "one_way_min_s": 0.00015406500000025858,
+          "one_way_max_s": 0.00016080599999668266,
+          "bandwidth_median_MBps": 0.05100642043343709
+        },
+        "1024": {
+          "one_way_median_s": 0.00020772699999938027,
+          "one_way_min_s": 0.00020376900000229625,
+          "one_way_max_s": 0.00021210250000081032,
+          "bandwidth_median_MBps": 4.929546953468038
+        },
+        "8192": {
+          "one_way_median_s": 0.00020208825000089803,
+          "one_way_min_s": 0.00019575950000216835,
+          "one_way_max_s": 0.0002241759999996873,
+          "bandwidth_median_MBps": 40.53674570373882
+        },
+        "65536": {
+          "one_way_median_s": 0.0009063630000003542,
+          "one_way_min_s": 0.000896288999999939,
+          "one_way_max_s": 0.0009479094999989002,
+          "bandwidth_median_MBps": 72.3065703255477
+        },
+        "1048576": {
+          "one_way_median_s": 0.009374335999998706,
+          "one_way_min_s": 0.009353446999998738,
+          "one_way_max_s": 0.009457169499999196,
+          "bandwidth_median_MBps": 111.85602905636672
+        }
+      }
+    },
+    {
+      "peer_rank": 34,
+      "peer_host": "pi35",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00015980625000011628,
+          "one_way_min_s": 0.0001550745000002962,
+          "one_way_max_s": 0.00016418549999741572,
+          "bandwidth_median_MBps": 0.050060620282336765
+        },
+        "1024": {
+          "one_way_median_s": 0.00020813000000075021,
+          "one_way_min_s": 0.00020469500000075413,
+          "one_way_max_s": 0.00021240750000117714,
+          "bandwidth_median_MBps": 4.920001921858017
+        },
+        "8192": {
+          "one_way_median_s": 0.00019921824999968862,
+          "one_way_min_s": 0.00019654699999804848,
+          "one_way_max_s": 0.0002246209999974269,
+          "bandwidth_median_MBps": 41.12073065601572
+        },
+        "65536": {
+          "one_way_median_s": 0.0009164232499987435,
+          "one_way_min_s": 0.0008993540000012956,
+          "one_way_max_s": 0.0009488634999996748,
+          "bandwidth_median_MBps": 71.51280808304443
+        },
+        "1048576": {
+          "one_way_median_s": 0.009396641500000413,
+          "one_way_min_s": 0.009386493499999204,
+          "one_way_max_s": 0.00954209550000229,
+          "bandwidth_median_MBps": 111.590508161874
+        }
+      }
+    },
+    {
+      "peer_rank": 35,
+      "peer_host": "pi36",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00016005149999998025,
+          "one_way_min_s": 0.00015883350000223118,
+          "one_way_max_s": 0.0001639354999980469,
+          "bandwidth_median_MBps": 0.04998391142851512
+        },
+        "1024": {
+          "one_way_median_s": 0.0002103200000025396,
+          "one_way_min_s": 0.00020583349999725442,
+          "one_way_max_s": 0.00021386150000068938,
+          "bandwidth_median_MBps": 4.868771395909259
+        },
+        "8192": {
+          "one_way_median_s": 0.00020707450000045924,
+          "one_way_min_s": 0.00020122250000298436,
+          "one_way_max_s": 0.00023235249999942198,
+          "bandwidth_median_MBps": 39.56064121841092
+        },
+        "65536": {
+          "one_way_median_s": 0.0009142842499993975,
+          "one_way_min_s": 0.0008980389999990734,
+          "one_way_max_s": 0.0009504100000015114,
+          "bandwidth_median_MBps": 71.6801148002311
+        },
+        "1048576": {
+          "one_way_median_s": 0.009396938000000077,
+          "one_way_min_s": 0.009386836000000898,
+          "one_way_max_s": 0.009449252999999658,
+          "bandwidth_median_MBps": 111.58698716539276
+        }
+      }
+    },
+    {
+      "peer_rank": 36,
+      "peer_host": "pi37",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00015982449999896176,
+          "one_way_min_s": 0.00015533349999685697,
+          "one_way_max_s": 0.0001642319999994868,
+          "bandwidth_median_MBps": 0.050054903973120325
+        },
+        "1024": {
+          "one_way_median_s": 0.00020885675000137383,
+          "one_way_min_s": 0.0002057875000005538,
+          "one_way_max_s": 0.0002125190000015209,
+          "bandwidth_median_MBps": 4.902881999232796
+        },
+        "8192": {
+          "one_way_median_s": 0.00020475974999811797,
+          "one_way_min_s": 0.00019826899999841885,
+          "one_way_max_s": 0.00023192649999970172,
+          "bandwidth_median_MBps": 40.00786287380843
+        },
+        "65536": {
+          "one_way_median_s": 0.0009168262500001134,
+          "one_way_min_s": 0.0009008164999997348,
+          "one_way_max_s": 0.0009466224999989947,
+          "bandwidth_median_MBps": 71.48137392443975
+        },
+        "1048576": {
+          "one_way_median_s": 0.009394377749998739,
+          "one_way_min_s": 0.009387076999999522,
+          "one_way_max_s": 0.009530623500001667,
+          "bandwidth_median_MBps": 111.61739796977406
+        }
+      }
+    },
+    {
+      "peer_rank": 37,
+      "peer_host": "pi38",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00015794475000063812,
+          "one_way_min_s": 0.0001545649999989962,
+          "one_way_max_s": 0.00016497300000040127,
+          "bandwidth_median_MBps": 0.05065062308160087
+        },
+        "1024": {
+          "one_way_median_s": 0.00020774124999967114,
+          "one_way_min_s": 0.0002042320000015252,
+          "one_way_max_s": 0.00021187100000119585,
+          "bandwidth_median_MBps": 4.9292088114499215
+        },
+        "8192": {
+          "one_way_median_s": 0.00020404674999952022,
+          "one_way_min_s": 0.0001974914999998134,
+          "one_way_max_s": 0.00022295399999805454,
+          "bandwidth_median_MBps": 40.14766223926263
+        },
+        "65536": {
+          "one_way_median_s": 0.000925872750000778,
+          "one_way_min_s": 0.0008948814999989452,
+          "one_way_max_s": 0.0009477709999998751,
+          "bandwidth_median_MBps": 70.78294506447558
+        },
+        "1048576": {
+          "one_way_median_s": 0.009390497750001003,
+          "one_way_min_s": 0.009382057999999915,
+          "one_way_max_s": 0.009424725000002354,
+          "bandwidth_median_MBps": 111.6635164520313
+        }
+      }
+    },
+    {
+      "peer_rank": 38,
+      "peer_host": "pi39",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00015999574999980837,
+          "one_way_min_s": 0.00015573149999781322,
+          "one_way_max_s": 0.00016710199999891984,
+          "bandwidth_median_MBps": 0.05000132816033914
+        },
+        "1024": {
+          "one_way_median_s": 0.00020865799999825185,
+          "one_way_min_s": 0.00020377850000130593,
+          "one_way_max_s": 0.0002130559999997672,
+          "bandwidth_median_MBps": 4.907552070893899
+        },
+        "8192": {
+          "one_way_median_s": 0.0002050464999996393,
+          "one_way_min_s": 0.00019985199999794645,
+          "one_way_max_s": 0.00022626899999877992,
+          "bandwidth_median_MBps": 39.9519133465551
+        },
+        "65536": {
+          "one_way_median_s": 0.0009079742499995547,
+          "one_way_min_s": 0.0008987984999997423,
+          "one_way_max_s": 0.0009590019999983213,
+          "bandwidth_median_MBps": 72.17825835923446
+        },
+        "1048576": {
+          "one_way_median_s": 0.009399400999999585,
+          "one_way_min_s": 0.009386790000000644,
+          "one_way_max_s": 0.009464984000000953,
+          "bandwidth_median_MBps": 111.5577471372959
+        }
+      }
+    },
+    {
+      "peer_rank": 39,
+      "peer_host": "pi40",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00015772725000040566,
+          "one_way_min_s": 0.00015476000000091972,
+          "one_way_max_s": 0.00016010199999882957,
+          "bandwidth_median_MBps": 0.05072046840339526
+        },
+        "1024": {
+          "one_way_median_s": 0.00020738925000252095,
+          "one_way_min_s": 0.00020387100000007763,
+          "one_way_max_s": 0.00021182449999912478,
+          "bandwidth_median_MBps": 4.937575115332895
+        },
+        "8192": {
+          "one_way_median_s": 0.00020370424999960335,
+          "one_way_min_s": 0.00019803749999880438,
+          "one_way_max_s": 0.00022687099999885163,
+          "bandwidth_median_MBps": 40.21516487759068
+        },
+        "65536": {
+          "one_way_median_s": 0.000934502000001558,
+          "one_way_min_s": 0.0008949740000012696,
+          "one_way_max_s": 0.0009462615000010999,
+          "bandwidth_median_MBps": 70.12933091624281
+        },
+        "1048576": {
+          "one_way_median_s": 0.009389650999999333,
+          "one_way_min_s": 0.009381771000001038,
+          "one_way_max_s": 0.00945985499999935,
+          "bandwidth_median_MBps": 111.67358616417954
+        }
+      }
+    },
+    {
+      "peer_rank": 40,
+      "peer_host": "pi41",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00015656525000018462,
+          "one_way_min_s": 0.00015331499999859943,
+          "one_way_max_s": 0.0001597229999994454,
+          "bandwidth_median_MBps": 0.05109690688061729
+        },
+        "1024": {
+          "one_way_median_s": 0.00020584300000159317,
+          "one_way_min_s": 0.00020275050000151396,
+          "one_way_max_s": 0.00020928749999882257,
+          "bandwidth_median_MBps": 4.974665157387302
+        },
+        "8192": {
+          "one_way_median_s": 0.0002024032500003159,
+          "one_way_min_s": 0.0001980929999980674,
+          "one_way_max_s": 0.00021905599999882952,
+          "bandwidth_median_MBps": 40.47365840216111
+        },
+        "65536": {
+          "one_way_median_s": 0.0009096177500005354,
+          "one_way_min_s": 0.0008921595000010996,
+          "one_way_max_s": 0.0009603815000005511,
+          "bandwidth_median_MBps": 72.04784647173103
+        },
+        "1048576": {
+          "one_way_median_s": 0.00938893325000123,
+          "one_way_min_s": 0.009382520999999144,
+          "one_way_max_s": 0.00940836399999867,
+          "bandwidth_median_MBps": 111.6821232060482
+        }
+      }
+    },
+    {
+      "peer_rank": 41,
+      "peer_host": "pi42",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00016641249999871377,
+          "one_way_min_s": 0.00016067599999658455,
+          "one_way_max_s": 0.00016947300000325072,
+          "bandwidth_median_MBps": 0.04807331180086732
+        },
+        "1024": {
+          "one_way_median_s": 0.00021433375000157184,
+          "one_way_min_s": 0.00020910250000127917,
+          "one_way_max_s": 0.00021675949999888644,
+          "bandwidth_median_MBps": 4.777595688931354
+        },
+        "8192": {
+          "one_way_median_s": 0.0002072920000006917,
+          "one_way_min_s": 0.0002015834999973265,
+          "one_way_max_s": 0.0002341209999983107,
+          "bandwidth_median_MBps": 39.51913243141397
+        },
+        "65536": {
+          "one_way_median_s": 0.0009183540000012869,
+          "one_way_min_s": 0.0009047244999997872,
+          "one_way_max_s": 0.0009789839999996275,
+          "bandwidth_median_MBps": 71.36245935653155
+        },
+        "1048576": {
+          "one_way_median_s": 0.009400539750000547,
+          "one_way_min_s": 0.009389021499998762,
+          "one_way_max_s": 0.009439623500000494,
+          "bandwidth_median_MBps": 111.54423340425096
+        }
+      }
+    },
+    {
+      "peer_rank": 42,
+      "peer_host": "pi43",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.0001602362500001675,
+          "one_way_min_s": 0.0001558430000017097,
+          "one_way_max_s": 0.00016406499999988,
+          "bandwidth_median_MBps": 0.04992628072606315
+        },
+        "1024": {
+          "one_way_median_s": 0.00020831524999920248,
+          "one_way_min_s": 0.00020515750000171806,
+          "one_way_max_s": 0.0002150279999995064,
+          "bandwidth_median_MBps": 4.91562667641433
+        },
+        "8192": {
+          "one_way_median_s": 0.00021666274999887492,
+          "one_way_min_s": 0.00020161149999964323,
+          "one_way_max_s": 0.0002246209999974269,
+          "bandwidth_median_MBps": 37.809914256338665
+        },
+        "65536": {
+          "one_way_median_s": 0.0009092889999990916,
+          "one_way_min_s": 0.0009017890000002637,
+          "one_way_max_s": 0.0009493909999989114,
+          "bandwidth_median_MBps": 72.0738950983301
+        },
+        "1048576": {
+          "one_way_median_s": 0.009397974999998837,
+          "one_way_min_s": 0.009390280499999903,
+          "one_way_max_s": 0.009442502999998936,
+          "bandwidth_median_MBps": 111.57467433145221
+        }
+      }
+    },
+    {
+      "peer_rank": 43,
+      "peer_host": "pi44",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00015961625000038282,
+          "one_way_min_s": 0.00015604649999900744,
+          "one_way_max_s": 0.00016384300000282792,
+          "bandwidth_median_MBps": 0.050120210191511284
+        },
+        "1024": {
+          "one_way_median_s": 0.0002075979999993649,
+          "one_way_min_s": 0.00020473200000026281,
+          "one_way_max_s": 0.00021235200000191412,
+          "bandwidth_median_MBps": 4.932610140767891
+        },
+        "8192": {
+          "one_way_median_s": 0.00020502349999951264,
+          "one_way_min_s": 0.0002004170000020622,
+          "one_way_max_s": 0.00022249100000237831,
+          "bandwidth_median_MBps": 39.956395242591576
+        },
+        "65536": {
+          "one_way_median_s": 0.0009164047499989891,
+          "one_way_min_s": 0.0009001780000019721,
+          "one_way_max_s": 0.0009507430000006423,
+          "bandwidth_median_MBps": 71.51425175401185
+        },
+        "1048576": {
+          "one_way_median_s": 0.009392910499999019,
+          "one_way_min_s": 0.009380224999997466,
+          "one_way_max_s": 0.009461160000000746,
+          "bandwidth_median_MBps": 111.63483352685087
+        }
+      }
+    },
+    {
+      "peer_rank": 44,
+      "peer_host": "pi45",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00015998175000042636,
+          "one_way_min_s": 0.0001539355000019782,
+          "one_way_max_s": 0.00016402849999863633,
+          "bandwidth_median_MBps": 0.05000570377545364
+        },
+        "1024": {
+          "one_way_median_s": 0.00020952350000058573,
+          "one_way_min_s": 0.00020673199999876601,
+          "one_way_max_s": 0.00021263000000004695,
+          "bandwidth_median_MBps": 4.887279947104441
+        },
+        "8192": {
+          "one_way_median_s": 0.00020521799999784207,
+          "one_way_min_s": 0.00019812100000038413,
+          "one_way_max_s": 0.000230130500000314,
+          "bandwidth_median_MBps": 39.91852566580973
+        },
+        "65536": {
+          "one_way_median_s": 0.0009104187499993088,
+          "one_way_min_s": 0.0008998629999972252,
+          "one_way_max_s": 0.0009679929999997228,
+          "bandwidth_median_MBps": 71.98445770152443
+        },
+        "1048576": {
+          "one_way_median_s": 0.009394317499998195,
+          "one_way_min_s": 0.009369363500002947,
+          "one_way_max_s": 0.00946462349999777,
+          "bandwidth_median_MBps": 111.618113822553
+        }
+      }
+    },
+    {
+      "peer_rank": 45,
+      "peer_host": "pi46",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00015691249999960633,
+          "one_way_min_s": 0.00015395399999817982,
+          "one_way_max_s": 0.00015935200000072314,
+          "bandwidth_median_MBps": 0.050983828567004355
+        },
+        "1024": {
+          "one_way_median_s": 0.0002070097499995427,
+          "one_way_min_s": 0.00019850049999803332,
+          "one_way_max_s": 0.0002111854999995444,
+          "bandwidth_median_MBps": 4.946626910096081
+        },
+        "8192": {
+          "one_way_median_s": 0.00020445424999948614,
+          "one_way_min_s": 0.00019927799999663875,
+          "one_way_max_s": 0.00023038900000216245,
+          "bandwidth_median_MBps": 40.06764349491678
+        },
+        "65536": {
+          "one_way_median_s": 0.0009057889999990465,
+          "one_way_min_s": 0.0008948355000022445,
+          "one_way_max_s": 0.000942067000000435,
+          "bandwidth_median_MBps": 72.35239111986233
+        },
+        "1048576": {
+          "one_way_median_s": 0.009389794250001415,
+          "one_way_min_s": 0.009355474999999558,
+          "one_way_max_s": 0.009458687999998716,
+          "bandwidth_median_MBps": 111.67188248026223
+        }
+      }
+    },
+    {
+      "peer_rank": 46,
+      "peer_host": "pi47",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.0001595697500000881,
+          "one_way_min_s": 0.00015435200000268878,
+          "one_way_max_s": 0.00016447249999984592,
+          "bandwidth_median_MBps": 0.05013481565268845
+        },
+        "1024": {
+          "one_way_median_s": 0.0002083292499985845,
+          "one_way_min_s": 0.0002045840000022281,
+          "one_way_max_s": 0.00021213000000130933,
+          "bandwidth_median_MBps": 4.915296339841658
+        },
+        "8192": {
+          "one_way_median_s": 0.00020450525000015318,
+          "one_way_min_s": 0.00019788000000175998,
+          "one_way_max_s": 0.00022573200000053362,
+          "bandwidth_median_MBps": 40.05765133165953
+        },
+        "65536": {
+          "one_way_median_s": 0.00091692349999839,
+          "one_way_min_s": 0.000902223999997176,
+          "one_way_max_s": 0.0009626225000012312,
+          "bandwidth_median_MBps": 71.47379252480178
+        },
+        "1048576": {
+          "one_way_median_s": 0.009391924000000884,
+          "one_way_min_s": 0.009376687500001424,
+          "one_way_max_s": 0.009425299000000109,
+          "bandwidth_median_MBps": 111.64655932052914
+        }
+      }
+    },
+    {
+      "peer_rank": 47,
+      "peer_host": "pi48",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.0001566994999997462,
+          "one_way_min_s": 0.00015378750000039076,
+          "one_way_max_s": 0.00015944449999949484,
+          "bandwidth_median_MBps": 0.05105313035467859
+        },
+        "1024": {
+          "one_way_median_s": 0.00020719050000117534,
+          "one_way_min_s": 0.0002039450000026477,
+          "one_way_max_s": 0.00021545399999922665,
+          "bandwidth_median_MBps": 4.942311544178865
+        },
+        "8192": {
+          "one_way_median_s": 0.00020452350000077502,
+          "one_way_min_s": 0.00020047250000132522,
+          "one_way_max_s": 0.00021544450000021698,
+          "bandwidth_median_MBps": 40.054076915214914
+        },
+        "65536": {
+          "one_way_median_s": 0.0009023030000019361,
+          "one_way_min_s": 0.000893446500001005,
+          "one_way_max_s": 0.0009532519999986278,
+          "bandwidth_median_MBps": 72.63192076260344
+        },
+        "1048576": {
+          "one_way_median_s": 0.009391201749998856,
+          "one_way_min_s": 0.00937771599999948,
+          "one_way_max_s": 0.009431104499999066,
+          "bandwidth_median_MBps": 111.65514573256054
+        }
+      }
+    },
+    {
+      "peer_rank": 48,
+      "peer_host": "pi49",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00015629675000106147,
+          "one_way_min_s": 0.00015273150000183477,
+          "one_way_max_s": 0.0001601025000006473,
+          "bandwidth_median_MBps": 0.0511846855417382
+        },
+        "1024": {
+          "one_way_median_s": 0.00020494500000012295,
+          "one_way_min_s": 0.00020154699999963555,
+          "one_way_max_s": 0.00021250050000176657,
+          "bandwidth_median_MBps": 4.9964624655365375
+        },
+        "8192": {
+          "one_way_median_s": 0.00020228750000050866,
+          "one_way_min_s": 0.00019763949999784813,
+          "one_way_max_s": 0.00022209299999786936,
+          "bandwidth_median_MBps": 40.49681764804746
+        },
+        "65536": {
+          "one_way_median_s": 0.0009094972499994469,
+          "one_way_min_s": 0.0008941690000021651,
+          "one_way_max_s": 0.00095253900000003,
+          "bandwidth_median_MBps": 72.05739214718884
+        },
+        "1048576": {
+          "one_way_median_s": 0.00938817400000147,
+          "one_way_min_s": 0.009362104499999191,
+          "one_way_max_s": 0.009447975000000497,
+          "bandwidth_median_MBps": 111.69115527682335
+        }
+      }
+    },
+    {
+      "peer_rank": 49,
+      "peer_host": "pi50",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00016065774999951543,
+          "one_way_min_s": 0.00014225949999868703,
+          "one_way_max_s": 0.0001933614999991562,
+          "bandwidth_median_MBps": 0.0497952946560258
+        },
+        "1024": {
+          "one_way_median_s": 0.00020822724999902675,
+          "one_way_min_s": 0.00017606500000155734,
+          "one_way_max_s": 0.00023518600000116408,
+          "bandwidth_median_MBps": 4.917704094948121
+        },
+        "8192": {
+          "one_way_median_s": 0.0002054122500005917,
+          "one_way_min_s": 0.00019713000000010084,
+          "one_way_max_s": 0.00023646349999850713,
+          "bandwidth_median_MBps": 39.88077634112086
+        },
+        "65536": {
+          "one_way_median_s": 0.0009320625000004412,
+          "one_way_min_s": 0.0009039555000001087,
+          "one_way_max_s": 0.0009752055000014082,
+          "bandwidth_median_MBps": 70.31288137862963
+        },
+        "1048576": {
+          "one_way_median_s": 0.009407307999998338,
+          "one_way_min_s": 0.009388400500000671,
+          "one_way_max_s": 0.009700642500000356,
+          "bandwidth_median_MBps": 111.46398098161401
+        }
+      }
+    },
+    {
+      "peer_rank": 50,
+      "peer_host": "pi51",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00015998175000042636,
+          "one_way_min_s": 0.00015561150000209523,
+          "one_way_max_s": 0.00016398200000011798,
+          "bandwidth_median_MBps": 0.05000570377545364
+        },
+        "1024": {
+          "one_way_median_s": 0.00020910675000074264,
+          "one_way_min_s": 0.00020405600000117374,
+          "one_way_max_s": 0.00021479699999815693,
+          "bandwidth_median_MBps": 4.89702030181409
+        },
+        "8192": {
+          "one_way_median_s": 0.00020507924999968452,
+          "one_way_min_s": 0.00020050949999728118,
+          "one_way_max_s": 0.00022292599999929053,
+          "bandwidth_median_MBps": 39.945533251231424
+        },
+        "65536": {
+          "one_way_median_s": 0.0009201690000022467,
+          "one_way_min_s": 0.0008970670000003622,
+          "one_way_max_s": 0.000961271000001318,
+          "bandwidth_median_MBps": 71.22169949198461
+        },
+        "1048576": {
+          "one_way_median_s": 0.009400192499997573,
+          "one_way_min_s": 0.009389179000002912,
+          "one_way_max_s": 0.009473780499998696,
+          "bandwidth_median_MBps": 111.5483539300148
+        }
+      }
+    },
+    {
+      "peer_rank": 51,
+      "peer_host": "pi52",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00016333349999975155,
+          "one_way_min_s": 0.0001613985000012974,
+          "one_way_max_s": 0.00016798199999712438,
+          "bandwidth_median_MBps": 0.048979541857684855
+        },
+        "1024": {
+          "one_way_median_s": 0.00021239850000043248,
+          "one_way_min_s": 0.00020813049999901523,
+          "one_way_max_s": 0.00021814850000012598,
+          "bandwidth_median_MBps": 4.821126326211885
+        },
+        "8192": {
+          "one_way_median_s": 0.00020613025000137952,
+          "one_way_min_s": 0.00019913950000116643,
+          "one_way_max_s": 0.00022604699999817512,
+          "bandwidth_median_MBps": 39.74186224460105
+        },
+        "65536": {
+          "one_way_median_s": 0.0009336177500021137,
+          "one_way_min_s": 0.0009036595000004866,
+          "one_way_max_s": 0.0009551965000014206,
+          "bandwidth_median_MBps": 70.19575195507115
+        },
+        "1048576": {
+          "one_way_median_s": 0.009401914749998852,
+          "one_way_min_s": 0.0093936879999994,
+          "one_way_max_s": 0.009441104499998687,
+          "bandwidth_median_MBps": 111.5279204164373
+        }
+      }
+    },
+    {
+      "peer_rank": 52,
+      "peer_host": "pi53",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00016036599999935675,
+          "one_way_min_s": 0.0001565375000005531,
+          "one_way_max_s": 0.0001647039999994604,
+          "bandwidth_median_MBps": 0.04988588603589345
+        },
+        "1024": {
+          "one_way_median_s": 0.00020861175000064236,
+          "one_way_min_s": 0.00020538900000133253,
+          "one_way_max_s": 0.00021353800000056822,
+          "bandwidth_median_MBps": 4.9086400933640935
+        },
+        "8192": {
+          "one_way_median_s": 0.00020063925000002314,
+          "one_way_min_s": 0.0001983149999986722,
+          "one_way_max_s": 0.0002241484999991883,
+          "bandwidth_median_MBps": 40.829498714728324
+        },
+        "65536": {
+          "one_way_median_s": 0.0009177612500010923,
+          "one_way_min_s": 0.0008997424999996895,
+          "one_way_max_s": 0.0009528724999974258,
+          "bandwidth_median_MBps": 71.40854988148823
+        },
+        "1048576": {
+          "one_way_median_s": 0.009401136750000205,
+          "one_way_min_s": 0.009370650999997565,
+          "one_way_max_s": 0.00948821600000116,
+          "bandwidth_median_MBps": 111.53715001539332
+        }
+      }
+    },
+    {
+      "peer_rank": 53,
+      "peer_host": "pi54",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00015900975000171513,
+          "one_way_min_s": 0.0001553614999991737,
+          "one_way_max_s": 0.00016354699999965305,
+          "bandwidth_median_MBps": 0.05031138027645292
+        },
+        "1024": {
+          "one_way_median_s": 0.00021000050000097303,
+          "one_way_min_s": 0.00020455599999991136,
+          "one_way_max_s": 0.00021265800000236368,
+          "bandwidth_median_MBps": 4.876178866218201
+        },
+        "8192": {
+          "one_way_median_s": 0.00020615349999886234,
+          "one_way_min_s": 0.00019989850000001752,
+          "one_way_max_s": 0.00023011149999874192,
+          "bandwidth_median_MBps": 39.73738015626806
+        },
+        "65536": {
+          "one_way_median_s": 0.0009085574999989632,
+          "one_way_min_s": 0.0009032240000017566,
+          "one_way_max_s": 0.0009500944999984995,
+          "bandwidth_median_MBps": 72.13192340614081
+        },
+        "1048576": {
+          "one_way_median_s": 0.009391109250000085,
+          "one_way_min_s": 0.009356604500002419,
+          "one_way_max_s": 0.009510262500000977,
+          "bandwidth_median_MBps": 111.65624550688626
+        }
+      }
+    },
+    {
+      "peer_rank": 54,
+      "peer_host": "pi55",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.0001593060000004698,
+          "one_way_min_s": 0.00015573199999963094,
+          "one_way_max_s": 0.00016435250000057522,
+          "bandwidth_median_MBps": 0.050217819793205574
+        },
+        "1024": {
+          "one_way_median_s": 0.00020837999999834267,
+          "one_way_min_s": 0.00020490749999879654,
+          "one_way_max_s": 0.0002125560000010296,
+          "bandwidth_median_MBps": 4.914099241808928
+        },
+        "8192": {
+          "one_way_median_s": 0.00020514424999973357,
+          "one_way_min_s": 0.00020138949999903843,
+          "one_way_max_s": 0.00021812999999681892,
+          "bandwidth_median_MBps": 39.9328765003681
+        },
+        "65536": {
+          "one_way_median_s": 0.0009182332499992896,
+          "one_way_min_s": 0.0008978820000002941,
+          "one_way_max_s": 0.0009492244999975696,
+          "bandwidth_median_MBps": 71.3718437009885
+        },
+        "1048576": {
+          "one_way_median_s": 0.009400021500002964,
+          "one_way_min_s": 0.009379780500001544,
+          "one_way_max_s": 0.009430872999999451,
+          "bandwidth_median_MBps": 111.55038315600335
+        }
+      }
+    },
+    {
+      "peer_rank": 55,
+      "peer_host": "pi56",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00015854675000070984,
+          "one_way_min_s": 0.00015483349999811935,
+          "one_way_max_s": 0.00016101900000364822,
+          "bandwidth_median_MBps": 0.05045830330778892
+        },
+        "1024": {
+          "one_way_median_s": 0.00020780599999881133,
+          "one_way_min_s": 0.0002050189999991403,
+          "one_way_max_s": 0.0002123244999978624,
+          "bandwidth_median_MBps": 4.927672925737743
+        },
+        "8192": {
+          "one_way_median_s": 0.000204815249997381,
+          "one_way_min_s": 0.00020044500000437893,
+          "one_way_max_s": 0.0002206205000021555,
+          "bandwidth_median_MBps": 39.99702170665882
+        },
+        "65536": {
+          "one_way_median_s": 0.0009065899999995963,
+          "one_way_min_s": 0.0008954004999992549,
+          "one_way_max_s": 0.0009471875000031105,
+          "bandwidth_median_MBps": 72.28846556881189
+        },
+        "1048576": {
+          "one_way_median_s": 0.009395225000002227,
+          "one_way_min_s": 0.009385650500000509,
+          "one_way_max_s": 0.009475623000000155,
+          "bandwidth_median_MBps": 111.60733244810544
+        }
+      }
+    },
+    {
+      "peer_rank": 56,
+      "peer_host": "pi57",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00015416699999803996,
+          "one_way_min_s": 0.0001518334999985882,
+          "one_way_max_s": 0.0001573519999951145,
+          "bandwidth_median_MBps": 0.05189177969410905
+        },
+        "1024": {
+          "one_way_median_s": 0.00020412099999944644,
+          "one_way_min_s": 0.00020029649999742105,
+          "one_way_max_s": 0.00020589850000618526,
+          "bandwidth_median_MBps": 5.016632291644549
+        },
+        "8192": {
+          "one_way_median_s": 0.00020414849999994544,
+          "one_way_min_s": 0.0001982779999991635,
+          "one_way_max_s": 0.00022751899999917669,
+          "bandwidth_median_MBps": 40.12765217477566
+        },
+        "65536": {
+          "one_way_median_s": 0.0009104142499971601,
+          "one_way_min_s": 0.0008942150000024185,
+          "one_way_max_s": 0.0009611135000042736,
+          "bandwidth_median_MBps": 71.98481350682333
+        },
+        "1048576": {
+          "one_way_median_s": 0.009391905750000262,
+          "one_way_min_s": 0.009353465499998492,
+          "one_way_max_s": 0.009426058499997225,
+          "bandwidth_median_MBps": 111.64677626795506
+        }
+      }
+    },
+    {
+      "peer_rank": 57,
+      "peer_host": "pi58",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00015857425000120884,
+          "one_way_min_s": 0.00015434300000549683,
+          "one_way_max_s": 0.00016358399999916173,
+          "bandwidth_median_MBps": 0.05044955281162619
+        },
+        "1024": {
+          "one_way_median_s": 0.00020780599999881133,
+          "one_way_min_s": 0.00020493599999582557,
+          "one_way_max_s": 0.00021245450000151322,
+          "bandwidth_median_MBps": 4.927672925737743
+        },
+        "8192": {
+          "one_way_median_s": 0.00020524574999924994,
+          "one_way_min_s": 0.00019604700000286357,
+          "one_way_max_s": 0.00023053749999490947,
+          "bandwidth_median_MBps": 39.913128530212866
+        },
+        "65536": {
+          "one_way_median_s": 0.0009081130000012649,
+          "one_way_min_s": 0.0008974650000013185,
+          "one_way_max_s": 0.0009567984999989676,
+          "bandwidth_median_MBps": 72.16723028952202
+        },
+        "1048576": {
+          "one_way_median_s": 0.00939146074999897,
+          "one_way_min_s": 0.009383178500002032,
+          "one_way_max_s": 0.009422456499997622,
+          "bandwidth_median_MBps": 111.65206647965972
+        }
+      }
+    },
+    {
+      "peer_rank": 58,
+      "peer_host": "pi59",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00015695849999985967,
+          "one_way_min_s": 0.00015550950000431385,
+          "one_way_max_s": 0.00016281549999774825,
+          "bandwidth_median_MBps": 0.0509688866802827
+        },
+        "1024": {
+          "one_way_median_s": 0.00020674574999901552,
+          "one_way_min_s": 0.0002029265000018654,
+          "one_way_max_s": 0.00021168550000538744,
+          "bandwidth_median_MBps": 4.952943409984854
+        },
+        "8192": {
+          "one_way_median_s": 0.00020525499999735075,
+          "one_way_min_s": 0.00020076899999565967,
+          "one_way_max_s": 0.000227000499997132,
+          "bandwidth_median_MBps": 39.91132980977679
+        },
+        "65536": {
+          "one_way_median_s": 0.0009442242499986264,
+          "one_way_min_s": 0.0008982800000012503,
+          "one_way_max_s": 0.0009541410000011297,
+          "bandwidth_median_MBps": 69.40724091771138
+        },
+        "1048576": {
+          "one_way_median_s": 0.009393646249996834,
+          "one_way_min_s": 0.00935736350000127,
+          "one_way_max_s": 0.009464196999999785,
+          "bandwidth_median_MBps": 111.62608981580006
+        }
+      }
+    },
+    {
+      "peer_rank": 59,
+      "peer_host": "pi60",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.0001630372500009969,
+          "one_way_min_s": 0.00015910249999961934,
+          "one_way_max_s": 0.0001675279999986401,
+          "bandwidth_median_MBps": 0.04906854108463608
+        },
+        "1024": {
+          "one_way_median_s": 0.0002120607500017968,
+          "one_way_min_s": 0.00020814850000050455,
+          "one_way_max_s": 0.0002174724999974842,
+          "bandwidth_median_MBps": 4.828804953256666
+        },
+        "8192": {
+          "one_way_median_s": 0.00021076400000197282,
+          "one_way_min_s": 0.00019876849999889146,
+          "one_way_max_s": 0.00022648200000219276,
+          "bandwidth_median_MBps": 38.868117894532844
+        },
+        "65536": {
+          "one_way_median_s": 0.0009122102500001006,
+          "one_way_min_s": 0.0008995670000047085,
+          "one_way_max_s": 0.0009958174999979974,
+          "bandwidth_median_MBps": 71.84308661297412
+        },
+        "1048576": {
+          "one_way_median_s": 0.009403558500000742,
+          "one_way_min_s": 0.009393067499999574,
+          "one_way_max_s": 0.009421206500000778,
+          "bandwidth_median_MBps": 111.50842524135064
+        }
+      }
+    },
+    {
+      "peer_rank": 60,
+      "peer_host": "pi61",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00016030149999934906,
+          "one_way_min_s": 0.00015587999999411295,
+          "one_way_max_s": 0.00016587999999728709,
+          "bandwidth_median_MBps": 0.049905958459730476
+        },
+        "1024": {
+          "one_way_median_s": 0.000210278249998197,
+          "one_way_min_s": 0.0002037129999976628,
+          "one_way_max_s": 0.0002128335000008974,
+          "bandwidth_median_MBps": 4.869738073285184
+        },
+        "8192": {
+          "one_way_median_s": 0.000205111499997912,
+          "one_way_min_s": 0.00020030599999643073,
+          "one_way_max_s": 0.00022462999999817157,
+          "bandwidth_median_MBps": 39.93925255328635
+        },
+        "65536": {
+          "one_way_median_s": 0.0009152012500024398,
+          "one_way_min_s": 0.0009013170000002901,
+          "one_way_max_s": 0.0009521225000028721,
+          "bandwidth_median_MBps": 71.60829380404068
+        },
+        "1048576": {
+          "one_way_median_s": 0.009402984250002078,
+          "one_way_min_s": 0.009385493500005282,
+          "one_way_max_s": 0.009431030499996496,
+          "bandwidth_median_MBps": 111.51523517650988
+        }
+      }
+    },
+    {
+      "peer_rank": 61,
+      "peer_host": "pi62",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00016260225000053197,
+          "one_way_min_s": 0.00015738949999644092,
+          "one_way_max_s": 0.00016804650000068477,
+          "bandwidth_median_MBps": 0.049199811195563575
+        },
+        "1024": {
+          "one_way_median_s": 0.00021188024999929667,
+          "one_way_min_s": 0.00020850050000120746,
+          "one_way_max_s": 0.00021887100000128612,
+          "bandwidth_median_MBps": 4.832918594363557
+        },
+        "8192": {
+          "one_way_median_s": 0.00020496825000293484,
+          "one_way_min_s": 0.0001998704999977008,
+          "one_way_max_s": 0.00023380600000422191,
+          "bandwidth_median_MBps": 39.967165645814426
+        },
+        "65536": {
+          "one_way_median_s": 0.0009465019999979063,
+          "one_way_min_s": 0.0009036039999941181,
+          "one_way_max_s": 0.0009852984999980663,
+          "bandwidth_median_MBps": 69.24021291042699
+        },
+        "1048576": {
+          "one_way_median_s": 0.009402349750004646,
+          "one_way_min_s": 0.009390086499998063,
+          "one_way_max_s": 0.009475391999998806,
+          "bandwidth_median_MBps": 111.52276057370466
+        }
+      }
+    },
+    {
+      "peer_rank": 62,
+      "peer_host": "pi63",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00015975975000159792,
+          "one_way_min_s": 0.0001557779999998843,
+          "one_way_max_s": 0.00016410199999938868,
+          "bandwidth_median_MBps": 0.05007519102852867
+        },
+        "1024": {
+          "one_way_median_s": 0.00020804675000363204,
+          "one_way_min_s": 0.00020475049999646444,
+          "one_way_max_s": 0.00021295399999843312,
+          "bandwidth_median_MBps": 4.921970662757881
+        },
+        "8192": {
+          "one_way_median_s": 0.00020022275000286527,
+          "one_way_min_s": 0.00019566699999984394,
+          "one_way_max_s": 0.000225806499997816,
+          "bandwidth_median_MBps": 40.914431551273616
+        },
+        "65536": {
+          "one_way_median_s": 0.0009230669999986674,
+          "one_way_min_s": 0.0008958259999971574,
+          "one_way_max_s": 0.0009624925000011331,
+          "bandwidth_median_MBps": 70.99809656297388
+        },
+        "1048576": {
+          "one_way_median_s": 0.009399160000000961,
+          "one_way_min_s": 0.009387928499997145,
+          "one_way_max_s": 0.009432836500003816,
+          "bandwidth_median_MBps": 111.56060754364144
+        }
+      }
+    },
+    {
+      "peer_rank": 63,
+      "peer_host": "pi64",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00015622724999886373,
+          "one_way_min_s": 0.00015309300000154735,
+          "one_way_max_s": 0.00015800050000081,
+          "bandwidth_median_MBps": 0.05120745580593773
+        },
+        "1024": {
+          "one_way_median_s": 0.0002046302499998376,
+          "one_way_min_s": 0.00019377799999631407,
+          "one_way_max_s": 0.00020913899999897012,
+          "bandwidth_median_MBps": 5.004147724985982
+        },
+        "8192": {
+          "one_way_median_s": 0.00020330125000356247,
+          "one_way_min_s": 0.000196167000005687,
+          "one_way_max_s": 0.0002278705000051673,
+          "bandwidth_median_MBps": 40.29488259347372
+        },
+        "65536": {
+          "one_way_median_s": 0.0009078215000002388,
+          "one_way_min_s": 0.0008954555000002529,
+          "one_way_max_s": 0.0009725394999975379,
+          "bandwidth_median_MBps": 72.19040306930687
+        },
+        "1048576": {
+          "one_way_median_s": 0.009391997999998125,
+          "one_way_min_s": 0.009357307999998454,
+          "one_way_max_s": 0.009424123000002282,
+          "bandwidth_median_MBps": 111.64567965199835
+        }
+      }
+    },
+    {
+      "peer_rank": 64,
+      "peer_host": "pi65",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.0001562224999993589,
+          "one_way_min_s": 0.00015383400000246183,
+          "one_way_max_s": 0.00015922250000244276,
+          "bandwidth_median_MBps": 0.051209012786460534
+        },
+        "1024": {
+          "one_way_median_s": 0.00020530124999851296,
+          "one_way_min_s": 0.0002038800000008223,
+          "one_way_max_s": 0.00021394500000582184,
+          "bandwidth_median_MBps": 4.987792329600609
+        },
+        "8192": {
+          "one_way_median_s": 0.00020038000000255352,
+          "one_way_min_s": 0.00019649149999878546,
+          "one_way_max_s": 0.0002343250000009789,
+          "bandwidth_median_MBps": 40.88232358466716
+        },
+        "65536": {
+          "one_way_median_s": 0.0009022522500004015,
+          "one_way_min_s": 0.0008948725000053059,
+          "one_way_max_s": 0.0009444189999996411,
+          "bandwidth_median_MBps": 72.63600617229919
+        },
+        "1048576": {
+          "one_way_median_s": 0.009395581499997974,
+          "one_way_min_s": 0.009375909999995713,
+          "one_way_max_s": 0.009433975000000316,
+          "bandwidth_median_MBps": 111.60309769014574
+        }
+      }
+    },
+    {
+      "peer_rank": 65,
+      "peer_host": "pi66",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00016208375000204,
+          "one_way_min_s": 0.000158028000001309,
+          "one_way_max_s": 0.00016463000000044303,
+          "bandwidth_median_MBps": 0.049357199595266715
+        },
+        "1024": {
+          "one_way_median_s": 0.00021003750000048171,
+          "one_way_min_s": 0.0002059724999980972,
+          "one_way_max_s": 0.00021482449999865594,
+          "bandwidth_median_MBps": 4.875319883342981
+        },
+        "8192": {
+          "one_way_median_s": 0.00020624550000292174,
+          "one_way_min_s": 0.000198537499997542,
+          "one_way_max_s": 0.00023137049999633064,
+          "bandwidth_median_MBps": 39.7196544888686
+        },
+        "65536": {
+          "one_way_median_s": 0.0009479050000003042,
+          "one_way_min_s": 0.0009057520000013142,
+          "one_way_max_s": 0.0009539835000040853,
+          "bandwidth_median_MBps": 69.13773004676521
+        },
+        "1048576": {
+          "one_way_median_s": 0.009410956499998235,
+          "one_way_min_s": 0.009390465500004552,
+          "one_way_max_s": 0.009442585999998698,
+          "bandwidth_median_MBps": 111.42076791027527
+        }
+      }
+    },
+    {
+      "peer_rank": 66,
+      "peer_host": "pi67",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00015672725000115406,
+          "one_way_min_s": 0.0001541300000056367,
+          "one_way_max_s": 0.00016229699999570357,
+          "bandwidth_median_MBps": 0.05104409092829162
+        },
+        "1024": {
+          "one_way_median_s": 0.00020691700000341484,
+          "one_way_min_s": 0.00020404699999687637,
+          "one_way_max_s": 0.0002120469999979946,
+          "bandwidth_median_MBps": 4.948844222480997
+        },
+        "8192": {
+          "one_way_median_s": 0.00020524574999924994,
+          "one_way_min_s": 0.00020023150000270107,
+          "one_way_max_s": 0.00022913000000102102,
+          "bandwidth_median_MBps": 39.913128530212866
+        },
+        "65536": {
+          "one_way_median_s": 0.0009080807500012611,
+          "one_way_min_s": 0.0008988999999957059,
+          "one_way_max_s": 0.000974308000003532,
+          "bandwidth_median_MBps": 72.1697932699366
+        },
+        "1048576": {
+          "one_way_median_s": 0.009393359249997957,
+          "one_way_min_s": 0.009360002499995801,
+          "one_way_max_s": 0.009419327000003364,
+          "bandwidth_median_MBps": 111.62950038349997
+        }
+      }
+    },
+    {
+      "peer_rank": 67,
+      "peer_host": "pi68",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00015864849999758235,
+          "one_way_min_s": 0.00015488949999564738,
+          "one_way_max_s": 0.000163555999996845,
+          "bandwidth_median_MBps": 0.05042594162643777
+        },
+        "1024": {
+          "one_way_median_s": 0.00020844974999789656,
+          "one_way_min_s": 0.00020547249999935957,
+          "one_way_max_s": 0.0002132134999968116,
+          "bandwidth_median_MBps": 4.912454920240169
+        },
+        "8192": {
+          "one_way_median_s": 0.00020491250000276295,
+          "one_way_min_s": 0.00019752800000105708,
+          "one_way_max_s": 0.000223639499999706,
+          "bandwidth_median_MBps": 39.97803940652494
+        },
+        "65536": {
+          "one_way_median_s": 0.0009086037500019017,
+          "one_way_min_s": 0.000898363000004565,
+          "one_way_max_s": 0.0009487430000021391,
+          "bandwidth_median_MBps": 72.12825172674317
+        },
+        "1048576": {
+          "one_way_median_s": 0.009395174249998917,
+          "one_way_min_s": 0.009384418999999866,
+          "one_way_max_s": 0.009426067500001523,
+          "bandwidth_median_MBps": 111.60793531850895
+        }
+      }
+    },
+    {
+      "peer_rank": 68,
+      "peer_host": "pi69",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00015683849999703625,
+          "one_way_min_s": 0.00015450050000254123,
+          "one_way_max_s": 0.0001600004999957605,
+          "bandwidth_median_MBps": 0.051007883907020116
+        },
+        "1024": {
+          "one_way_median_s": 0.00020658375000337514,
+          "one_way_min_s": 0.00020353749999912907,
+          "one_way_max_s": 0.00020894500000423477,
+          "bandwidth_median_MBps": 4.956827436733382
+        },
+        "8192": {
+          "one_way_median_s": 0.00020245900000048778,
+          "one_way_min_s": 0.0001976484999985928,
+          "one_way_max_s": 0.00022895449999538187,
+          "bandwidth_median_MBps": 40.46251339767688
+        },
+        "65536": {
+          "one_way_median_s": 0.0009414649999968105,
+          "one_way_min_s": 0.0008933444999996709,
+          "one_way_max_s": 0.0009554375000035975,
+          "bandwidth_median_MBps": 69.61065998228509
+        },
+        "1048576": {
+          "one_way_median_s": 0.009393924000001164,
+          "one_way_min_s": 0.00938330799999676,
+          "one_way_max_s": 0.009451789500005248,
+          "bandwidth_median_MBps": 111.62278936894424
+        }
+      }
+    },
+    {
+      "peer_rank": 69,
+      "peer_host": "pi70",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.0001608382500002392,
+          "one_way_min_s": 0.00015742650000305503,
+          "one_way_max_s": 0.00016529650000052243,
+          "bandwidth_median_MBps": 0.04973941211116201
+        },
+        "1024": {
+          "one_way_median_s": 0.00021099575000249615,
+          "one_way_min_s": 0.00020653749999866022,
+          "one_way_max_s": 0.00021811149999706458,
+          "bandwidth_median_MBps": 4.853178322254765
+        },
+        "8192": {
+          "one_way_median_s": 0.00020529200000041214,
+          "one_way_min_s": 0.00020136150000382713,
+          "one_way_max_s": 0.000223667000000205,
+          "bandwidth_median_MBps": 39.90413654688714
+        },
+        "65536": {
+          "one_way_median_s": 0.0009488912500010827,
+          "one_way_min_s": 0.0009032705000038277,
+          "one_way_max_s": 0.0009647799999967788,
+          "bandwidth_median_MBps": 69.06587029854605
+        },
+        "1048576": {
+          "one_way_median_s": 0.009397609250001437,
+          "one_way_min_s": 0.00936340999999885,
+          "one_way_max_s": 0.00944145649999939,
+          "bandwidth_median_MBps": 111.57901675895278
+        }
+      }
+    },
+    {
+      "peer_rank": 70,
+      "peer_host": "pi71",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00015850500000169632,
+          "one_way_min_s": 0.0001572685000041929,
+          "one_way_max_s": 0.00016361149999966074,
+          "bandwidth_median_MBps": 0.05047159395548648
+        },
+        "1024": {
+          "one_way_median_s": 0.00020985249999583289,
+          "one_way_min_s": 0.00020598199999710687,
+          "one_way_max_s": 0.00021393549999970674,
+          "bandwidth_median_MBps": 4.87961782690382
+        },
+        "8192": {
+          "one_way_median_s": 0.00020538000000058787,
+          "one_way_min_s": 0.00019431499999456037,
+          "one_way_max_s": 0.00022606549999437675,
+          "bandwidth_median_MBps": 39.887038659930624
+        },
+        "65536": {
+          "one_way_median_s": 0.0009199279999982934,
+          "one_way_min_s": 0.0009002429999966921,
+          "one_way_max_s": 0.0009526224999945043,
+          "bandwidth_median_MBps": 71.2403579411884
+        },
+        "1048576": {
+          "one_way_median_s": 0.009401636999999852,
+          "one_way_min_s": 0.009370169500002135,
+          "one_way_max_s": 0.009437197499998717,
+          "bandwidth_median_MBps": 111.53121525538761
+        }
+      }
+    },
+    {
+      "peer_rank": 71,
+      "peer_host": "pi72",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00015927800000170578,
+          "one_way_min_s": 0.00015583350000270002,
+          "one_way_max_s": 0.00016366699999537104,
+          "bandwidth_median_MBps": 0.05022664774742478
+        },
+        "1024": {
+          "one_way_median_s": 0.00020834274999614877,
+          "one_way_min_s": 0.00020503749999534193,
+          "one_way_max_s": 0.00021275999999659234,
+          "bandwidth_median_MBps": 4.91497784309235
+        },
+        "8192": {
+          "one_way_median_s": 0.0002050977499976625,
+          "one_way_min_s": 0.00020059300000241365,
+          "one_way_max_s": 0.00022342649999984587,
+          "bandwidth_median_MBps": 39.94193012889397
+        },
+        "65536": {
+          "one_way_median_s": 0.0009072290000027294,
+          "one_way_min_s": 0.0008971594999991339,
+          "one_way_max_s": 0.0009472244999955137,
+          "bandwidth_median_MBps": 72.23754972537566
+        },
+        "1048576": {
+          "one_way_median_s": 0.009395368499998114,
+          "one_way_min_s": 0.009384160000003305,
+          "one_way_max_s": 0.009468530500001293,
+          "bandwidth_median_MBps": 111.6056278154721
+        }
+      }
+    },
+    {
+      "peer_rank": 72,
+      "peer_host": "pi73",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.0001604495000009365,
+          "one_way_min_s": 0.00015870400000039808,
+          "one_way_max_s": 0.00016562100000072633,
+          "bandwidth_median_MBps": 0.049859924773547476
+        },
+        "1024": {
+          "one_way_median_s": 0.0002133292499983952,
+          "one_way_min_s": 0.00021004649999412095,
+          "one_way_max_s": 0.00021843550000255618,
+          "bandwidth_median_MBps": 4.8000918767946885
+        },
+        "8192": {
+          "one_way_median_s": 0.00021048674999946115,
+          "one_way_min_s": 0.0002031759999994165,
+          "one_way_max_s": 0.0002300839999946902,
+          "bandwidth_median_MBps": 38.919314398749435
+        },
+        "65536": {
+          "one_way_median_s": 0.0009515945000018178,
+          "one_way_min_s": 0.0009181409999996504,
+          "one_way_max_s": 0.0009627150000000029,
+          "bandwidth_median_MBps": 68.86967085231662
+        },
+        "1048576": {
+          "one_way_median_s": 0.00941273425000233,
+          "one_way_min_s": 0.009397364000001573,
+          "one_way_max_s": 0.009457308500003592,
+          "bandwidth_median_MBps": 111.39972426181484
+        }
+      }
+    },
+    {
+      "peer_rank": 73,
+      "peer_host": "pi74",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.0001627319999997212,
+          "one_way_min_s": 0.00015861149999807367,
+          "one_way_max_s": 0.0001670839999974305,
+          "bandwidth_median_MBps": 0.04916058304459913
+        },
+        "1024": {
+          "one_way_median_s": 0.0002136857500012468,
+          "one_way_min_s": 0.00021051000000227305,
+          "one_way_max_s": 0.00021773150000115038,
+          "bandwidth_median_MBps": 4.7920837023246765
+        },
+        "8192": {
+          "one_way_median_s": 0.00020772275000169316,
+          "one_way_min_s": 0.00020329699999876993,
+          "one_way_max_s": 0.00023100050000124384,
+          "bandwidth_median_MBps": 39.437182494133296
+        },
+        "65536": {
+          "one_way_median_s": 0.0009543865000019025,
+          "one_way_min_s": 0.0009217429999992532,
+          "one_way_max_s": 0.0009762800000032712,
+          "bandwidth_median_MBps": 68.66819679434838
+        },
+        "1048576": {
+          "one_way_median_s": 0.009409687999998084,
+          "one_way_min_s": 0.009400419499996815,
+          "one_way_max_s": 0.009446919500000206,
+          "bandwidth_median_MBps": 111.43578830671255
+        }
+      }
+    },
+    {
+      "peer_rank": 74,
+      "peer_host": "pi75",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.0001626669999978958,
+          "one_way_min_s": 0.00015998199999955887,
+          "one_way_max_s": 0.00016916700000280116,
+          "bandwidth_median_MBps": 0.04918022709033477
+        },
+        "1024": {
+          "one_way_median_s": 0.00021444499999745403,
+          "one_way_min_s": 0.00020937999999404155,
+          "one_way_max_s": 0.00021894500000030348,
+          "bandwidth_median_MBps": 4.775117162965596
+        },
+        "8192": {
+          "one_way_median_s": 0.0002108847500004174,
+          "one_way_min_s": 0.00020671349999901167,
+          "one_way_max_s": 0.00023815800000193121,
+          "bandwidth_median_MBps": 38.84586249116537
+        },
+        "65536": {
+          "one_way_median_s": 0.0009679465000012044,
+          "one_way_min_s": 0.0009318080000042528,
+          "one_way_max_s": 0.001007344500003171,
+          "bandwidth_median_MBps": 67.70622136648922
+        },
+        "1048576": {
+          "one_way_median_s": 0.009412891750002927,
+          "one_way_min_s": 0.009375224499997614,
+          "one_way_max_s": 0.009485308499996847,
+          "bandwidth_median_MBps": 111.39786028025594
+        }
+      }
+    },
+    {
+      "peer_rank": 75,
+      "peer_host": "pi76",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.0001626115000021855,
+          "one_way_min_s": 0.00015948200000082124,
+          "one_way_max_s": 0.00016682449999905202,
+          "bandwidth_median_MBps": 0.049197012510754035
+        },
+        "1024": {
+          "one_way_median_s": 0.0002125285000040833,
+          "one_way_min_s": 0.0002085374999936107,
+          "one_way_max_s": 0.00021955599999756714,
+          "bandwidth_median_MBps": 4.81817732671301
+        },
+        "8192": {
+          "one_way_median_s": 0.00020910699999987514,
+          "one_way_min_s": 0.00020413900000448848,
+          "one_way_max_s": 0.0002209450000023594,
+          "bandwidth_median_MBps": 39.17611557721593
+        },
+        "65536": {
+          "one_way_median_s": 0.0009545437500015908,
+          "one_way_min_s": 0.0009201314999955912,
+          "one_way_max_s": 0.0010053080000034242,
+          "bandwidth_median_MBps": 68.65688450622696
+        },
+        "1048576": {
+          "one_way_median_s": 0.009407970249998954,
+          "one_way_min_s": 0.009365918999996836,
+          "one_way_max_s": 0.009492567999998869,
+          "bandwidth_median_MBps": 111.45613475979226
+        }
+      }
+    },
+    {
+      "peer_rank": 76,
+      "peer_host": "pi77",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00016522250000150507,
+          "one_way_min_s": 0.00016197300000442283,
+          "one_way_max_s": 0.00017005600000175036,
+          "bandwidth_median_MBps": 0.04841955544751547
+        },
+        "1024": {
+          "one_way_median_s": 0.00021515775000224835,
+          "one_way_min_s": 0.000211685499998282,
+          "one_way_max_s": 0.0002195004999947514,
+          "bandwidth_median_MBps": 4.759298700554822
+        },
+        "8192": {
+          "one_way_median_s": 0.0002091485000015325,
+          "one_way_min_s": 0.00020501900000624573,
+          "one_way_max_s": 0.00023637099999973543,
+          "bandwidth_median_MBps": 39.16834211070112
+        },
+        "65536": {
+          "one_way_median_s": 0.0009573910000000296,
+          "one_way_min_s": 0.0009238445000008255,
+          "one_way_max_s": 0.0009813074999982518,
+          "bandwidth_median_MBps": 68.45270114300007
+        },
+        "1048576": {
+          "one_way_median_s": 0.00941347975000184,
+          "one_way_min_s": 0.009398169000000678,
+          "one_way_max_s": 0.009470456500004332,
+          "bandwidth_median_MBps": 111.39090196691558
+        }
+      }
+    },
+    {
+      "peer_rank": 77,
+      "peer_host": "pi78",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00015848174999888442,
+          "one_way_min_s": 0.00015643550000277173,
+          "one_way_max_s": 0.00016439850000438128,
+          "bandwidth_median_MBps": 0.05047899837083017
+        },
+        "1024": {
+          "one_way_median_s": 0.00021054224999872417,
+          "one_way_min_s": 0.00020719500000154767,
+          "one_way_max_s": 0.00021548200000154338,
+          "bandwidth_median_MBps": 4.863631883891262
+        },
+        "8192": {
+          "one_way_median_s": 0.00020824599999968996,
+          "one_way_min_s": 0.00020437999999955991,
+          "one_way_max_s": 0.00022632450000514837,
+          "bandwidth_median_MBps": 39.33809052760772
+        },
+        "65536": {
+          "one_way_median_s": 0.0009511735000025112,
+          "one_way_min_s": 0.0009180019999988076,
+          "one_way_max_s": 0.0009712985000049912,
+          "bandwidth_median_MBps": 68.90015333672245
+        },
+        "1048576": {
+          "one_way_median_s": 0.009429109249996515,
+          "one_way_min_s": 0.009367752999999368,
+          "one_way_max_s": 0.009478910500000381,
+          "bandwidth_median_MBps": 111.20626267008069
+        }
+      }
+    },
+    {
+      "peer_rank": 78,
+      "peer_host": "pi79",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00015904675000300017,
+          "one_way_min_s": 0.00015638949999896568,
+          "one_way_max_s": 0.00016595399999630445,
+          "bandwidth_median_MBps": 0.050299676037700185
+        },
+        "1024": {
+          "one_way_median_s": 0.00021088449999950853,
+          "one_way_min_s": 0.00020830599999754895,
+          "one_way_max_s": 0.00021646300000099927,
+          "bandwidth_median_MBps": 4.855738567805536
+        },
+        "8192": {
+          "one_way_median_s": 0.00021022725000108267,
+          "one_way_min_s": 0.00020394499999554228,
+          "one_way_max_s": 0.00023757450000516656,
+          "bandwidth_median_MBps": 38.96735556383776
+        },
+        "65536": {
+          "one_way_median_s": 0.0009308125000018208,
+          "one_way_min_s": 0.0009201224999983992,
+          "one_way_max_s": 0.0009718820000017558,
+          "bandwidth_median_MBps": 70.40730544537358
+        },
+        "1048576": {
+          "one_way_median_s": 0.00940719249999944,
+          "one_way_min_s": 0.009368188000003386,
+          "one_way_max_s": 0.009424280499999327,
+          "bandwidth_median_MBps": 111.46534951847349
+        }
+      }
+    },
+    {
+      "peer_rank": 79,
+      "peer_host": "pi80",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00016328274999821701,
+          "one_way_min_s": 0.0001603799999969624,
+          "one_way_max_s": 0.0001690280000019584,
+          "bandwidth_median_MBps": 0.048994765216089003
+        },
+        "1024": {
+          "one_way_median_s": 0.0002146439999997085,
+          "one_way_min_s": 0.00021097299999439656,
+          "one_way_max_s": 0.00022082449999771825,
+          "bandwidth_median_MBps": 4.770690072871315
+        },
+        "8192": {
+          "one_way_median_s": 0.0002115837500049622,
+          "one_way_min_s": 0.00020640750000211483,
+          "one_way_max_s": 0.00022936200000600593,
+          "bandwidth_median_MBps": 38.717529109905065
+        },
+        "65536": {
+          "one_way_median_s": 0.0009606410000024823,
+          "one_way_min_s": 0.0009265114999976731,
+          "one_way_max_s": 0.0009756970000012188,
+          "bandwidth_median_MBps": 68.22111485958922
+        },
+        "1048576": {
+          "one_way_median_s": 0.009409984000001259,
+          "one_way_min_s": 0.009395020999996007,
+          "one_way_max_s": 0.009440142000002538,
+          "bandwidth_median_MBps": 111.43228298792641
+        }
+      }
+    },
+    {
+      "peer_rank": 80,
+      "peer_host": "pi81",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00015913000000011834,
+          "one_way_min_s": 0.00015679650000066658,
+          "one_way_max_s": 0.0001643244999982585,
+          "bandwidth_median_MBps": 0.0502733614025894
+        },
+        "1024": {
+          "one_way_median_s": 0.00021042175000118846,
+          "one_way_min_s": 0.00020755599999944252,
+          "one_way_max_s": 0.00021767650000015237,
+          "bandwidth_median_MBps": 4.866417088510178
+        },
+        "8192": {
+          "one_way_median_s": 0.00020912549999962948,
+          "one_way_min_s": 0.00020391700000033097,
+          "one_way_max_s": 0.00022639850000416573,
+          "bandwidth_median_MBps": 39.17264991602896
+        },
+        "65536": {
+          "one_way_median_s": 0.0009550070000017286,
+          "one_way_min_s": 0.0009177704999956404,
+          "one_way_max_s": 0.0009736040000021262,
+          "bandwidth_median_MBps": 68.62358076944084
+        },
+        "1048576": {
+          "one_way_median_s": 0.009404877749997098,
+          "one_way_min_s": 0.009373373000002516,
+          "one_way_max_s": 0.00948438249999839,
+          "bandwidth_median_MBps": 111.49278362499965
+        }
+      }
+    },
+    {
+      "peer_rank": 81,
+      "peer_host": "pi82",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00016429225000180736,
+          "one_way_min_s": 0.00016018550000040932,
+          "one_way_max_s": 0.0001659820000057266,
+          "bandwidth_median_MBps": 0.04869371501036715
+        },
+        "1024": {
+          "one_way_median_s": 0.00021580600000348227,
+          "one_way_min_s": 0.00021052799999665694,
+          "one_way_max_s": 0.00021853750000389027,
+          "bandwidth_median_MBps": 4.745002455832909
+        },
+        "8192": {
+          "one_way_median_s": 0.00021298200000074985,
+          "one_way_min_s": 0.00020738949999810075,
+          "one_way_max_s": 0.000242796999998518,
+          "bandwidth_median_MBps": 38.46334432004187
+        },
+        "65536": {
+          "one_way_median_s": 0.0009625114999955997,
+          "one_way_min_s": 0.0009267155000003413,
+          "one_way_max_s": 0.0009798540000005573,
+          "bandwidth_median_MBps": 68.08853712428329
+        },
+        "1048576": {
+          "one_way_median_s": 0.009411692499998736,
+          "one_way_min_s": 0.009400159999998436,
+          "one_way_max_s": 0.00944514199999702,
+          "bandwidth_median_MBps": 111.41205473937242
+        }
+      }
+    },
+    {
+      "peer_rank": 82,
+      "peer_host": "pi83",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.0001643474999966088,
+          "one_way_min_s": 0.00015952850000644503,
+          "one_way_max_s": 0.00017002799999943363,
+          "bandwidth_median_MBps": 0.048677345260287344
+        },
+        "1024": {
+          "one_way_median_s": 0.0002171854999986067,
+          "one_way_min_s": 0.0002112409999952547,
+          "one_way_max_s": 0.00021908399999404082,
+          "bandwidth_median_MBps": 4.714863561363761
+        },
+        "8192": {
+          "one_way_median_s": 0.0002116812499970422,
+          "one_way_min_s": 0.00020602800000091293,
+          "one_way_max_s": 0.00023832449999616756,
+          "bandwidth_median_MBps": 38.699695887635144
+        },
+        "65536": {
+          "one_way_median_s": 0.0009589327499988087,
+          "one_way_min_s": 0.0009293540000001599,
+          "one_way_max_s": 0.0009817245000007802,
+          "bandwidth_median_MBps": 68.34264446602894
+        },
+        "1048576": {
+          "one_way_median_s": 0.009410225000003436,
+          "one_way_min_s": 0.009403335999998319,
+          "one_way_max_s": 0.009439289999995992,
+          "bandwidth_median_MBps": 111.42942915813565
+        }
+      }
+    },
+    {
+      "peer_rank": 83,
+      "peer_host": "pi84",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00016523150000224973,
+          "one_way_min_s": 0.00016188899999747264,
+          "one_way_max_s": 0.00016955600000301274,
+          "bandwidth_median_MBps": 0.04841691808094144
+        },
+        "1024": {
+          "one_way_median_s": 0.00021733374999755029,
+          "one_way_min_s": 0.00020948200000248107,
+          "one_way_max_s": 0.00022485249999704138,
+          "bandwidth_median_MBps": 4.7116474087045495
+        },
+        "8192": {
+          "one_way_median_s": 0.00021313924999688538,
+          "one_way_min_s": 0.00020192649999728474,
+          "one_way_max_s": 0.00023626899999840134,
+          "bandwidth_median_MBps": 38.434966812164866
+        },
+        "65536": {
+          "one_way_median_s": 0.0009630527500021913,
+          "one_way_min_s": 0.000928436999998894,
+          "one_way_max_s": 0.0009813725000000773,
+          "bandwidth_median_MBps": 68.05027035107982
+        },
+        "1048576": {
+          "one_way_median_s": 0.00941453499999767,
+          "one_way_min_s": 0.00940323400000409,
+          "one_way_max_s": 0.009543012500003556,
+          "bandwidth_median_MBps": 111.37841645925789
+        }
+      }
+    },
+    {
+      "peer_rank": 84,
+      "peer_host": "pi85",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00015880124999867462,
+          "one_way_min_s": 0.00015584249999989197,
+          "one_way_max_s": 0.00016472250000276745,
+          "bandwidth_median_MBps": 0.05037743720573213
+        },
+        "1024": {
+          "one_way_median_s": 0.00021129699999988816,
+          "one_way_min_s": 0.0002063244999988001,
+          "one_way_max_s": 0.00021332450000244307,
+          "bandwidth_median_MBps": 4.846259057159079
+        },
+        "8192": {
+          "one_way_median_s": 0.00020355124999937857,
+          "one_way_min_s": 0.00019838949999950728,
+          "one_way_max_s": 0.00022891700000116089,
+          "bandwidth_median_MBps": 40.245392745193215
+        },
+        "65536": {
+          "one_way_median_s": 0.0009191642500034902,
+          "one_way_min_s": 0.0008998449999992886,
+          "one_way_max_s": 0.0009648354999995945,
+          "bandwidth_median_MBps": 71.29955282720269
+        },
+        "1048576": {
+          "one_way_median_s": 0.00939581274999668,
+          "one_way_min_s": 0.009388520999998207,
+          "one_way_max_s": 0.009423429000001704,
+          "bandwidth_median_MBps": 111.60035091167292
+        }
+      }
+    },
+    {
+      "peer_rank": 85,
+      "peer_host": "pi86",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00015632900000284167,
+          "one_way_min_s": 0.00015309300000154735,
+          "one_way_max_s": 0.00016351900000444175,
+          "bandwidth_median_MBps": 0.0511741263607813
+        },
+        "1024": {
+          "one_way_median_s": 0.0002056530000018597,
+          "one_way_min_s": 0.00020282450000053132,
+          "one_way_max_s": 0.0002120190000027833,
+          "bandwidth_median_MBps": 4.979261182626755
+        },
+        "8192": {
+          "one_way_median_s": 0.0002035884999997961,
+          "one_way_min_s": 0.00019709300000414487,
+          "one_way_max_s": 0.00022044499999651634,
+          "bandwidth_median_MBps": 40.23802916180532
+        },
+        "65536": {
+          "one_way_median_s": 0.000944946499995325,
+          "one_way_min_s": 0.0008966505000032043,
+          "one_way_max_s": 0.0009667614999955276,
+          "bandwidth_median_MBps": 69.35419095189434
+        },
+        "1048576": {
+          "one_way_median_s": 0.009393409999997715,
+          "one_way_min_s": 0.009358928499999308,
+          "one_way_max_s": 0.009455817999999283,
+          "bandwidth_median_MBps": 111.62889728014162
+        }
+      }
+    },
+    {
+      "peer_rank": 86,
+      "peer_host": "pi87",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00016212074999799597,
+          "one_way_min_s": 0.00015693550000150935,
+          "one_way_max_s": 0.00016618549999947163,
+          "bandwidth_median_MBps": 0.04934593505210709
+        },
+        "1024": {
+          "one_way_median_s": 0.0002115562500009105,
+          "one_way_min_s": 0.00020827850000415538,
+          "one_way_max_s": 0.00021805600000135428,
+          "bandwidth_median_MBps": 4.84032024577668
+        },
+        "8192": {
+          "one_way_median_s": 0.00020761624999821038,
+          "one_way_min_s": 0.00020110200000544864,
+          "one_way_max_s": 0.00022732449999551818,
+          "bandwidth_median_MBps": 39.45741241386748
+        },
+        "65536": {
+          "one_way_median_s": 0.0009488029999999981,
+          "one_way_min_s": 0.0009081314999974666,
+          "one_way_max_s": 0.0009663169999996057,
+          "bandwidth_median_MBps": 69.07229424864818
+        },
+        "1048576": {
+          "one_way_median_s": 0.00939813699999803,
+          "one_way_min_s": 0.009388938000000735,
+          "one_way_max_s": 0.009465771500003939,
+          "bandwidth_median_MBps": 111.572751067602
+        }
+      }
+    },
+    {
+      "peer_rank": 87,
+      "peer_host": "pi88",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.0001608290000021384,
+          "one_way_min_s": 0.00015435249999740108,
+          "one_way_max_s": 0.00016443549999678453,
+          "bandwidth_median_MBps": 0.04974227284814077
+        },
+        "1024": {
+          "one_way_median_s": 0.00021022250000157783,
+          "one_way_min_s": 0.00020492650000392132,
+          "one_way_max_s": 0.0002129909999979418,
+          "bandwidth_median_MBps": 4.871029504417055
+        },
+        "8192": {
+          "one_way_median_s": 0.0002061762499998565,
+          "one_way_min_s": 0.00020292649999475998,
+          "one_way_max_s": 0.00022752800000347406,
+          "bandwidth_median_MBps": 39.732995434758855
+        },
+        "65536": {
+          "one_way_median_s": 0.0009501135000000716,
+          "one_way_min_s": 0.0009070849999943675,
+          "one_way_max_s": 0.0009581500000024334,
+          "bandwidth_median_MBps": 68.97702221891917
+        },
+        "1048576": {
+          "one_way_median_s": 0.009402433250002673,
+          "one_way_min_s": 0.009356354499999497,
+          "one_way_max_s": 0.009457234499997469,
+          "bandwidth_median_MBps": 111.52177017578954
+        }
+      }
+    },
+    {
+      "peer_rank": 88,
+      "peer_host": "pi89",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00015975950000068906,
+          "one_way_min_s": 0.00015315799999626734,
+          "one_way_max_s": 0.00016710250000073756,
+          "bandwidth_median_MBps": 0.05007526938908481
+        },
+        "1024": {
+          "one_way_median_s": 0.00021056050000112236,
+          "one_way_min_s": 0.00020306550000270818,
+          "one_way_max_s": 0.00021396349999491804,
+          "bandwidth_median_MBps": 4.863210336195733
+        },
+        "8192": {
+          "one_way_median_s": 0.00020602349999876424,
+          "one_way_min_s": 0.000201148500003967,
+          "one_way_max_s": 0.00023106550000306925,
+          "bandwidth_median_MBps": 39.762454283366395
+        },
+        "65536": {
+          "one_way_median_s": 0.0009475024999971993,
+          "one_way_min_s": 0.0009051964999997608,
+          "one_way_max_s": 0.0009722710000019674,
+          "bandwidth_median_MBps": 69.16709982316007
+        },
+        "1048576": {
+          "one_way_median_s": 0.009400465499997068,
+          "one_way_min_s": 0.009389789499998358,
+          "one_way_max_s": 0.009485465500006285,
+          "bandwidth_median_MBps": 111.54511444144197
+        }
+      }
+    },
+    {
+      "peer_rank": 89,
+      "peer_host": "pi90",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00015950499999917156,
+          "one_way_min_s": 0.00015630600000093864,
+          "one_way_max_s": 0.00016439849999727585,
+          "bandwidth_median_MBps": 0.0501551675498671
+        },
+        "1024": {
+          "one_way_median_s": 0.0002094680000013227,
+          "one_way_min_s": 0.00020422299999722782,
+          "one_way_max_s": 0.00021319500000060998,
+          "bandwidth_median_MBps": 4.888574865819762
+        },
+        "8192": {
+          "one_way_median_s": 0.00020628300000069544,
+          "one_way_min_s": 0.00019417650000264075,
+          "one_way_max_s": 0.0002286950000041088,
+          "bandwidth_median_MBps": 39.7124338892317
+        },
+        "65536": {
+          "one_way_median_s": 0.0009414790000015216,
+          "one_way_min_s": 0.0008982889999984423,
+          "one_way_max_s": 0.0009565854999991075,
+          "bandwidth_median_MBps": 69.60962485609777
+        },
+        "1048576": {
+          "one_way_median_s": 0.009395261750000827,
+          "one_way_min_s": 0.009366947000003734,
+          "one_way_max_s": 0.009417317500002298,
+          "bandwidth_median_MBps": 111.60689589088965
+        }
+      }
+    },
+    {
+      "peer_rank": 90,
+      "peer_host": "pi91",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00016338475000310382,
+          "one_way_min_s": 0.00015940799999469846,
+          "one_way_max_s": 0.00017029700000392722,
+          "bandwidth_median_MBps": 0.04896417811238824
+        },
+        "1024": {
+          "one_way_median_s": 0.0002130234999988545,
+          "one_way_min_s": 0.0002085285000035242,
+          "one_way_max_s": 0.00021647300000182668,
+          "bandwidth_median_MBps": 4.806981389403076
+        },
+        "8192": {
+          "one_way_median_s": 0.00021911150000164525,
+          "one_way_min_s": 0.00020189850000207343,
+          "one_way_max_s": 0.0002281764999949587,
+          "bandwidth_median_MBps": 37.38735757793858
+        },
+        "65536": {
+          "one_way_median_s": 0.000948747500000735,
+          "one_way_min_s": 0.000904808000001367,
+          "one_way_max_s": 0.0009555670000054306,
+          "bandwidth_median_MBps": 69.07633485194873
+        },
+        "1048576": {
+          "one_way_median_s": 0.009398368499997645,
+          "one_way_min_s": 0.009384188000005622,
+          "one_way_max_s": 0.00947893800000088,
+          "bandwidth_median_MBps": 111.57000281487822
+        }
+      }
+    },
+    {
+      "peer_rank": 91,
+      "peer_host": "pi92",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00014669025000202396,
+          "one_way_min_s": 0.0001434540000033735,
+          "one_way_max_s": 0.00014886149999426834,
+          "bandwidth_median_MBps": 0.05453668529360077
+        },
+        "1024": {
+          "one_way_median_s": 0.00019633825000298089,
+          "one_way_min_s": 0.00019115749999798481,
+          "one_way_max_s": 0.00019878750000401624,
+          "bandwidth_median_MBps": 5.215489085720451
+        },
+        "8192": {
+          "one_way_median_s": 0.00021998649999588338,
+          "one_way_min_s": 0.0002123710000034862,
+          "one_way_max_s": 0.00023233400000322035,
+          "bandwidth_median_MBps": 37.23864873596015
+        },
+        "65536": {
+          "one_way_median_s": 0.0009327842500006511,
+          "one_way_min_s": 0.0008914745000012658,
+          "one_way_max_s": 0.0009743354999969256,
+          "bandwidth_median_MBps": 70.2584761695475
+        },
+        "1048576": {
+          "one_way_median_s": 0.009350937749999844,
+          "one_way_min_s": 0.009329502500001752,
+          "one_way_max_s": 0.009378678499999182,
+          "bandwidth_median_MBps": 112.13591920233
+        }
+      }
+    },
+    {
+      "peer_rank": 92,
+      "peer_host": "pi93",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00014135224999733964,
+          "one_way_min_s": 0.00013937050000123463,
+          "one_way_max_s": 0.0001466579999984674,
+          "bandwidth_median_MBps": 0.05659619850515692
+        },
+        "1024": {
+          "one_way_median_s": 0.0001933940000000689,
+          "one_way_min_s": 0.000188148999995974,
+          "one_way_max_s": 0.00019633400000174106,
+          "bandwidth_median_MBps": 5.2948902241002065
+        },
+        "8192": {
+          "one_way_median_s": 0.00021678274999814562,
+          "one_way_min_s": 0.00019473149999527095,
+          "one_way_max_s": 0.0002257964999969886,
+          "bandwidth_median_MBps": 37.78898459434653
+        },
+        "65536": {
+          "one_way_median_s": 0.000932867999999587,
+          "one_way_min_s": 0.0008832055000027594,
+          "one_way_max_s": 0.0009634004999981016,
+          "bandwidth_median_MBps": 70.25216858122373
+        },
+        "1048576": {
+          "one_way_median_s": 0.009339646000000812,
+          "one_way_min_s": 0.009312622999999576,
+          "one_way_max_s": 0.009376641500004723,
+          "bandwidth_median_MBps": 112.27149294522607
+        }
+      }
+    },
+    {
+      "peer_rank": 93,
+      "peer_host": "pi94",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00014625500000420288,
+          "one_way_min_s": 0.00013993550000179766,
+          "one_way_max_s": 0.00015560250000135056,
+          "bandwidth_median_MBps": 0.05469898464852556
+        },
+        "1024": {
+          "one_way_median_s": 0.0001948107500027163,
+          "one_way_min_s": 0.00018813949999696433,
+          "one_way_max_s": 0.00019912099999430666,
+          "bandwidth_median_MBps": 5.256383438725646
+        },
+        "8192": {
+          "one_way_median_s": 0.0002166672499974709,
+          "one_way_min_s": 0.00019941749999929925,
+          "one_way_max_s": 0.0002214265000048954,
+          "bandwidth_median_MBps": 37.80912897586333
+        },
+        "65536": {
+          "one_way_median_s": 0.0009368262499975799,
+          "one_way_min_s": 0.0008913074999981063,
+          "one_way_max_s": 0.0009505670000038435,
+          "bandwidth_median_MBps": 69.95534123875083
+        },
+        "1048576": {
+          "one_way_median_s": 0.009345511999999445,
+          "one_way_min_s": 0.009316326499998695,
+          "one_way_max_s": 0.009431891500000233,
+          "bandwidth_median_MBps": 112.20102226609546
+        }
+      }
+    },
+    {
+      "peer_rank": 94,
+      "peer_host": "pi95",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00013813924999794835,
+          "one_way_min_s": 0.00013687100000225882,
+          "one_way_max_s": 0.00014286150000231146,
+          "bandwidth_median_MBps": 0.057912577345821815
+        },
+        "1024": {
+          "one_way_median_s": 0.00018873199999802637,
+          "one_way_min_s": 0.0001849074999995537,
+          "one_way_max_s": 0.00019188000000269767,
+          "bandwidth_median_MBps": 5.425682979095799
+        },
+        "8192": {
+          "one_way_median_s": 0.00019648199999977578,
+          "one_way_min_s": 0.00019200950000453076,
+          "one_way_max_s": 0.00021913900000214426,
+          "bandwidth_median_MBps": 41.693386671600194
+        },
+        "65536": {
+          "one_way_median_s": 0.0008904650000012282,
+          "one_way_min_s": 0.0008799740000000611,
+          "one_way_max_s": 0.0009587429999982078,
+          "bandwidth_median_MBps": 73.59750242840494
+        },
+        "1048576": {
+          "one_way_median_s": 0.009336557999997552,
+          "one_way_min_s": 0.00931176149999402,
+          "one_way_max_s": 0.009362030500000174,
+          "bandwidth_median_MBps": 112.30862594119534
+        }
+      }
+    },
+    {
+      "peer_rank": 95,
+      "peer_host": "pi96",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00014466724999806502,
+          "one_way_min_s": 0.00014073150000371015,
+          "one_way_max_s": 0.0001532040000000734,
+          "bandwidth_median_MBps": 0.05529931619013289
+        },
+        "1024": {
+          "one_way_median_s": 0.0001959217499987176,
+          "one_way_min_s": 0.00019106549999747813,
+          "one_way_max_s": 0.00019979700000050116,
+          "bandwidth_median_MBps": 5.2265764265922625
+        },
+        "8192": {
+          "one_way_median_s": 0.00022344974999910505,
+          "one_way_min_s": 0.00021099099999588589,
+          "one_way_max_s": 0.00023020399999751362,
+          "bandwidth_median_MBps": 36.66148653123492
+        },
+        "65536": {
+          "one_way_median_s": 0.0009425575000037156,
+          "one_way_min_s": 0.0008979465000038545,
+          "one_way_max_s": 0.0009732245000009243,
+          "bandwidth_median_MBps": 69.52997562455515
+        },
+        "1048576": {
+          "one_way_median_s": 0.009369058499995475,
+          "one_way_min_s": 0.009317447000000811,
+          "one_way_max_s": 0.009445040000002791,
+          "bandwidth_median_MBps": 111.91903647527727
+        }
+      }
+    },
+    {
+      "peer_rank": 96,
+      "peer_host": "pi97",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00014668550000251912,
+          "one_way_min_s": 0.0001408150000017372,
+          "one_way_max_s": 0.00015072249999548148,
+          "bandwidth_median_MBps": 0.054538451311565296
+        },
+        "1024": {
+          "one_way_median_s": 0.0001980237500021076,
+          "one_way_min_s": 0.00019261150000460248,
+          "one_way_max_s": 0.00019997249999903488,
+          "bandwidth_median_MBps": 5.171096901200495
+        },
+        "8192": {
+          "one_way_median_s": 0.0002215932500000406,
+          "one_way_min_s": 0.00020487100000110559,
+          "one_way_max_s": 0.00022864900000030275,
+          "bandwidth_median_MBps": 36.968635100566004
+        },
+        "65536": {
+          "one_way_median_s": 0.0009330809999994472,
+          "one_way_min_s": 0.0009000300000039374,
+          "one_way_max_s": 0.0009751874999963661,
+          "bandwidth_median_MBps": 70.23613169707542
+        },
+        "1048576": {
+          "one_way_median_s": 0.009377988750003396,
+          "one_way_min_s": 0.00933772500000174,
+          "one_way_max_s": 0.009387225000004662,
+          "bandwidth_median_MBps": 111.81246085410588
+        }
+      }
+    },
+    {
+      "peer_rank": 97,
+      "peer_host": "pi98",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.0001440422500031957,
+          "one_way_min_s": 0.00014017650000397452,
+          "one_way_max_s": 0.0001480839999956629,
+          "bandwidth_median_MBps": 0.05553926018111015
+        },
+        "1024": {
+          "one_way_median_s": 0.00019440325000275038,
+          "one_way_min_s": 0.00019166750000465527,
+          "one_way_max_s": 0.00019679649999915227,
+          "bandwidth_median_MBps": 5.267401650875243
+        },
+        "8192": {
+          "one_way_median_s": 0.00021572699999694578,
+          "one_way_min_s": 0.00020151900000087153,
+          "one_way_max_s": 0.00022078749999820957,
+          "bandwidth_median_MBps": 37.973920742957446
+        },
+        "65536": {
+          "one_way_median_s": 0.0009526039999983027,
+          "one_way_min_s": 0.0009111780000026215,
+          "one_way_max_s": 0.0009659465000027012,
+          "bandwidth_median_MBps": 68.79668781583614
+        },
+        "1048576": {
+          "one_way_median_s": 0.009350285000000014,
+          "one_way_min_s": 0.009312632499998585,
+          "one_way_max_s": 0.009378530499994042,
+          "bandwidth_median_MBps": 112.1437474900496
+        }
+      }
+    },
+    {
+      "peer_rank": 98,
+      "peer_host": "pi99",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.0001477177499999982,
+          "one_way_min_s": 0.00014326899999872467,
+          "one_way_max_s": 0.0001540280000043026,
+          "bandwidth_median_MBps": 0.054157337219122935
+        },
+        "1024": {
+          "one_way_median_s": 0.00019927800000019147,
+          "one_way_min_s": 0.00019394499999947357,
+          "one_way_max_s": 0.00020300050000088277,
+          "bandwidth_median_MBps": 5.138550166094682
+        },
+        "8192": {
+          "one_way_median_s": 0.00022460250000122528,
+          "one_way_min_s": 0.00021468549999781317,
+          "one_way_max_s": 0.00022825049999397606,
+          "bandwidth_median_MBps": 36.473325096360504
+        },
+        "65536": {
+          "one_way_median_s": 0.0009252195000009067,
+          "one_way_min_s": 0.0008958629999966661,
+          "one_way_max_s": 0.000975983500005384,
+          "bandwidth_median_MBps": 70.83292126888352
+        },
+        "1048576": {
+          "one_way_median_s": 0.009373984250000689,
+          "one_way_min_s": 0.009316002500000309,
+          "one_way_max_s": 0.009475799000000507,
+          "bandwidth_median_MBps": 111.86022634931597
+        }
+      }
+    },
+    {
+      "peer_rank": 99,
+      "peer_host": "pi100",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00014750500000104694,
+          "one_way_min_s": 0.00013309299999519908,
+          "one_way_max_s": 0.0001525929999957043,
+          "bandwidth_median_MBps": 0.054235449645389774
+        },
+        "1024": {
+          "one_way_median_s": 0.00019766699999834714,
+          "one_way_min_s": 0.0001652684999982057,
+          "one_way_max_s": 0.00020085250000079213,
+          "bandwidth_median_MBps": 5.180429712640767
+        },
+        "8192": {
+          "one_way_median_s": 0.00022231999999888785,
+          "one_way_min_s": 0.0002038800000008223,
+          "one_way_max_s": 0.0002294539999994072,
+          "bandwidth_median_MBps": 36.84778697391589
+        },
+        "65536": {
+          "one_way_median_s": 0.0009670577499996114,
+          "one_way_min_s": 0.0009197149999948806,
+          "one_way_max_s": 0.0009993815000015616,
+          "bandwidth_median_MBps": 67.76844505928042
+        },
+        "1048576": {
+          "one_way_median_s": 0.009382025750003464,
+          "one_way_min_s": 0.009349641500001837,
+          "one_way_max_s": 0.009512503000003392,
+          "bandwidth_median_MBps": 111.76434897331345
+        }
+      }
+    },
+    {
+      "peer_rank": 100,
+      "peer_host": "pi101",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00016161125000024867,
+          "one_way_min_s": 0.00015862099999708335,
+          "one_way_max_s": 0.0001677504999975099,
+          "bandwidth_median_MBps": 0.04950150438158043
+        },
+        "1024": {
+          "one_way_median_s": 0.00021302825000191206,
+          "one_way_min_s": 0.0002085094999983994,
+          "one_way_max_s": 0.00021852799999777517,
+          "bandwidth_median_MBps": 4.8068742056079845
+        },
+        "8192": {
+          "one_way_median_s": 0.00021937099999647103,
+          "one_way_min_s": 0.0002085094999983994,
+          "one_way_max_s": 0.0002285834999966596,
+          "bandwidth_median_MBps": 37.34313104344596
+        },
+        "65536": {
+          "one_way_median_s": 0.0009904929999962064,
+          "one_way_min_s": 0.0009505205000053252,
+          "one_way_max_s": 0.0011565955000065742,
+          "bandwidth_median_MBps": 66.16503094948779
+        },
+        "1048576": {
+          "one_way_median_s": 0.009406539750003162,
+          "one_way_min_s": 0.00934789149999915,
+          "one_way_max_s": 0.009533937999997022,
+          "bandwidth_median_MBps": 111.47308445697553
+        }
+      }
+    },
+    {
+      "peer_rank": 101,
+      "peer_host": "pi102",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00014769450000073903,
+          "one_way_min_s": 0.0001445284999945784,
+          "one_way_max_s": 0.00015169500000666858,
+          "bandwidth_median_MBps": 0.05416586264187204
+        },
+        "1024": {
+          "one_way_median_s": 0.00020043099999966785,
+          "one_way_min_s": 0.00019721350000168059,
+          "one_way_max_s": 0.00020444500000138532,
+          "bandwidth_median_MBps": 5.108990126286338
+        },
+        "8192": {
+          "one_way_median_s": 0.00022447250000112717,
+          "one_way_min_s": 0.0002070560000007049,
+          "one_way_max_s": 0.00023161200000032522,
+          "bandwidth_median_MBps": 36.494448094794976
+        },
+        "65536": {
+          "one_way_median_s": 0.0009737754999967763,
+          "one_way_min_s": 0.000923465000006729,
+          "one_way_max_s": 0.000982770499994956,
+          "bandwidth_median_MBps": 67.3009333262307
+        },
+        "1048576": {
+          "one_way_median_s": 0.009380923999998458,
+          "one_way_min_s": 0.009329493499997454,
+          "one_way_max_s": 0.009416558000005182,
+          "bandwidth_median_MBps": 111.77747522527338
+        }
+      }
+    },
+    {
+      "peer_rank": 102,
+      "peer_host": "pi103",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00015687524999563607,
+          "one_way_min_s": 0.00015185199999478982,
+          "one_way_max_s": 0.00016115799999738556,
+          "bandwidth_median_MBps": 0.05099593466925179
+        },
+        "1024": {
+          "one_way_median_s": 0.00019774575000042205,
+          "one_way_min_s": 0.00019314850000284878,
+          "one_way_max_s": 0.0002103340000019216,
+          "bandwidth_median_MBps": 5.17836666526494
+        },
+        "8192": {
+          "one_way_median_s": 0.0002221947500018473,
+          "one_way_min_s": 0.00021231499999885273,
+          "one_way_max_s": 0.0002367969999994557,
+          "bandwidth_median_MBps": 36.86855787516084
+        },
+        "65536": {
+          "one_way_median_s": 0.0009300762500039639,
+          "one_way_min_s": 0.0009032334999972136,
+          "one_way_max_s": 0.0009789839999996275,
+          "bandwidth_median_MBps": 70.46303999238847
+        },
+        "1048576": {
+          "one_way_median_s": 0.009374956250002953,
+          "one_way_min_s": 0.009343261499999755,
+          "one_way_max_s": 0.009431178500001636,
+          "bandwidth_median_MBps": 111.84862862689836
+        }
+      }
+    },
+    {
+      "peer_rank": 103,
+      "peer_host": "pi104",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00014647700000480768,
+          "one_way_min_s": 0.00014231500000505548,
+          "one_way_max_s": 0.00015170449999857283,
+          "bandwidth_median_MBps": 0.05461608306926974
+        },
+        "1024": {
+          "one_way_median_s": 0.0001989169999987439,
+          "one_way_min_s": 0.00019447300000052792,
+          "one_way_max_s": 0.00020236150000130237,
+          "bandwidth_median_MBps": 5.147875747203438
+        },
+        "8192": {
+          "one_way_median_s": 0.00022395874999858734,
+          "one_way_min_s": 0.00022080600000151662,
+          "one_way_max_s": 0.00022844499999763457,
+          "bandwidth_median_MBps": 36.57816450597118
+        },
+        "65536": {
+          "one_way_median_s": 0.000963390999999092,
+          "one_way_min_s": 0.0009141039999960299,
+          "one_way_max_s": 0.0010172799999992321,
+          "bandwidth_median_MBps": 68.02637765980975
+        },
+        "1048576": {
+          "one_way_median_s": 0.009373669250003047,
+          "one_way_min_s": 0.009335252500001445,
+          "one_way_max_s": 0.009386067499995931,
+          "bandwidth_median_MBps": 111.86398538647596
+        }
+      }
+    },
+    {
+      "peer_rank": 104,
+      "peer_host": "pi105",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00014536624999905712,
+          "one_way_min_s": 0.00014112999999582598,
+          "one_way_max_s": 0.00014942649999483137,
+          "bandwidth_median_MBps": 0.05503340699819862
+        },
+        "1024": {
+          "one_way_median_s": 0.00019470899999873836,
+          "one_way_min_s": 0.0001923525000009363,
+          "one_way_max_s": 0.00020000949999854356,
+          "bandwidth_median_MBps": 5.259130291905536
+        },
+        "8192": {
+          "one_way_median_s": 0.00022190800000032596,
+          "one_way_min_s": 0.00020663050000280236,
+          "one_way_max_s": 0.00022617650000000822,
+          "bandwidth_median_MBps": 36.916199506047406
+        },
+        "65536": {
+          "one_way_median_s": 0.000931816999997892,
+          "one_way_min_s": 0.0008984744999978034,
+          "one_way_max_s": 0.0009742430000017066,
+          "bandwidth_median_MBps": 70.33140627413779
+        },
+        "1048576": {
+          "one_way_median_s": 0.009375094999999334,
+          "one_way_min_s": 0.009327947000002723,
+          "one_way_max_s": 0.009386817500001143,
+          "bandwidth_median_MBps": 111.84697328401201
+        }
+      }
+    },
+    {
+      "peer_rank": 105,
+      "peer_host": "pi106",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00014789375000034966,
+          "one_way_min_s": 0.00014377800000175966,
+          "one_way_max_s": 0.00014984249999372423,
+          "bandwidth_median_MBps": 0.05409288763035007
+        },
+        "1024": {
+          "one_way_median_s": 0.00019847275000017817,
+          "one_way_min_s": 0.00019441700000299988,
+          "one_way_max_s": 0.00020212100000094324,
+          "bandwidth_median_MBps": 5.159398456458535
+        },
+        "8192": {
+          "one_way_median_s": 0.00022275974999885761,
+          "one_way_min_s": 0.0002148709999971743,
+          "one_way_max_s": 0.00022721349999699214,
+          "bandwidth_median_MBps": 36.775045761373015
+        },
+        "65536": {
+          "one_way_median_s": 0.0009740714999999511,
+          "one_way_min_s": 0.0009177244999989398,
+          "one_way_max_s": 0.0009853634999998917,
+          "bandwidth_median_MBps": 67.28048197694244
+        },
+        "1048576": {
+          "one_way_median_s": 0.009377201749998676,
+          "one_way_min_s": 0.009321614000000977,
+          "one_way_max_s": 0.009456150999994861,
+          "bandwidth_median_MBps": 111.82184493366032
+        }
+      }
+    },
+    {
+      "peer_rank": 106,
+      "peer_host": "pi107",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00014452850000168382,
+          "one_way_min_s": 0.00014067600000089442,
+          "one_way_max_s": 0.00014891699999708408,
+          "bandwidth_median_MBps": 0.05535240454240373
+        },
+        "1024": {
+          "one_way_median_s": 0.00019485225000082096,
+          "one_way_min_s": 0.00019209299999545237,
+          "one_way_max_s": 0.0002009815000008075,
+          "bandwidth_median_MBps": 5.255263924310269
+        },
+        "8192": {
+          "one_way_median_s": 0.00022269975000099862,
+          "one_way_min_s": 0.00020467600000273478,
+          "one_way_max_s": 0.00022805600000452841,
+          "bandwidth_median_MBps": 36.78495373238302
+        },
+        "65536": {
+          "one_way_median_s": 0.0009159372499958351,
+          "one_way_min_s": 0.000893937000000733,
+          "one_way_max_s": 0.0009687430000013819,
+          "bandwidth_median_MBps": 71.55075306774346
+        },
+        "1048576": {
+          "one_way_median_s": 0.009370321999998765,
+          "one_way_min_s": 0.009314965500003325,
+          "one_way_max_s": 0.009391094999998018,
+          "bandwidth_median_MBps": 111.9039452433052
+        }
+      }
+    },
+    {
+      "peer_rank": 107,
+      "peer_host": "pi108",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.0001471532500012529,
+          "one_way_min_s": 0.00014345399999626807,
+          "one_way_max_s": 0.00015131500000364895,
+          "bandwidth_median_MBps": 0.054365092173852
+        },
+        "1024": {
+          "one_way_median_s": 0.00019955124999881946,
+          "one_way_min_s": 0.0001957409999988613,
+          "one_way_max_s": 0.00020271350000200528,
+          "bandwidth_median_MBps": 5.131513834195767
+        },
+        "8192": {
+          "one_way_median_s": 0.00022312549999981002,
+          "one_way_min_s": 0.000219852000000742,
+          "one_way_max_s": 0.00022663899999741943,
+          "bandwidth_median_MBps": 36.71476366442641
+        },
+        "65536": {
+          "one_way_median_s": 0.0009618865000007304,
+          "one_way_min_s": 0.0009184184999995182,
+          "one_way_max_s": 0.000984298500000591,
+          "bandwidth_median_MBps": 68.1327786593847
+        },
+        "1048576": {
+          "one_way_median_s": 0.009377016500000224,
+          "one_way_min_s": 0.009331354000003955,
+          "one_way_max_s": 0.009439215999996975,
+          "bandwidth_median_MBps": 111.82405405812979
+        }
+      }
+    },
+    {
+      "peer_rank": 108,
+      "peer_host": "pi109",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00016193100000094773,
+          "one_way_min_s": 0.0001558059999950956,
+          "one_way_max_s": 0.00016604700000755201,
+          "bandwidth_median_MBps": 0.049403758390630444
+        },
+        "1024": {
+          "one_way_median_s": 0.00021237549999852945,
+          "one_way_min_s": 0.00021036149999531517,
+          "one_way_max_s": 0.00021562100000949158,
+          "bandwidth_median_MBps": 4.821648448183009
+        },
+        "8192": {
+          "one_way_median_s": 0.0002152779999988752,
+          "one_way_min_s": 0.00020881550000240168,
+          "one_way_max_s": 0.00022457449999535584,
+          "bandwidth_median_MBps": 38.05312200987933
+        },
+        "65536": {
+          "one_way_median_s": 0.0009765577500004952,
+          "one_way_min_s": 0.0009641505000104189,
+          "one_way_max_s": 0.0009917799999925592,
+          "bandwidth_median_MBps": 67.10919041906817
+        },
+        "1048576": {
+          "one_way_median_s": 0.009387437750007166,
+          "one_way_min_s": 0.009352798999998413,
+          "one_way_max_s": 0.00945864150000375,
+          "bandwidth_median_MBps": 111.69991513383933
+        }
+      }
+    },
+    {
+      "peer_rank": 109,
+      "peer_host": "pi110",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.0001641157500031909,
+          "one_way_min_s": 0.00015980599999920742,
+          "one_way_max_s": 0.00016751900000144815,
+          "bandwidth_median_MBps": 0.04874608317510328
+        },
+        "1024": {
+          "one_way_median_s": 0.0002154495000041834,
+          "one_way_min_s": 0.00021203749999187949,
+          "one_way_max_s": 0.00022112050000089312,
+          "bandwidth_median_MBps": 4.752853916950919
+        },
+        "8192": {
+          "one_way_median_s": 0.00022011175000358207,
+          "one_way_min_s": 0.00020887099999811198,
+          "one_way_max_s": 0.0002253520000010667,
+          "bandwidth_median_MBps": 37.21745885836028
+        },
+        "65536": {
+          "one_way_median_s": 0.0009844097500035787,
+          "one_way_min_s": 0.0009610205000001315,
+          "one_way_max_s": 0.0010423730000042042,
+          "bandwidth_median_MBps": 66.57390380353482
+        },
+        "1048576": {
+          "one_way_median_s": 0.009425410249995991,
+          "one_way_min_s": 0.0093726689999869,
+          "one_way_max_s": 0.00946429900000112,
+          "bandwidth_median_MBps": 111.24990554129418
+        }
+      }
+    },
+    {
+      "peer_rank": 110,
+      "peer_host": "pi111",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00016267175000450607,
+          "one_way_min_s": 0.00015902849999349655,
+          "one_way_max_s": 0.00016629699999270997,
+          "bandwidth_median_MBps": 0.049178791030270445
+        },
+        "1024": {
+          "one_way_median_s": 0.0002140699999912954,
+          "one_way_min_s": 0.0002114820000116424,
+          "one_way_max_s": 0.00021973200000502402,
+          "bandwidth_median_MBps": 4.783482038780018
+        },
+        "8192": {
+          "one_way_median_s": 0.00021455625000044165,
+          "one_way_min_s": 0.00020774099999698592,
+          "one_way_max_s": 0.00023194499999590334,
+          "bandwidth_median_MBps": 38.1811296570626
+        },
+        "65536": {
+          "one_way_median_s": 0.000983427999990738,
+          "one_way_min_s": 0.0009733910000022661,
+          "one_way_max_s": 0.0010032244999962359,
+          "bandwidth_median_MBps": 66.64036411472647
+        },
+        "1048576": {
+          "one_way_median_s": 0.009415715499997646,
+          "one_way_min_s": 0.009378465500006428,
+          "one_way_max_s": 0.009479095499997925,
+          "bandwidth_median_MBps": 111.36445233506282
+        }
+      }
+    },
+    {
+      "peer_rank": 111,
+      "peer_host": "pi112",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00016825024999889138,
+          "one_way_min_s": 0.00016510199999686392,
+          "one_way_max_s": 0.00017062999999950534,
+          "bandwidth_median_MBps": 0.04754822058245211
+        },
+        "1024": {
+          "one_way_median_s": 0.00021893574999864995,
+          "one_way_min_s": 0.0002138895000030061,
+          "one_way_max_s": 0.00022868550000509913,
+          "bandwidth_median_MBps": 4.677171270595664
+        },
+        "8192": {
+          "one_way_median_s": 0.000216912500007993,
+          "one_way_min_s": 0.00021166700000208039,
+          "one_way_max_s": 0.00022981549999201434,
+          "bandwidth_median_MBps": 37.76638045155597
+        },
+        "65536": {
+          "one_way_median_s": 0.0009677800000034154,
+          "one_way_min_s": 0.0009545854999970516,
+          "one_way_max_s": 0.000989428499991618,
+          "bandwidth_median_MBps": 67.71786976355031
+        },
+        "1048576": {
+          "one_way_median_s": 0.009432785249998688,
+          "one_way_min_s": 0.009393002999999567,
+          "one_way_max_s": 0.009520882499998606,
+          "bandwidth_median_MBps": 111.16292507561813
+        }
+      }
+    },
+    {
+      "peer_rank": 112,
+      "peer_host": "pi113",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00015974125000184358,
+          "one_way_min_s": 0.00015849100000764338,
+          "one_way_max_s": 0.00016426899999544275,
+          "bandwidth_median_MBps": 0.050080990351006216
+        },
+        "1024": {
+          "one_way_median_s": 0.00021112999999672866,
+          "one_way_min_s": 0.00020783399999402263,
+          "one_way_max_s": 0.00021619500000724656,
+          "bandwidth_median_MBps": 4.850092360232399
+        },
+        "8192": {
+          "one_way_median_s": 0.00021649125000067215,
+          "one_way_min_s": 0.00020843549999938205,
+          "one_way_max_s": 0.00022437999999169733,
+          "bandwidth_median_MBps": 37.83986650718939
+        },
+        "65536": {
+          "one_way_median_s": 0.0009750437500031239,
+          "one_way_min_s": 0.0009481779999873652,
+          "one_way_max_s": 0.0009929374999870788,
+          "bandwidth_median_MBps": 67.21339427055456
+        },
+        "1048576": {
+          "one_way_median_s": 0.009385822250003173,
+          "one_way_min_s": 0.00934206750000044,
+          "one_way_max_s": 0.009457465500005924,
+          "bandwidth_median_MBps": 111.71914106935549
+        }
+      }
+    },
+    {
+      "peer_rank": 113,
+      "peer_host": "pi114",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00016443549999678453,
+          "one_way_min_s": 0.00016019450001181212,
+          "one_way_max_s": 0.0001674355000034211,
+          "bandwidth_median_MBps": 0.048651294885571766
+        },
+        "1024": {
+          "one_way_median_s": 0.00021574125000256572,
+          "one_way_min_s": 0.0001945465000119384,
+          "one_way_max_s": 0.00021867649999762762,
+          "bandwidth_median_MBps": 4.746426564172692
+        },
+        "8192": {
+          "one_way_median_s": 0.00021767175000064753,
+          "one_way_min_s": 0.00020935199999883025,
+          "one_way_max_s": 0.00023620400000368136,
+          "bandwidth_median_MBps": 37.63464942040311
+        },
+        "65536": {
+          "one_way_median_s": 0.0009832612499991455,
+          "one_way_min_s": 0.0009474929999981896,
+          "one_way_max_s": 0.0010572060000129113,
+          "bandwidth_median_MBps": 66.65166556706771
+        },
+        "1048576": {
+          "one_way_median_s": 0.009403988999999058,
+          "one_way_min_s": 0.009358539499999097,
+          "one_way_max_s": 0.009490179000010812,
+          "bandwidth_median_MBps": 111.50332055897823
+        }
+      }
+    },
+    {
+      "peer_rank": 114,
+      "peer_host": "pi115",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.000162838500003204,
+          "one_way_min_s": 0.00015894499999546952,
+          "one_way_max_s": 0.00016570399999693564,
+          "bandwidth_median_MBps": 0.04912843092906526
+        },
+        "1024": {
+          "one_way_median_s": 0.00021494950000544577,
+          "one_way_min_s": 0.00021159300000306303,
+          "one_way_max_s": 0.00021962099999939255,
+          "bandwidth_median_MBps": 4.763909662381428
+        },
+        "8192": {
+          "one_way_median_s": 0.0002166764999955717,
+          "one_way_min_s": 0.0002089080000047261,
+          "one_way_max_s": 0.00022601900001006925,
+          "bandwidth_median_MBps": 37.80751489048154
+        },
+        "65536": {
+          "one_way_median_s": 0.000984136500001398,
+          "one_way_min_s": 0.000950418999991598,
+          "one_way_max_s": 0.0010051135000139766,
+          "bandwidth_median_MBps": 66.59238835253738
+        },
+        "1048576": {
+          "one_way_median_s": 0.009392090500007555,
+          "one_way_min_s": 0.009362104499999191,
+          "one_way_max_s": 0.009444465999990825,
+          "bandwidth_median_MBps": 111.64458008567492
+        }
+      }
+    },
+    {
+      "peer_rank": 115,
+      "peer_host": "pi116",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00016526900000002342,
+          "one_way_min_s": 0.00016192649999879904,
+          "one_way_max_s": 0.00016735199999118322,
+          "bandwidth_median_MBps": 0.04840593214697775
+        },
+        "1024": {
+          "one_way_median_s": 0.00021594025000126749,
+          "one_way_min_s": 0.00020975050000515694,
+          "one_way_max_s": 0.00021916699999735556,
+          "bandwidth_median_MBps": 4.742052489028746
+        },
+        "8192": {
+          "one_way_median_s": 0.00022102349999642001,
+          "one_way_min_s": 0.0002112505000013698,
+          "one_way_max_s": 0.00023355600001195853,
+          "bandwidth_median_MBps": 37.063932116416076
+        },
+        "65536": {
+          "one_way_median_s": 0.0009837525000051528,
+          "one_way_min_s": 0.0009535020000015493,
+          "one_way_max_s": 0.0010156319999907737,
+          "bandwidth_median_MBps": 66.61838216386411
+        },
+        "1048576": {
+          "one_way_median_s": 0.009401984250004602,
+          "one_way_min_s": 0.0093649750000111,
+          "one_way_max_s": 0.009460725500005651,
+          "bandwidth_median_MBps": 111.52709599566568
+        }
+      }
+    },
+    {
+      "peer_rank": 116,
+      "peer_host": "pi117",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00016531525000118563,
+          "one_way_min_s": 0.00015920400001334656,
+          "one_way_max_s": 0.00016727799999216586,
+          "bandwidth_median_MBps": 0.04839238969146903
+        },
+        "1024": {
+          "one_way_median_s": 0.0002164727499973651,
+          "one_way_min_s": 0.00021112049999771898,
+          "one_way_max_s": 0.00022064850000447223,
+          "bandwidth_median_MBps": 4.730387543062414
+        },
+        "8192": {
+          "one_way_median_s": 0.00021894950000245217,
+          "one_way_min_s": 0.00021300049999695148,
+          "one_way_max_s": 0.000226824500003886,
+          "bandwidth_median_MBps": 37.4150203581568
+        },
+        "65536": {
+          "one_way_median_s": 0.0009844510000007745,
+          "one_way_min_s": 0.0009391410000034739,
+          "one_way_max_s": 0.0010188360000000785,
+          "bandwidth_median_MBps": 66.57111425550733
+        },
+        "1048576": {
+          "one_way_median_s": 0.009400308250000933,
+          "one_way_min_s": 0.009356373000002804,
+          "one_way_max_s": 0.009450336000000448,
+          "bandwidth_median_MBps": 111.54698038757356
+        }
+      }
+    },
+    {
+      "peer_rank": 117,
+      "peer_host": "pi118",
+      "sizes": {
+        "8": {
+          "one_way_median_s": 0.00016523650000266343,
+          "one_way_min_s": 0.0001599075000058292,
+          "one_way_max_s": 0.00016976899999576744,
+          "bandwidth_median_MBps": 0.048415453001431574
+        },
+        "1024": {
+          "one_way_median_s": 0.00021531975000499415,
+          "one_way_min_s": 0.00021133399999939684,
+          "one_way_max_s": 0.00021871350000424172,
+          "bandwidth_median_MBps": 4.755717949590084
+        },
+        "8192": {
+          "one_way_median_s": 0.00021913449999999557,
+          "one_way_min_s": 0.0002021024999976362,
+          "one_way_max_s": 0.0002306300000043393,
+          "bandwidth_median_MBps": 37.38343346209823
+        },
+        "65536": {
+          "one_way_median_s": 0.0009584832499953677,
+          "one_way_min_s": 0.000945826500000635,
+          "one_way_max_s": 0.000987678000001324,
+          "bandwidth_median_MBps": 68.37469512411066
+        },
+        "1048576": {
+          "one_way_median_s": 0.009383965750004108,
+          "one_way_min_s": 0.009353021500004388,
+          "one_way_max_s": 0.009443206499994972,
+          "bandwidth_median_MBps": 111.74124330105755
+        }
+      }
+    }
+  ],
+  "wall_s": 141.92643317400007
+}

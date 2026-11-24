@@ -1,0 +1,38 @@
+{
+  "orchestrator": "pi119",
+  "excluded": [
+    "pi119"
+  ],
+  "workers": 117,
+  "slots_per_host": 1,
+  "missing_from_list": [
+    "pi103",
+    "pi105"
+  ],
+  "files": {
+    "3": {
+      "path": "cluster\\hostfiles\\hosts_k3.txt",
+      "first": "pi1",
+      "last": "pi3"
+    },
+    "4": {
+      "path": "cluster\\hostfiles\\hosts_k4.txt",
+      "first": "pi1",
+      "last": "pi4"
+    },
+    "8": {
+      "path": "cluster\\hostfiles\\hosts_k8.txt",
+      "first": "pi1",
+      "last": "pi8"
+    },
+    "16": {
+      "path": "cluster\\hostfiles\\hosts_k16.txt",
+      "first": "pi1",
+      "last": "pi16"
+    }
+  },
+  "problems": [
+    "k=118 needs 118 workers at 1 slot(s), only 117 available"
+  ],
+  "central_host": "pi1"
+}

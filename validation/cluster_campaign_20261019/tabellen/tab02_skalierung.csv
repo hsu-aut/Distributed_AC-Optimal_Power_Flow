@@ -1,0 +1,16 @@
+﻿Konfiguration;Agenten;Busse Ø;Busse max;Toleranz;Strafparameter;Iterationen;Budget;Jobzeit [s];ms je Iteration;Rechnen [ms];MPI [ms];Rechnen [%];MPI [%];Lastspreizung
+C1 partitions k3;3;39.3;44;1e-04;einheitlich;640;1200;44.1;66.28;52.88;12.82;80;19;1.7
+C1 partitions k4;4;29.5;36;1e-04;einheitlich;1730;2500;95.6;54.24;41.58;12.13;77;22;1.8
+C1 partitions k8;8;14.8;18;1e-04;einheitlich;1750;2500;52.2;28.80;19.98;8.43;69;29;2.3
+C1 partitions k16;16;7.4;9;1e-04;einheitlich;3190;5000;54.6;16.30;9.94;6.10;61;37;3.3
+C2 bus118 edge rho k118;118;1.0;1;1e-04;kantengew.;15220;20000;95.6;5.75;1.68;3.88;29;67;6.4
+C3 strict tolerance k3;3;39.3;44;1e-05;einheitlich;940;1200;67.2;69.76;54.10;15.14;78;22;1.7
+C3 strict tolerance k4;4;29.5;36;1e-05;einheitlich;3030;3800;168.2;54.95;42.31;12.17;77;22;1.8
+C3 strict tolerance k8;8;14.8;18;1e-05;einheitlich;2960;3700;87.7;29.00;20.20;8.46;70;29;2.3
+C3 strict tolerance k16;16;7.4;9;1e-05;einheitlich;5840;7300;99.0;16.49;10.11;6.13;61;37;3.3
+C4 partitions edge rho k3;3;39.3;44;1e-04;kantengew.;360;450;25.2;65.45;52.91;11.84;81;18;1.6
+C4 partitions edge rho k4;4;29.5;36;1e-04;kantengew.;1440;1800;83.1;56.30;42.57;13.23;76;24;1.9
+C4 partitions edge rho k8;8;14.8;18;1e-04;kantengew.;1130;1450;34.8;29.01;19.93;8.62;69;30;2.2
+C4 partitions edge rho k16;16;7.4;9;1e-04;kantengew.;2510;3200;43.5;16.37;9.88;6.23;60;38;3.3
+C4 partitions edge rho k32;32;3.7;5;1e-04;kantengew.;3670;4600;42.1;10.50;5.17;5.14;49;49;5.7
+C4 partitions edge rho k64;64;1.8;4;1e-04;kantengew.;4560;5700;41.1;7.71;2.81;4.75;36;62;6.0

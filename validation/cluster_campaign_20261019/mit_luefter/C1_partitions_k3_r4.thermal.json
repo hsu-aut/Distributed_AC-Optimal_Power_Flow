@@ -1,0 +1,102 @@
+{
+  "before": {
+    "time_utc": "2026-10-19T15:27:14.018857+00:00",
+    "max_temp_c": 57.1,
+    "median_temp_c": 56.0,
+    "nodes_throttled_now": [],
+    "nodes": {
+      "pi109": {
+        "throttled": "0x0",
+        "temp_c": 39.5,
+        "cur_freq_mhz": 1600
+      },
+      "pi7": {
+        "throttled": "0xe0000",
+        "temp_c": 56.0,
+        "cur_freq_mhz": 1600
+      },
+      "pi19": {
+        "throttled": "0xe0000",
+        "temp_c": 57.1,
+        "cur_freq_mhz": 1600
+      }
+    }
+  },
+  "during": {
+    "columns": [
+      "unix_time",
+      "temp_c",
+      "throttled",
+      "cur_freq_mhz"
+    ],
+    "max_temp_c": 69.2,
+    "nodes_throttled_during": [],
+    "samples": {
+      "pi109": [
+        [
+          1792423634,
+          38.9,
+          "0x0",
+          1600
+        ],
+        [
+          1792423664,
+          51.0,
+          "0x0",
+          2400
+        ]
+      ],
+      "pi7": [
+        [
+          1792423634,
+          57.6,
+          "0xe0000",
+          1600
+        ],
+        [
+          1792423664,
+          68.1,
+          "0xe0000",
+          2400
+        ]
+      ],
+      "pi19": [
+        [
+          1792423634,
+          56.5,
+          "0xe0000",
+          1600
+        ],
+        [
+          1792423664,
+          69.2,
+          "0xe0000",
+          2400
+        ]
+      ]
+    }
+  },
+  "after": {
+    "time_utc": "2026-10-19T15:27:59.953551+00:00",
+    "max_temp_c": 71.4,
+    "median_temp_c": 70.3,
+    "nodes_throttled_now": [],
+    "nodes": {
+      "pi109": {
+        "throttled": "0x0",
+        "temp_c": 51.6,
+        "cur_freq_mhz": 2400
+      },
+      "pi7": {
+        "throttled": "0xe0000",
+        "temp_c": 70.3,
+        "cur_freq_mhz": 2400
+      },
+      "pi19": {
+        "throttled": "0xe0000",
+        "temp_c": 71.4,
+        "cur_freq_mhz": 2400
+      }
+    }
+  }
+}

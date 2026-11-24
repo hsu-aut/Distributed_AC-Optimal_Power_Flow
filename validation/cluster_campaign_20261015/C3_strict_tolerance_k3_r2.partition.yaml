@@ -1,0 +1,173 @@
+agents:
+- bus_ids:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  - 13
+  - 14
+  - 15
+  - 16
+  - 17
+  - 18
+  - 19
+  - 20
+  - 21
+  - 22
+  - 23
+  - 24
+  - 25
+  - 26
+  - 27
+  - 28
+  - 29
+  - 30
+  - 31
+  - 32
+  - 33
+  - 34
+  - 35
+  - 36
+  - 37
+  - 42
+  - 112
+  - 113
+  - 114
+  - 116
+  neighbor_ranks:
+  - 1
+  rank: 0
+- bus_ids:
+  - 38
+  - 39
+  - 40
+  - 41
+  - 43
+  - 44
+  - 45
+  - 46
+  - 47
+  - 48
+  - 49
+  - 50
+  - 51
+  - 52
+  - 53
+  - 54
+  - 55
+  - 56
+  - 57
+  - 58
+  - 59
+  - 60
+  - 61
+  - 62
+  - 63
+  - 64
+  - 65
+  - 66
+  - 67
+  - 68
+  - 69
+  - 70
+  - 71
+  - 72
+  - 73
+  - 74
+  - 75
+  - 76
+  - 77
+  - 78
+  - 79
+  - 80
+  - 115
+  - 117
+  neighbor_ranks:
+  - 0
+  - 2
+  rank: 1
+- bus_ids:
+  - 81
+  - 82
+  - 83
+  - 84
+  - 85
+  - 86
+  - 87
+  - 88
+  - 89
+  - 90
+  - 91
+  - 92
+  - 93
+  - 94
+  - 95
+  - 96
+  - 97
+  - 98
+  - 99
+  - 100
+  - 101
+  - 102
+  - 103
+  - 104
+  - 105
+  - 106
+  - 107
+  - 108
+  - 109
+  - 110
+  - 111
+  neighbor_ranks:
+  - 1
+  rank: 2
+partitioning:
+  statistics:
+    agents: 3
+    components_per_partition:
+      0: 1
+      1: 1
+      2: 1
+    cut_branches: 11
+    cut_bus_pairs: 11
+    disconnected_partitions: 0
+    leaf_bus_cuts: 0
+    max_cut_admittance: 11.06738566969713
+    sizes:
+    - 43
+    - 44
+    - 31
+    slack_rank:
+    - 1
+    strongest_cut_branches:
+    - admittance: 11.06738566969713
+      branch: 127
+      from: 76
+      to: 81
+    - admittance: 10.506862631475421
+      branch: 150
+      from: 79
+      to: 96
+    - admittance: 10.099907477186324
+      branch: 95
+      from: 37
+      to: 64
+    - admittance: 9.042300990945876
+      branch: 151
+      from: 79
+      to: 97
+    - admittance: 9.029033443282138
+      branch: 51
+      from: 36
+      to: 38
+    sum_cut_admittance: 76.82776765614372
+  strategy: connected_impedance

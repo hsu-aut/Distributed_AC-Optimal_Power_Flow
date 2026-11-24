@@ -1,0 +1,21 @@
+# Lösungsgüte gegenüber der zentralen Referenz
+
+Kostenabweichung als Median über die Wiederholungen, Fehler als Maximum. Aktive Grenzen: Vergleich der Mengen (Spannungs-, Wirk- und Blindleistungsgrenzen) mit der zentralen Lösung; sie stammen aus der Messreihe vom 15.10., weil die Archive vom 19.10. keine Checkpoints enthalten. Die Iterate beider Messreihen sind bis auf die Rundung der Konvergenzprüfung gleich. Streuung über Wiederholungen: bis 16 Agenten sind die Endzustände bitgleich; ab 32 Agenten unterscheiden sie sich in der neunten Stelle, weil die Rangzuordnung je Wiederholung wechselt (siehe docs/CLUSTER_CAMPAIGN_20261019.md).
+
+| Konfiguration | Kostenabweichung [%] | max ΔP [p.u.] | max ΔQ [p.u.] | max Spannungsverletzung | max therm. Verletzung | aktive Grenzen wie zentral | max ΔP_g [MW] | Streuung über Wiederholungen (rel.) |
+|---|---|---|---|---|---|---|---|---|
+| C1 partitions k3 | -0.00006 | 1.8e-05 | 2.2e-05 | 0.0e+00 | 0.0e+00 | nein (1) | 0.40 | identisch |
+| C1 partitions k4 | +0.00088 | 4.9e-05 | 3.4e-05 | 0.0e+00 | 0.0e+00 | nein (2) | 2.04 | identisch |
+| C1 partitions k8 | -0.00004 | 4.2e-05 | 3.3e-05 | 0.0e+00 | 0.0e+00 | nein (2) | 1.21 | identisch |
+| C1 partitions k16 | +0.00083 | 4.8e-05 | 2.3e-05 | 0.0e+00 | 0.0e+00 | nein (1) | 2.09 | identisch |
+| C2 bus118 edge rho k118 | +0.05896 | 4.2e-05 | 4.8e-06 | 0.0e+00 | 0.0e+00 | nein (8) | 16.57 | 4e-09 |
+| C3 strict tolerance k3 | -0.00001 | 1.9e-06 | 2.2e-06 | 0.0e+00 | 0.0e+00 | ja | 0.04 | identisch |
+| C3 strict tolerance k4 | +0.00002 | 4.9e-06 | 3.5e-06 | 0.0e+00 | 0.0e+00 | ja | 0.20 | identisch |
+| C3 strict tolerance k8 | -0.00004 | 4.2e-06 | 4.2e-06 | 0.0e+00 | 0.0e+00 | nein (1) | 0.12 | identisch |
+| C3 strict tolerance k16 | -0.00001 | 4.7e-06 | 4.3e-06 | 0.0e+00 | 0.0e+00 | ja | 0.20 | identisch |
+| C4 partitions edge rho k3 | -0.00013 | 4.8e-05 | 4.4e-05 | 0.0e+00 | 0.0e+00 | nein (1) | 0.41 | identisch |
+| C4 partitions edge rho k4 | +0.00075 | 3.1e-05 | 2.9e-05 | 0.0e+00 | 0.0e+00 | nein (1) | 1.70 | identisch |
+| C4 partitions edge rho k8 | -0.00007 | 2.8e-05 | 3.0e-05 | 0.0e+00 | 0.0e+00 | nein (2) | 1.06 | identisch |
+| C4 partitions edge rho k16 | +0.00185 | 4.4e-05 | 2.3e-05 | 0.0e+00 | 0.0e+00 | nein (1) | 2.92 | identisch |
+| C4 partitions edge rho k32 | +0.00707 | 5.0e-05 | 2.2e-05 | 0.0e+00 | 0.0e+00 | nein (4) | 5.52 | 2e-09 |
+| C4 partitions edge rho k64 | +0.02372 | 7.6e-05 | 1.7e-05 | 0.0e+00 | 0.0e+00 | nein (3) | 10.47 | 2e-08 |

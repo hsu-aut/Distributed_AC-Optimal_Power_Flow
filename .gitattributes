@@ -1,0 +1,9 @@
+# Preserve the exact bytes used by the full-case provenance hashes.
+data/matpower/* -text
+# Upstream has a trailing space in a comment; keep its source hash unchanged.
+data/matpower/case118.m whitespace=-blank-at-eol
+topology_ieee118_full.yaml -text
+*.sh text eol=lf
+# PGLib-OPF source and derived topology: keep the exact bytes behind their provenance hashes.
+data/pglib/* -text
+topology_ieee118_pglib.yaml -text

@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# License files (sensitive)
+gurobi.lic
+*.lic
+
+# SSH keys
+*_key
+*_key.pub
+
+# Local scratch
+scratch/
+*.tmp

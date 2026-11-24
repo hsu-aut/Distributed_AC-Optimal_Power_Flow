@@ -1,0 +1,41 @@
+[
+  {
+    "run": "bus118_edge",
+    "agents": 118,
+    "rho": 1000000.0,
+    "edge_rho": "admittance",
+    "run_tolerance": 2e-05,
+    "level": 0.0001,
+    "trace_iterations": 46934,
+    "solver_per_rank": 15219,
+    "boyd_matrix_per_rank": 15281,
+    "boyd_matrix_global": 6713,
+    "boyd_global_minus_solver": -8506
+  },
+  {
+    "run": "bus118_edge",
+    "agents": 118,
+    "rho": 1000000.0,
+    "edge_rho": "admittance",
+    "run_tolerance": 2e-05,
+    "level": 5e-05,
+    "trace_iterations": 46934,
+    "solver_per_rank": 28375,
+    "boyd_matrix_per_rank": 28447,
+    "boyd_matrix_global": 15347,
+    "boyd_global_minus_solver": -13028
+  },
+  {
+    "run": "bus118_edge",
+    "agents": 118,
+    "rho": 1000000.0,
+    "edge_rho": "admittance",
+    "run_tolerance": 2e-05,
+    "level": 2e-05,
+    "trace_iterations": 46934,
+    "solver_per_rank": 46934,
+    "boyd_matrix_per_rank": null,
+    "boyd_matrix_global": 33160,
+    "boyd_global_minus_solver": -13774
+  }
+]

@@ -1,0 +1,233 @@
+{
+  "before": {
+    "time_utc": "2026-10-19T19:59:13.070959+00:00",
+    "max_temp_c": 72.5,
+    "median_temp_c": 70.3,
+    "nodes_throttled_now": [],
+    "nodes": {
+      "pi31": {
+        "throttled": "0xe0000",
+        "temp_c": 72.5,
+        "cur_freq_mhz": 1600
+      },
+      "pi43": {
+        "throttled": "0xe0000",
+        "temp_c": 70.3,
+        "cur_freq_mhz": 1600
+      },
+      "pi55": {
+        "throttled": "0x0",
+        "temp_c": 63.7,
+        "cur_freq_mhz": 2400
+      },
+      "pi67": {
+        "throttled": "0xe0000",
+        "temp_c": 68.6,
+        "cur_freq_mhz": 1600
+      },
+      "pi79": {
+        "throttled": "0xe0000",
+        "temp_c": 71.9,
+        "cur_freq_mhz": 1600
+      },
+      "pi91": {
+        "throttled": "0xe0000",
+        "temp_c": 70.8,
+        "cur_freq_mhz": 1700
+      },
+      "pi103": {
+        "throttled": "0xe0000",
+        "temp_c": 67.0,
+        "cur_freq_mhz": 1600
+      },
+      "pi115": {
+        "throttled": "0x0",
+        "temp_c": 59.3,
+        "cur_freq_mhz": 1600
+      }
+    }
+  },
+  "during": {
+    "columns": [
+      "unix_time",
+      "temp_c",
+      "throttled",
+      "cur_freq_mhz"
+    ],
+    "max_temp_c": 84.5,
+    "nodes_throttled_during": [
+      "pi31",
+      "pi43",
+      "pi79",
+      "pi91"
+    ],
+    "samples": {
+      "pi31": [
+        [
+          1792439953,
+          71.4,
+          "0xe0000",
+          1600
+        ],
+        [
+          1792439983,
+          84.5,
+          "0xe0008",
+          2400
+        ]
+      ],
+      "pi43": [
+        [
+          1792439953,
+          71.4,
+          "0xe0000",
+          1600
+        ],
+        [
+          1792439983,
+          82.9,
+          "0xe0008",
+          2400
+        ]
+      ],
+      "pi55": [
+        [
+          1792439953,
+          62.6,
+          "0x0",
+          2400
+        ],
+        [
+          1792439983,
+          74.7,
+          "0x0",
+          2400
+        ]
+      ],
+      "pi67": [
+        [
+          1792439953,
+          70.3,
+          "0xe0000",
+          1600
+        ],
+        [
+          1792439983,
+          81.8,
+          "0xe0000",
+          2400
+        ]
+      ],
+      "pi79": [
+        [
+          1792439953,
+          70.8,
+          "0xe0000",
+          1600
+        ],
+        [
+          1792439983,
+          82.3,
+          "0xe0008",
+          2400
+        ]
+      ],
+      "pi91": [
+        [
+          1792439953,
+          71.4,
+          "0xe0000",
+          1600
+        ],
+        [
+          1792439983,
+          82.9,
+          "0xe0008",
+          2400
+        ]
+      ],
+      "pi103": [
+        [
+          1792439953,
+          67.5,
+          "0xe0000",
+          1600
+        ],
+        [
+          1792439983,
+          80.1,
+          "0xe0000",
+          2400
+        ]
+      ],
+      "pi115": [
+        [
+          1792439953,
+          59.3,
+          "0x0",
+          1600
+        ],
+        [
+          1792439983,
+          71.4,
+          "0x0",
+          2400
+        ]
+      ]
+    }
+  },
+  "after": {
+    "time_utc": "2026-10-19T20:00:12.674049+00:00",
+    "max_temp_c": 84.5,
+    "median_temp_c": 83.4,
+    "nodes_throttled_now": [
+      "pi31",
+      "pi43",
+      "pi67",
+      "pi79",
+      "pi91"
+    ],
+    "nodes": {
+      "pi31": {
+        "throttled": "0xe0008",
+        "temp_c": 84.5,
+        "cur_freq_mhz": 2400
+      },
+      "pi43": {
+        "throttled": "0xe0008",
+        "temp_c": 83.4,
+        "cur_freq_mhz": 2400
+      },
+      "pi55": {
+        "throttled": "0x0",
+        "temp_c": 74.1,
+        "cur_freq_mhz": 2400
+      },
+      "pi67": {
+        "throttled": "0xe0008",
+        "temp_c": 83.4,
+        "cur_freq_mhz": 2400
+      },
+      "pi79": {
+        "throttled": "0xe0008",
+        "temp_c": 83.4,
+        "cur_freq_mhz": 2400
+      },
+      "pi91": {
+        "throttled": "0xe0008",
+        "temp_c": 84.0,
+        "cur_freq_mhz": 2400
+      },
+      "pi103": {
+        "throttled": "0xe0000",
+        "temp_c": 81.8,
+        "cur_freq_mhz": 2400
+      },
+      "pi115": {
+        "throttled": "0x0",
+        "temp_c": 70.8,
+        "cur_freq_mhz": 2400
+      }
+    }
+  }
+}

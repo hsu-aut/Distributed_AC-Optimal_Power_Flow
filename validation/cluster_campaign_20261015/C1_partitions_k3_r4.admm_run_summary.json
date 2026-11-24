@@ -1,0 +1,78 @@
+{
+  "status": "converged",
+  "raw_ac_feasible": true,
+  "postprocessing": "none",
+  "cpu_rank_sum_s": 139.293856223,
+  "wall_solve_s": 46.062428792,
+  "wall_iterations_s": 46.042725606999994,
+  "wall_total_s": 46.510961212,
+  "relaxation": 1.0,
+  "adaptive_rho": {
+    "enabled": false,
+    "metric": "normalized",
+    "mu": 10.0,
+    "tau": 2.0,
+    "period": 50,
+    "until": 0,
+    "rho_min": 1000000.0,
+    "rho_max": 100000000.0
+  },
+  "final_rho": {
+    "rho": 300000.0,
+    "rho_v": 300000.0,
+    "rho_theta": 300000.0
+  },
+  "rho_history": [],
+  "edge_penalty": null,
+  "boyd_global_final": {
+    "r": 2.8790591420317636e-06,
+    "s": 14.016716707190536,
+    "eps_pri": 0.0021596490268776577,
+    "eps_dual": 20.96872391090301,
+    "primal_ratio": 0.0013331143654365927,
+    "dual_ratio": 0.6684582603475613
+  },
+  "boyd_consensus_final": {
+    "r": 2.8790591420317632e-06,
+    "s": 16.883573006593743,
+    "eps_pri": 0.0016371477567853677,
+    "eps_dual": 27.088863223413046,
+    "members": 88.0,
+    "variables": 68.0,
+    "primal_ratio": 0.0017585823454841724,
+    "dual_ratio": 0.6232662060178731,
+    "max_rank_primal_ratio": 0.0020500492765928463,
+    "max_rank_dual_ratio": 1.0514575862009847
+  },
+  "residual_trace": {
+    "file": "logs/residual_trace.npy",
+    "columns": [
+      "iteration",
+      "max_rank_primal_residual",
+      "max_rank_dual_residual",
+      "max_rank_primal_ratio",
+      "max_rank_dual_ratio",
+      "global_primal_residual",
+      "global_dual_residual",
+      "global_primal_ratio",
+      "global_dual_ratio",
+      "boyd_a_max_rank_primal_ratio",
+      "boyd_a_max_rank_dual_ratio",
+      "boyd_a_global_primal_ratio",
+      "boyd_a_global_dual_ratio"
+    ],
+    "rows": 633
+  },
+  "converged": true,
+  "convergence_kind": "current",
+  "wall_iterations": 633,
+  "abs_tol": 0.0001,
+  "slack_tol": 1e-06,
+  "phys_tol": 0.0001,
+  "phys_gate": true,
+  "last_phys_max_dP": 1.9506227977750257e-05,
+  "last_phys_max_dQ": 2.2812496999979892e-05,
+  "best_iterate": null,
+  "best_iterate_criteria_met": false,
+  "track_best_iterate": false
+}

@@ -1,0 +1,48 @@
+{
+  "before": {
+    "time_utc": "2026-10-19T19:02:03.747058+00:00",
+    "max_temp_c": 58.2,
+    "median_temp_c": 58.2,
+    "nodes_throttled_now": [],
+    "nodes": {
+      "pi22": {
+        "throttled": "0x0",
+        "temp_c": 58.2,
+        "cur_freq_mhz": 1600
+      }
+    }
+  },
+  "during": {
+    "columns": [
+      "unix_time",
+      "temp_c",
+      "throttled",
+      "cur_freq_mhz"
+    ],
+    "max_temp_c": 60.9,
+    "nodes_throttled_during": [],
+    "samples": {
+      "pi22": [
+        [
+          1792436524,
+          60.9,
+          "0x0",
+          1600
+        ]
+      ]
+    }
+  },
+  "after": {
+    "time_utc": "2026-10-19T19:02:06.057323+00:00",
+    "max_temp_c": 62.6,
+    "median_temp_c": 62.6,
+    "nodes_throttled_now": [],
+    "nodes": {
+      "pi22": {
+        "throttled": "0x0",
+        "temp_c": 62.6,
+        "cur_freq_mhz": 2400
+      }
+    }
+  }
+}

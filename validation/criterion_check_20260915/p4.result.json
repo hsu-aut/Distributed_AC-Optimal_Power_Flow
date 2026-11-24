@@ -1,0 +1,89 @@
+{
+  "success": true,
+  "process_exit_code": 0,
+  "mpi_exit_code": 0,
+  "reason": "completed",
+  "started_at_utc": "2026-09-15T14:43:47.653902+00:00",
+  "finished_at_utc": "2026-09-15T14:46:10.790642+00:00",
+  "wall_total_s": 143.13625715800003,
+  "wall_total_scope": "process launch through process exit; excludes snapshot preparation",
+  "mode": "admm",
+  "admm": {
+    "status": "converged",
+    "raw_ac_feasible": true,
+    "postprocessing": "none",
+    "cpu_rank_sum_s": 566.754984183,
+    "wall_solve_s": 141.294640698,
+    "wall_iterations_s": 141.287945844,
+    "wall_total_s": 141.53211812199999,
+    "relaxation": 1.0,
+    "adaptive_rho": {
+      "enabled": false,
+      "metric": "normalized",
+      "mu": 10.0,
+      "tau": 2.0,
+      "period": 50,
+      "until": 0,
+      "rho_min": 1000000.0,
+      "rho_max": 100000000.0
+    },
+    "final_rho": {
+      "rho": 300000.0,
+      "rho_v": 300000.0,
+      "rho_theta": 300000.0
+    },
+    "rho_history": [],
+    "edge_penalty": null,
+    "boyd_global_final": {
+      "r": 1.2273777432223698e-07,
+      "s": 0.6833457198920662,
+      "eps_pri": 5.0154033960022085e-05,
+      "eps_dual": 0.8555568429803703,
+      "primal_ratio": 0.002447216397789091,
+      "dual_ratio": 0.7987145746057047
+    },
+    "boyd_consensus_final": {
+      "r": 1.2273777432223698e-07,
+      "s": 0.8954577857340943,
+      "eps_pri": 4.300846411156562e-05,
+      "eps_dual": 1.0557835065356094,
+      "members": 152.0,
+      "variables": 114.0,
+      "primal_ratio": 0.002853805102266625,
+      "dual_ratio": 0.8481452686000001,
+      "max_rank_primal_ratio": 0.0033870431736875003,
+      "max_rank_dual_ratio": 0.990910868729626
+    },
+    "residual_trace": {
+      "file": "logs/residual_trace.npy",
+      "columns": [
+        "iteration",
+        "max_rank_primal_residual",
+        "max_rank_dual_residual",
+        "max_rank_primal_ratio",
+        "max_rank_dual_ratio",
+        "global_primal_residual",
+        "global_dual_residual",
+        "global_primal_ratio",
+        "global_dual_ratio",
+        "boyd_a_max_rank_primal_ratio",
+        "boyd_a_max_rank_dual_ratio",
+        "boyd_a_global_primal_ratio",
+        "boyd_a_global_dual_ratio"
+      ],
+      "rows": 3933
+    },
+    "converged": true,
+    "convergence_kind": "current",
+    "wall_iterations": 3933,
+    "abs_tol": 2e-06,
+    "slack_tol": 1e-06,
+    "phys_tol": 0.0001,
+    "phys_gate": true,
+    "last_phys_max_dP": 9.91972873620739e-07,
+    "last_phys_max_dQ": 1.0931095247024292e-06,
+    "best_iterate": null,
+    "best_iterate_criteria_met": false,
+    "track_best_iterate": false
+  }
+}

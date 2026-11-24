@@ -1,0 +1,222 @@
+{
+  "before": {
+    "time_utc": "2026-10-19T14:42:38.982620+00:00",
+    "max_temp_c": 54.3,
+    "median_temp_c": 37.3,
+    "nodes_throttled_now": [],
+    "nodes": {
+      "pi114": {
+        "throttled": "0x0",
+        "temp_c": 54.3,
+        "cur_freq_mhz": 2400
+      },
+      "pi12": {
+        "throttled": "0x0",
+        "temp_c": 42.2,
+        "cur_freq_mhz": 1700
+      },
+      "pi24": {
+        "throttled": "0x0",
+        "temp_c": 37.3,
+        "cur_freq_mhz": 1600
+      },
+      "pi36": {
+        "throttled": "0x0",
+        "temp_c": 35.1,
+        "cur_freq_mhz": 1600
+      },
+      "pi48": {
+        "throttled": "0x0",
+        "temp_c": 33.4,
+        "cur_freq_mhz": 1600
+      },
+      "pi60": {
+        "throttled": "0x0",
+        "temp_c": 40.6,
+        "cur_freq_mhz": 1600
+      },
+      "pi72": {
+        "throttled": "0x0",
+        "temp_c": 35.1,
+        "cur_freq_mhz": 1600
+      },
+      "pi84": {
+        "throttled": "0x0",
+        "temp_c": 33.4,
+        "cur_freq_mhz": 1600
+      }
+    }
+  },
+  "during": {
+    "columns": [
+      "unix_time",
+      "temp_c",
+      "throttled",
+      "cur_freq_mhz"
+    ],
+    "max_temp_c": 64.8,
+    "nodes_throttled_during": [],
+    "samples": {
+      "pi114": [
+        [
+          1792420959,
+          54.3,
+          "0x0",
+          1500
+        ],
+        [
+          1792420989,
+          64.8,
+          "0x0",
+          2400
+        ]
+      ],
+      "pi12": [
+        [
+          1792420959,
+          42.8,
+          "0x0",
+          1600
+        ],
+        [
+          1792420989,
+          55.4,
+          "0x0",
+          2400
+        ]
+      ],
+      "pi24": [
+        [
+          1792420959,
+          38.4,
+          "0x0",
+          1600
+        ],
+        [
+          1792420989,
+          48.3,
+          "0x0",
+          2400
+        ]
+      ],
+      "pi36": [
+        [
+          1792420959,
+          35.1,
+          "0x0",
+          1700
+        ],
+        [
+          1792420989,
+          45.5,
+          "0x0",
+          2400
+        ]
+      ],
+      "pi48": [
+        [
+          1792420959,
+          33.4,
+          "0x0",
+          1600
+        ],
+        [
+          1792420989,
+          43.3,
+          "0x0",
+          2400
+        ]
+      ],
+      "pi60": [
+        [
+          1792420959,
+          41.1,
+          "0x0",
+          1600
+        ],
+        [
+          1792420989,
+          50.5,
+          "0x0",
+          2400
+        ]
+      ],
+      "pi72": [
+        [
+          1792420959,
+          34.5,
+          "0x0",
+          1700
+        ],
+        [
+          1792420989,
+          43.9,
+          "0x0",
+          2400
+        ]
+      ],
+      "pi84": [
+        [
+          1792420959,
+          34.0,
+          "0x0",
+          1600
+        ],
+        [
+          1792420989,
+          43.9,
+          "0x0",
+          2400
+        ]
+      ]
+    }
+  },
+  "after": {
+    "time_utc": "2026-10-19T14:43:16.241812+00:00",
+    "max_temp_c": 63.7,
+    "median_temp_c": 47.2,
+    "nodes_throttled_now": [],
+    "nodes": {
+      "pi114": {
+        "throttled": "0x0",
+        "temp_c": 63.7,
+        "cur_freq_mhz": 2400
+      },
+      "pi12": {
+        "throttled": "0x0",
+        "temp_c": 52.7,
+        "cur_freq_mhz": 2400
+      },
+      "pi24": {
+        "throttled": "0x0",
+        "temp_c": 47.2,
+        "cur_freq_mhz": 2400
+      },
+      "pi36": {
+        "throttled": "0x0",
+        "temp_c": 43.9,
+        "cur_freq_mhz": 2400
+      },
+      "pi48": {
+        "throttled": "0x0",
+        "temp_c": 42.8,
+        "cur_freq_mhz": 2400
+      },
+      "pi60": {
+        "throttled": "0x0",
+        "temp_c": 48.8,
+        "cur_freq_mhz": 2400
+      },
+      "pi72": {
+        "throttled": "0x0",
+        "temp_c": 44.4,
+        "cur_freq_mhz": 2400
+      },
+      "pi84": {
+        "throttled": "0x0",
+        "temp_c": 43.3,
+        "cur_freq_mhz": 2400
+      }
+    }
+  }
+}

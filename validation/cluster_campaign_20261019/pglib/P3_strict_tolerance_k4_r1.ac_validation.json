@@ -1,0 +1,4806 @@
+{
+  "valid_data": true,
+  "feasible": true,
+  "errors": [],
+  "generation_cost": 97213.58613124712,
+  "tolerances": {
+    "balance": 0.0001,
+    "voltage": 1e-05,
+    "generation": 1e-05,
+    "thermal": 1e-05,
+    "angle": 1e-05
+  },
+  "max_dP": 5.394126644922559e-06,
+  "max_dQ": 5.5217272354468605e-06,
+  "max_voltage_violation": 0.0,
+  "max_pg_violation": 0.0,
+  "max_qg_violation": 0.0,
+  "max_angle_violation": 0.0,
+  "max_thermal_violation": 0.0,
+  "bus_details": [
+    {
+      "bus": 0,
+      "dP": -7.771561172376096e-16,
+      "dQ": -7.008282842946301e-15,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 1,
+      "dP": 2.4980018054066022e-15,
+      "dQ": 1.0408340855860843e-15,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 2,
+      "dP": -1.1102230246251565e-16,
+      "dQ": -7.147060721024445e-15,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 3,
+      "dP": -6.439293542825908e-15,
+      "dQ": 3.9968028886505635e-15,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 4,
+      "dP": -7.882583474838611e-15,
+      "dQ": -2.6478819137309983e-14,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 5,
+      "dP": 9.103828801926284e-15,
+      "dQ": 3.524958103184872e-15,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 6,
+      "dP": -4.496403249731884e-15,
+      "dQ": -2.0920765120280294e-15,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 7,
+      "dP": -3.219646771412954e-15,
+      "dQ": -1.1569911695374913e-13,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 8,
+      "dP": -7.993605777301127e-15,
+      "dQ": 3.6637359812630166e-15,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 9,
+      "dP": 6.217248937900877e-15,
+      "dQ": -4.96269692007445e-14,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 10,
+      "dP": -4.551914400963142e-15,
+      "dQ": -6.300515664747763e-15,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 11,
+      "dP": -1.6404710923012544e-11,
+      "dQ": 2.1649348980190553e-15,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 12,
+      "dP": -3.444137086638932e-09,
+      "dQ": -2.046372724051615e-08,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 13,
+      "dP": -4.433296202366321e-09,
+      "dQ": -2.5936812751356508e-08,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 14,
+      "dP": -8.46509221608116e-08,
+      "dQ": -1.5944377304566437e-08,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 15,
+      "dP": -4.191311219203797e-07,
+      "dQ": 2.49326012974338e-07,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 16,
+      "dP": -5.394126644922559e-06,
+      "dQ": 8.797172856567226e-07,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 17,
+      "dP": 1.4432899320127035e-15,
+      "dQ": -3.4833247397614286e-15,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 18,
+      "dP": -6.050715484207103e-15,
+      "dQ": 1.27675647831893e-15,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 19,
+      "dP": 1.9984014443252818e-15,
+      "dQ": -2.8033131371785203e-15,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 20,
+      "dP": -5.551115123125783e-16,
+      "dQ": 3.733124920302089e-15,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 21,
+      "dP": -2.7755575615628914e-17,
+      "dQ": -1.8041124150158794e-16,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 22,
+      "dP": 9.521336332141139e-07,
+      "dQ": -3.828304331876531e-08,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 23,
+      "dP": 7.704537930974809e-07,
+      "dQ": -3.5553854849101896e-07,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 24,
+      "dP": 5.615857042728933e-07,
+      "dQ": -4.064201326592354e-07,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 25,
+      "dP": 1.7763568394002505e-15,
+      "dQ": 9.034439862887211e-15,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 26,
+      "dP": -2.4424906541753444e-15,
+      "dQ": -1.6653345369377348e-15,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 27,
+      "dP": 6.492469316887739e-07,
+      "dQ": -1.8343160881895137e-07,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 28,
+      "dP": 6.083320475136489e-07,
+      "dQ": 1.1523310056160696e-08,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 29,
+      "dP": -4.265971762618115e-06,
+      "dQ": -1.6619111369853279e-06,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 30,
+      "dP": 3.1091550983797234e-07,
+      "dQ": 5.1559091107655775e-08,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 31,
+      "dP": 9.174484967289231e-07,
+      "dQ": -6.204285013799993e-07,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 32,
+      "dP": -8.049116928532385e-16,
+      "dQ": 1.2212453270876722e-15,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 33,
+      "dP": -1.5987211554602254e-14,
+      "dQ": -1.3128387266192476e-14,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 34,
+      "dP": 5.551115123125783e-17,
+      "dQ": 2.173261570703744e-14,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 35,
+      "dP": 1.1102230246251565e-16,
+      "dQ": -7.269185253733212e-14,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 36,
+      "dP": 1.0436096431476471e-14,
+      "dQ": 3.799738301779598e-14,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 37,
+      "dP": -5.042470302862867e-06,
+      "dQ": -5.711687947052013e-07,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 38,
+      "dP": 6.106226635438361e-16,
+      "dQ": 9.020562075079397e-16,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 39,
+      "dP": -5.88418203051333e-15,
+      "dQ": -4.496403249731884e-15,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 40,
+      "dP": 4.3298697960381105e-15,
+      "dQ": 6.772360450213455e-15,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 41,
+      "dP": -1.2433504190667577e-06,
+      "dQ": -2.1981237652290986e-07,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 42,
+      "dP": -4.259663300421046e-07,
+      "dQ": -6.677047462155805e-08,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 43,
+      "dP": -7.317664185435557e-07,
+      "dQ": 6.219808927621084e-08,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 44,
+      "dP": 1.2212453270876722e-15,
+      "dQ": 6.938893903907228e-16,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 45,
+      "dP": 6.938893903907228e-17,
+      "dQ": 1.942890293094024e-16,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 46,
+      "dP": -1.3877787807814457e-15,
+      "dQ": -5.523359547510154e-15,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 47,
+      "dP": -1.6653345369377348e-16,
+      "dQ": 1.734723475976807e-15,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 48,
+      "dP": -2.013667173228484e-06,
+      "dQ": 1.1597909654881278e-07,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 49,
+      "dP": -3.885780586188048e-16,
+      "dQ": 2.0886070650760757e-15,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 50,
+      "dP": -2.0816681711721685e-15,
+      "dQ": -1.3877787807814457e-17,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 51,
+      "dP": 5.273559366969494e-16,
+      "dQ": 2.123301534595612e-15,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 52,
+      "dP": -1.1102230246251565e-16,
+      "dQ": -4.579669976578771e-16,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 53,
+      "dP": 4.218847493575595e-15,
+      "dQ": 3.969047313034935e-15,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 54,
+      "dP": 4.6629367034256575e-15,
+      "dQ": 3.164135620181696e-15,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 55,
+      "dP": -1.5654144647214707e-14,
+      "dQ": -1.1907141939104804e-14,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 56,
+      "dP": 2.5673907444456745e-15,
+      "dQ": 7.91033905045424e-16,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 57,
+      "dP": 2.3037127760972e-15,
+      "dQ": -4.218847493575595e-15,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 58,
+      "dP": -1.3322676295501878e-15,
+      "dQ": -7.605027718682322e-15,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 59,
+      "dP": -3.9968028886505635e-15,
+      "dQ": 2.123301534595612e-15,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 60,
+      "dP": 2.886579864025407e-15,
+      "dQ": -1.1296519275560968e-14,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 61,
+      "dP": -1.5543122344752192e-15,
+      "dQ": 4.107825191113079e-15,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 62,
+      "dP": 2.6645352591003757e-15,
+      "dQ": 1.8318679906315083e-14,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 63,
+      "dP": 6.661338147750939e-16,
+      "dQ": 1.709743457922741e-14,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 64,
+      "dP": -2.782847756463113e-06,
+      "dQ": 2.81233578425244e-07,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 65,
+      "dP": -8.326672684688674e-16,
+      "dQ": 4.884981308350689e-15,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 66,
+      "dP": 2.7755575615628914e-16,
+      "dQ": -8.326672684688674e-16,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 67,
+      "dP": -7.771561172376096e-15,
+      "dQ": -3.552713678800501e-15,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 68,
+      "dP": 1.744070203812953e-06,
+      "dQ": -2.941879357898358e-07,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 69,
+      "dP": 1.8861309725171083e-07,
+      "dQ": 1.2118428599494635e-07,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 70,
+      "dP": -3.608224830031759e-16,
+      "dQ": 2.886579864025407e-15,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 71,
+      "dP": 4.4681452274208944e-07,
+      "dQ": 1.254874237265058e-07,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 72,
+      "dP": -3.677613769070831e-16,
+      "dQ": -2.3939183968479938e-15,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 73,
+      "dP": -1.2212453270876722e-15,
+      "dQ": -1.4155343563970746e-15,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 74,
+      "dP": 8.261128053299593e-07,
+      "dQ": -2.446786011717217e-07,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 75,
+      "dP": 1.0963811126751821e-06,
+      "dQ": -3.372135813917154e-07,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 76,
+      "dP": 3.30756772004559e-06,
+      "dQ": -1.4456083763381145e-07,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 77,
+      "dP": -2.6645352591003757e-15,
+      "dQ": 4.218847493575595e-15,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 78,
+      "dP": 8.881784197001252e-16,
+      "dQ": 9.270362255620057e-15,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 79,
+      "dP": 3.7802177419443694e-06,
+      "dQ": 3.795186945598772e-06,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 80,
+      "dP": 5.0228048831257865e-08,
+      "dQ": -5.5217272354468605e-06,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 81,
+      "dP": 1.5543122344752192e-15,
+      "dQ": 4.218847493575595e-15,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 82,
+      "dP": -2.1094237467877974e-15,
+      "dQ": 8.604228440844963e-16,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 83,
+      "dP": -3.2335245592207684e-15,
+      "dQ": -3.802513859341161e-15,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 84,
+      "dP": -2.4369395390522186e-14,
+      "dQ": 3.858025010572419e-15,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 85,
+      "dP": -2.6867397195928788e-14,
+      "dQ": -9.159339953157541e-16,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 86,
+      "dP": 1.474747431344319e-14,
+      "dQ": -2.401967513776526e-13,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 87,
+      "dP": -1.7763568394002505e-15,
+      "dQ": 8.049116928532385e-16,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 88,
+      "dP": -6.217248937900877e-15,
+      "dQ": -1.6917023337725823e-14,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 89,
+      "dP": -8.881784197001252e-16,
+      "dQ": -2.0261570199409107e-15,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 90,
+      "dP": 3.608224830031759e-16,
+      "dQ": 2.3696322681843185e-15,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 91,
+      "dP": 3.552713678800501e-15,
+      "dQ": 2.3321622411032195e-14,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 92,
+      "dP": -1.8596235662471372e-15,
+      "dQ": -1.7763568394002505e-15,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 93,
+      "dP": -1.27675647831893e-15,
+      "dQ": 1.1934897514720433e-15,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 94,
+      "dP": -1.7208456881689926e-15,
+      "dQ": -5.10702591327572e-15,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 95,
+      "dP": -1.4432899320127035e-15,
+      "dQ": -6.494804694057166e-15,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 96,
+      "dP": 3.608224830031759e-16,
+      "dQ": -9.575673587391975e-16,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 97,
+      "dP": -5.551115123125783e-16,
+      "dQ": -2.609024107869118e-15,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 98,
+      "dP": -1.3877787807814457e-15,
+      "dQ": -3.9968028886505635e-15,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 99,
+      "dP": -8.881784197001252e-16,
+      "dQ": -1.0644263248593688e-14,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 100,
+      "dP": -6.38378239159465e-16,
+      "dQ": -1.4155343563970746e-15,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 101,
+      "dP": -9.853229343548264e-16,
+      "dQ": -9.020562075079397e-16,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 102,
+      "dP": -3.0531133177191805e-16,
+      "dQ": 2.1371793224034263e-15,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 103,
+      "dP": -3.1086244689504383e-15,
+      "dQ": -6.522560269672795e-15,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 104,
+      "dP": -1.3877787807814457e-15,
+      "dQ": -9.783840404509192e-15,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 105,
+      "dP": 1.3877787807814457e-15,
+      "dQ": 3.0808688933348094e-15,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 106,
+      "dP": 4.440892098500626e-16,
+      "dQ": 1.249000902703301e-16,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 107,
+      "dP": -8.708311849403572e-16,
+      "dQ": 8.026565523344686e-15,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 108,
+      "dP": 1.4016565685892601e-15,
+      "dQ": 7.28583859910259e-15,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 109,
+      "dP": -2.55351295663786e-15,
+      "dQ": -9.270362255620057e-15,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 110,
+      "dP": 1.499946237874244e-16,
+      "dQ": 5.48172618408671e-16,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 111,
+      "dP": 1.887379141862766e-15,
+      "dQ": 1.790234627208065e-15,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 112,
+      "dP": 1.5444610078352294e-07,
+      "dQ": 2.6152959967801204e-08,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 113,
+      "dP": 8.465450562766819e-16,
+      "dQ": -9.291178937331779e-15,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 114,
+      "dP": -6.050715484207103e-15,
+      "dQ": 5.7592819402429996e-15,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 115,
+      "dP": 4.884981308350689e-15,
+      "dQ": 5.1514348342607263e-14,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 116,
+      "dP": -4.440892098500626e-16,
+      "dQ": -8.604228440844963e-16,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    },
+    {
+      "bus": 117,
+      "dP": 1.7208456881689926e-15,
+      "dQ": 7.188694084447889e-15,
+      "voltage_violation": 0.0,
+      "pg_violation": 0.0,
+      "qg_violation": 0.0,
+      "angle_violation": 0.0
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": 0,
+      "from": 0,
+      "to": 1,
+      "p": -0.08147285944653548,
+      "q": -0.05861440488886445,
+      "s": 0.10036670407496036,
+      "limit": 1.51,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 0,
+      "from": 1,
+      "to": 0,
+      "p": 0.08172484931417578,
+      "q": 0.032715097803171236,
+      "s": 0.08802970305354776,
+      "limit": 1.51,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 1,
+      "from": 0,
+      "to": 2,
+      "p": -0.42852714055346375,
+      "q": -0.06138560008791544,
+      "s": 0.4329014923618092,
+      "limit": 1.51,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 1,
+      "from": 2,
+      "to": 0,
+      "p": 0.43083165500191745,
+      "q": 0.05756244563226087,
+      "s": 0.43466003968487626,
+      "limit": 1.51,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 2,
+      "from": 3,
+      "to": 4,
+      "p": -1.1839790002052917,
+      "q": 0.5222890091292339,
+      "s": 1.2940603084803735,
+      "limit": 1.76,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 2,
+      "from": 4,
+      "to": 3,
+      "p": 1.1866040033137155,
+      "q": -0.5127422746705319,
+      "s": 1.292646007580748,
+      "limit": 1.76,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 3,
+      "from": 2,
+      "to": 4,
+      "p": -0.7761556879892623,
+      "q": -0.07826619380764199,
+      "s": 0.7800918209359847,
+      "limit": 1.75,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 3,
+      "from": 4,
+      "to": 2,
+      "p": 0.7899240378961356,
+      "q": 0.10899691882116758,
+      "s": 0.7974084988001092,
+      "limit": 1.75,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 4,
+      "from": 4,
+      "to": 5,
+      "p": 1.0597507219345363,
+      "q": -0.09306730890525933,
+      "s": 1.0638294584319603,
+      "limit": 1.76,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 4,
+      "from": 5,
+      "to": 4,
+      "p": -1.047735938559672,
+      "q": 0.13171622768308056,
+      "s": 1.0559828415199644,
+      "limit": 1.76,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 5,
+      "from": 5,
+      "to": 6,
+      "p": 0.5277359385596629,
+      "q": 0.11539282048777333,
+      "s": 0.5402043352913524,
+      "limit": 1.76,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 5,
+      "from": 6,
+      "to": 5,
+      "p": -0.5265225250854226,
+      "q": -0.11595370352210546,
+      "s": 0.539139342640492,
+      "limit": 1.76,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 6,
+      "from": 7,
+      "to": 8,
+      "p": -4.936389407057225,
+      "q": -0.38273909518387117,
+      "s": 4.951204862767138,
+      "limit": 7.11,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 6,
+      "from": 8,
+      "to": 7,
+      "p": 4.990879548852158,
+      "q": -0.22457687859300846,
+      "s": 4.995929687810798,
+      "limit": 7.11,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 7,
+      "from": 7,
+      "to": 4,
+      "p": 3.967549270770246,
+      "q": 0.3392517995552309,
+      "s": 3.982026996328751,
+      "limit": 10.99,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 7,
+      "from": 4,
+      "to": 7,
+      "p": -3.967549270770246,
+      "q": 0.036207689631130746,
+      "s": 3.9677144822653174,
+      "limit": 10.99,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 8,
+      "from": 8,
+      "to": 9,
+      "p": -4.99087954885215,
+      "q": 0.2245768785930048,
+      "s": 4.99592968781079,
+      "limit": 7.1,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 8,
+      "from": 9,
+      "to": 8,
+      "p": 5.04999999933976,
+      "q": -0.8630258027672486,
+      "s": 5.1232132036031475,
+      "limit": 7.1,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 9,
+      "from": 3,
+      "to": 10,
+      "p": 0.7939790002052981,
+      "q": 0.06856503715456619,
+      "s": 0.7969340104971125,
+      "limit": 1.51,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 9,
+      "from": 10,
+      "to": 3,
+      "p": -0.7821386385133957,
+      "q": -0.04886994682968371,
+      "s": 0.7836639085467216,
+      "limit": 1.51,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 10,
+      "from": 4,
+      "to": 10,
+      "p": 0.9312705076258666,
+      "q": 0.01279991877291381,
+      "s": 0.9313584682034799,
+      "limit": 1.52,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 10,
+      "from": 10,
+      "to": 4,
+      "p": -0.915535287796233,
+      "q": 0.020928251572377377,
+      "s": 0.9157744563559348,
+      "limit": 1.52,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 11,
+      "from": 10,
+      "to": 11,
+      "p": 0.7074412431324371,
+      "q": -0.25897777397982785,
+      "s": 0.7533542326822852,
+      "limit": 1.51,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 11,
+      "from": 11,
+      "to": 10,
+      "p": -0.7043295780369833,
+      "q": 0.26378890495643975,
+      "s": 0.7521068679887669,
+      "limit": 1.51,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 12,
+      "from": 1,
+      "to": 11,
+      "p": -0.2817248493141783,
+      "q": -0.12271509780317227,
+      "s": 0.3072912070820423,
+      "limit": 1.51,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 12,
+      "from": 11,
+      "to": 1,
+      "p": 0.2833567769185018,
+      "q": 0.11124049986415686,
+      "s": 0.3044101046871951,
+      "limit": 1.51,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 13,
+      "from": 2,
+      "to": 11,
+      "p": -0.04467596701265511,
+      "q": -0.07929625182461174,
+      "s": 0.09101558977421444,
+      "limit": 1.51,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 13,
+      "from": 11,
+      "to": 2,
+      "p": 0.0449190417004135,
+      "q": 0.03653888950122693,
+      "s": 0.05790346063290482,
+      "limit": 1.51,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 14,
+      "from": 6,
+      "to": 11,
+      "p": 0.3365225250854271,
+      "q": 0.09595370352210755,
+      "s": 0.3499350269828393,
+      "limit": 1.64,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 14,
+      "from": 11,
+      "to": 6,
+      "p": -0.3355528187388657,
+      "q": -0.10166122873877008,
+      "s": 0.3506147452579178,
+      "limit": 1.64,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 15,
+      "from": 10,
+      "to": 12,
+      "p": 0.29023268317719614,
+      "q": 0.05691946923714046,
+      "s": 0.295761451785848,
+      "limit": 1.51,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 15,
+      "from": 12,
+      "to": 10,
+      "p": -0.2884089147649839,
+      "q": -0.07102776426255535,
+      "s": 0.29702633790970945,
+      "limit": 1.51,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 16,
+      "from": 11,
+      "to": 13,
+      "p": 0.08328400552729816,
+      "q": -0.044098730719951476,
+      "s": 0.09423865251467585,
+      "limit": 1.51,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 16,
+      "from": 13,
+      "to": 11,
+      "p": -0.08312322261907752,
+      "q": 0.02492288829150119,
+      "s": 0.08677914783731959,
+      "limit": 1.51,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 17,
+      "from": 12,
+      "to": 14,
+      "p": -0.051591081790879,
+      "q": -0.0889722152737174,
+      "s": 0.10284792079116563,
+      "limit": 1.15,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 17,
+      "from": 14,
+      "to": 12,
+      "p": 0.05199586813550728,
+      "q": 0.022735932890395646,
+      "s": 0.05674938719987764,
+      "limit": 1.15,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 18,
+      "from": 13,
+      "to": 14,
+      "p": -0.05687677294762628,
+      "q": -0.03492286235468844,
+      "s": 0.06674259221801583,
+      "limit": 1.44,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 18,
+      "from": 14,
+      "to": 13,
+      "p": 0.057057284756912366,
+      "q": -0.019236039832938815,
+      "s": 0.06021261472719643,
+      "limit": 1.44,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 19,
+      "from": 11,
+      "to": 15,
+      "p": -0.043043669665356506,
+      "q": 0.016642003913665028,
+      "s": 0.046148822222487694,
+      "limit": 1.64,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 19,
+      "from": 15,
+      "to": 11,
+      "p": 0.04309548767407327,
+      "q": -0.03961365079276761,
+      "s": 0.05853599223552582,
+      "limit": 1.64,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 20,
+      "from": 14,
+      "to": 16,
+      "p": -1.1660452997665676,
+      "q": 0.03709123672222753,
+      "s": 1.1666350761696174,
+      "limit": 1.51,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 20,
+      "from": 16,
+      "to": 14,
+      "p": 1.18247234843208,
+      "q": -0.03197377900958265,
+      "s": 1.1829045512426741,
+      "limit": 1.51,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 21,
+      "from": 15,
+      "to": 16,
+      "p": -0.29309506854295136,
+      "q": -0.060386598533245364,
+      "s": 0.2992511662243152,
+      "limit": 1.58,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 21,
+      "from": 16,
+      "to": 15,
+      "p": 0.29675310249322917,
+      "q": 0.023518273734896317,
+      "s": 0.29768357871879075,
+      "limit": 1.58,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 22,
+      "from": 16,
+      "to": 17,
+      "p": 0.8482279055470554,
+      "q": -0.009856788703122565,
+      "s": 0.8482851737666304,
+      "limit": 1.67,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 22,
+      "from": 17,
+      "to": 16,
+      "p": -0.8403516015599706,
+      "q": 0.027732646396117555,
+      "s": 0.8408090829198621,
+      "limit": 1.67,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 23,
+      "from": 17,
+      "to": 18,
+      "p": 0.2403516015599692,
+      "q": 0.04635446149655746,
+      "s": 0.24478077635524817,
+      "limit": 1.73,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 23,
+      "from": 18,
+      "to": 17,
+      "p": -0.23973835483009295,
+      "q": -0.05620903583987487,
+      "s": 0.24623958757008974,
+      "limit": 1.73,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 24,
+      "from": 18,
+      "to": 19,
+      "p": -0.15567591613182685,
+      "q": 0.1300589884851405,
+      "s": 0.20285544446541606,
+      "limit": 1.78,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 24,
+      "from": 19,
+      "to": 18,
+      "p": 0.15672734230404123,
+      "q": -0.15740273796789134,
+      "s": 0.22212402334163853,
+      "limit": 1.78,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 25,
+      "from": 14,
+      "to": 18,
+      "p": 0.05681012162054479,
+      "q": -0.0062806737102177705,
+      "s": 0.057156248834185325,
+      "limit": 1.51,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 25,
+      "from": 18,
+      "to": 14,
+      "p": -0.05677476590017723,
+      "q": -0.004662143404053361,
+      "s": 0.056965863674132824,
+      "limit": 1.51,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 26,
+      "from": 19,
+      "to": 20,
+      "p": -0.3367273423040432,
+      "q": 0.12740273796789414,
+      "s": 0.36002327799304895,
+      "limit": 1.77,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 26,
+      "from": 20,
+      "to": 19,
+      "p": 0.338999934803429,
+      "q": -0.1398271072435205,
+      "s": 0.3667050254861802,
+      "limit": 1.77,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 27,
+      "from": 20,
+      "to": 21,
+      "p": -0.47899993480342845,
+      "q": 0.05982710724351675,
+      "s": 0.48272167995939025,
+      "limit": 1.78,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 27,
+      "from": 21,
+      "to": 20,
+      "p": 0.4836365103071447,
+      "q": -0.06443798592916272,
+      "s": 0.48791036895384776,
+      "limit": 1.78,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 28,
+      "from": 21,
+      "to": 22,
+      "p": -0.5836365103071447,
+      "q": 0.0144379859291629,
+      "s": 0.5838150662677287,
+      "limit": 1.78,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 28,
+      "from": 22,
+      "to": 21,
+      "p": 0.5946040063793502,
+      "q": -0.007271054491091694,
+      "s": 0.5946484613919275,
+      "limit": 1.78,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 29,
+      "from": 22,
+      "to": 23,
+      "p": -0.21025168981875647,
+      "q": -0.0062112299459291115,
+      "s": 0.2103434155115957,
+      "limit": 1.58,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 29,
+      "from": 23,
+      "to": 22,
+      "p": 0.21079817566204978,
+      "q": -0.04682797982954571,
+      "s": 0.2159368670638822,
+      "limit": 1.58,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 30,
+      "from": 22,
+      "to": 24,
+      "p": -1.4451687941364693,
+      "q": 0.18728262639722593,
+      "s": 1.457253452799512,
+      "limit": 1.86,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 30,
+      "from": 24,
+      "to": 22,
+      "p": 1.4754825354165946,
+      "q": -0.12802495360187094,
+      "s": 1.4810263674439235,
+      "limit": 1.86,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 31,
+      "from": 25,
+      "to": 24,
+      "p": 2.0872060612505043,
+      "q": 0.38626289244093165,
+      "s": 2.1226465000554566,
+      "limit": 7.68,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 31,
+      "from": 24,
+      "to": 25,
+      "p": -2.087206061250504,
+      "q": -0.23625595230252694,
+      "s": 2.1005346979088957,
+      "limit": 7.68,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 32,
+      "from": 24,
+      "to": 26,
+      "p": 1.3940662914576252,
+      "q": -0.10571868005072423,
+      "s": 1.398069119997321,
+      "limit": 1.77,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 32,
+      "from": 26,
+      "to": 24,
+      "p": -1.3390625760017927,
+      "q": 0.19287513021984776,
+      "s": 1.3528818863100651,
+      "limit": 1.77,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 33,
+      "from": 26,
+      "to": 27,
+      "p": 0.3166885414823246,
+      "q": 0.032926251118318844,
+      "s": 0.3183956191892543,
+      "limit": 1.74,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 33,
+      "from": 27,
+      "to": 26,
+      "p": -0.31488479484154874,
+      "q": -0.04809073244843723,
+      "s": 0.31853595176970434,
+      "limit": 1.74,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 34,
+      "from": 27,
+      "to": 28,
+      "p": 0.14488414559461704,
+      "q": -0.021909084119953952,
+      "s": 0.14653130590988878,
+      "limit": 1.65,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 34,
+      "from": 28,
+      "to": 27,
+      "p": -0.14441545848831533,
+      "q": -0.0015326603382741846,
+      "s": 0.14442359121037965,
+      "limit": 1.65,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 35,
+      "from": 29,
+      "to": 16,
+      "p": 2.4747412453433073,
+      "q": 0.47177769742822495,
+      "s": 2.5193091170386417,
+      "limit": 7.56,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 35,
+      "from": 16,
+      "to": 29,
+      "p": -2.4747412453433073,
+      "q": -0.2579942095940905,
+      "s": 2.488152978333009,
+      "limit": 7.56,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 36,
+      "from": 7,
+      "to": 29,
+      "p": 0.6888401362869824,
+      "q": -0.00562930176841861,
+      "s": 0.6888631376393052,
+      "limit": 5.8,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 36,
+      "from": 29,
+      "to": 7,
+      "p": -0.6866717172609609,
+      "q": -0.5230118459771224,
+      "s": 0.8631682560882983,
+      "limit": 5.8,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 37,
+      "from": 25,
+      "to": 29,
+      "p": 2.762793938532071,
+      "q": -0.44793551659035,
+      "s": 2.7988705889720262,
+      "limit": 3.4,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 37,
+      "from": 29,
+      "to": 25,
+      "p": -2.705110293278985,
+      "q": 0.10677090596929106,
+      "s": 2.7072166010804195,
+      "limit": 3.4,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 38,
+      "from": 16,
+      "to": 30,
+      "p": 0.06647178892112035,
+      "q": 0.1468732703879771,
+      "s": 0.16121493813178048,
+      "limit": 1.51,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 38,
+      "from": 30,
+      "to": 16,
+      "p": -0.06507639572671364,
+      "q": -0.185937847120824,
+      "s": 0.19699700574553602,
+      "limit": 1.51,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 39,
+      "from": 28,
+      "to": 30,
+      "p": -0.09558514984373216,
+      "q": -0.03846735118503587,
+      "s": 0.1030352268781974,
+      "limit": 1.46,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 39,
+      "from": 30,
+      "to": 28,
+      "p": 0.09568997971093807,
+      "q": 0.029965749782778304,
+      "s": 0.100272221363266,
+      "limit": 1.46,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 40,
+      "from": 22,
+      "to": 31,
+      "p": 0.9908155254422423,
+      "q": -0.2038003036771618,
+      "s": 1.0115581887545027,
+      "limit": 1.58,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 40,
+      "from": 31,
+      "to": 22,
+      "p": -0.9620501597509435,
+      "q": 0.18006397117168232,
+      "s": 0.9787561205892571,
+      "limit": 1.58,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 41,
+      "from": 30,
+      "to": 31,
+      "p": -0.2906138957542472,
+      "q": -0.02402798475484884,
+      "s": 0.2916055219930509,
+      "limit": 1.51,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 41,
+      "from": 31,
+      "to": 30,
+      "p": 0.2929799053444376,
+      "q": 0.0048586217279454336,
+      "s": 0.2930201889643969,
+      "limit": 1.51,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 42,
+      "from": 26,
+      "to": 31,
+      "p": 0.11067159086243723,
+      "q": -0.047642293332462504,
+      "s": 0.12049061846467177,
+      "limit": 1.51,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 42,
+      "from": 31,
+      "to": 26,
+      "p": -0.11038382673836017,
+      "q": 0.027691769011105784,
+      "s": 0.11380432011294103,
+      "limit": 1.51,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 43,
+      "from": 14,
+      "to": 32,
+      "p": 0.10018210990452522,
+      "q": -0.034310640682470986,
+      "s": 0.10589464202198336,
+      "limit": 1.5,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 43,
+      "from": 32,
+      "to": 14,
+      "p": -0.09982419481836675,
+      "q": 0.0005414206115093023,
+      "s": 0.09982566307024365,
+      "limit": 1.5,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 44,
+      "from": 18,
+      "to": 33,
+      "p": 0.0021890368621030644,
+      "q": -0.07918797277962425,
+      "s": 0.07921822337903166,
+      "limit": 1.14,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 44,
+      "from": 33,
+      "to": 18,
+      "p": -0.0020519605492059076,
+      "q": 0.009789227364485037,
+      "s": 0.010001975529318198,
+      "limit": 1.14,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 45,
+      "from": 34,
+      "to": 35,
+      "p": 0.012713705969890722,
+      "q": -0.0431292780250861,
+      "s": 0.04496412950846496,
+      "limit": 1.76,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 45,
+      "from": 35,
+      "to": 34,
+      "p": -0.012709887234387426,
+      "q": 0.04016584056330593,
+      "s": 0.04212880228142923,
+      "limit": 1.76,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 46,
+      "from": 34,
+      "to": 36,
+      "p": -0.3427137059698908,
+      "q": -0.04687072197493562,
+      "s": 0.3459039589800448,
+      "limit": 1.75,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 46,
+      "from": 36,
+      "to": 34,
+      "p": 0.3438911826892759,
+      "q": 0.03745914524092131,
+      "s": 0.345925328782975,
+      "limit": 1.75,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 47,
+      "from": 32,
+      "to": 36,
+      "p": -0.13017580518163246,
+      "q": -0.09054142061151052,
+      "s": 0.15856698616369294,
+      "limit": 1.54,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 47,
+      "from": 36,
+      "to": 32,
+      "p": 0.13100872810184275,
+      "q": 0.052840097392709715,
+      "s": 0.14126345150580744,
+      "limit": 1.54,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 48,
+      "from": 33,
+      "to": 35,
+      "p": 0.29799049467431016,
+      "q": -0.0339958424919698,
+      "s": 0.2999234105950699,
+      "limit": 1.46,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 48,
+      "from": 35,
+      "to": 33,
+      "p": -0.2972901127656127,
+      "q": 0.02982117169360987,
+      "s": 0.29878205004546454,
+      "limit": 1.46,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 49,
+      "from": 33,
+      "to": 36,
+      "p": -0.9475337799147587,
+      "q": -0.141176035030257,
+      "s": 0.957993182098085,
+      "limit": 1.59,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 49,
+      "from": 36,
+      "to": 33,
+      "p": 0.949635301887503,
+      "q": 0.13787313945032226,
+      "s": 0.9595916887785434,
+      "limit": 1.59,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 50,
+      "from": 37,
+      "to": 36,
+      "p": 2.541857542345092,
+      "q": 0.9557857265347166,
+      "s": 2.715615237956977,
+      "limit": 7.83,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 50,
+      "from": 36,
+      "to": 37,
+      "p": -2.541857542345092,
+      "q": -0.7227170291125369,
+      "s": 2.6426047131089967,
+      "limit": 7.83,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 51,
+      "from": 36,
+      "to": 38,
+      "p": 0.611930152548565,
+      "q": 0.142929549875337,
+      "s": 0.6284006427635768,
+      "limit": 1.51,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 51,
+      "from": 38,
+      "to": 36,
+      "p": -0.6005182100746428,
+      "q": -0.1346584885867701,
+      "s": 0.6154307671702205,
+      "limit": 1.51,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 52,
+      "from": 36,
+      "to": 39,
+      "p": 0.5053921771178953,
+      "q": 0.07071509802000275,
+      "s": 0.5103154688816954,
+      "limit": 1.4,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 52,
+      "from": 39,
+      "to": 36,
+      "p": -0.4914424399850954,
+      "q": -0.07661857663975985,
+      "s": 0.4973792095622884,
+      "limit": 1.4,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 53,
+      "from": 29,
+      "to": 37,
+      "p": 0.9170450311684012,
+      "q": -0.05553509550925667,
+      "s": 0.918725060082654,
+      "limit": 5.42,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 53,
+      "from": 37,
+      "to": 29,
+      "p": -0.9132453210285607,
+      "q": -0.3431144209378335,
+      "s": 0.9755739450375167,
+      "limit": 5.42,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 54,
+      "from": 38,
+      "to": 39,
+      "p": 0.33051821007464216,
+      "q": 0.024658488586769195,
+      "s": 0.33143676357689883,
+      "limit": 1.51,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 54,
+      "from": 39,
+      "to": 38,
+      "p": -0.3285944133796969,
+      "q": -0.03458703302184862,
+      "s": 0.3304096720097667,
+      "limit": 1.51,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 55,
+      "from": 39,
+      "to": 40,
+      "p": 0.2173678524878292,
+      "q": 0.17240239974255347,
+      "s": 0.2774371473544267,
+      "limit": 1.52,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 55,
+      "from": 40,
+      "to": 39,
+      "p": -0.21626300382559027,
+      "q": -0.18124988139729806,
+      "s": 0.28217229901285823,
+      "limit": 1.52,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 56,
+      "from": 39,
+      "to": 41,
+      "p": -0.057330999123031,
+      "q": 0.09572067114542226,
+      "s": 0.11157638793658387,
+      "limit": 1.51,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 56,
+      "from": 41,
+      "to": 39,
+      "p": 0.058274600102387906,
+      "q": -0.14018712371979808,
+      "s": 0.1518168589910989,
+      "limit": 1.51,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 57,
+      "from": 40,
+      "to": 41,
+      "p": -0.15373699617441405,
+      "q": 0.08124988139729128,
+      "s": 0.17388676551079355,
+      "limit": 1.51,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 57,
+      "from": 41,
+      "to": 40,
+      "p": 0.155084186236037,
+      "q": -0.11153130925049713,
+      "s": 0.19102444284338022,
+      "limit": 1.51,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 58,
+      "from": 42,
+      "to": 43,
+      "p": -0.1195734863679524,
+      "q": 0.11429067884623148,
+      "s": 0.16540912282374065,
+      "limit": 1.17,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 58,
+      "from": 43,
+      "to": 42,
+      "p": 0.12162978356892057,
+      "q": -0.1683862241956629,
+      "s": 0.20772030413489798,
+      "limit": 1.17,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 59,
+      "from": 33,
+      "to": 42,
+      "p": 0.06159524578967058,
+      "q": 0.14315620159091655,
+      "s": 0.15584502673434616,
+      "limit": 1.67,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 59,
+      "from": 42,
+      "to": 33,
+      "p": -0.060426087665717554,
+      "q": -0.18429061207575687,
+      "s": 0.19394417178621812,
+      "limit": 1.67,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 60,
+      "from": 43,
+      "to": 44,
+      "p": -0.28162905180250203,
+      "q": 0.18845698895572718,
+      "s": 0.33886717088770263,
+      "limit": 1.66,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 60,
+      "from": 44,
+      "to": 43,
+      "p": 0.2842968167891903,
+      "q": -0.19989208214401716,
+      "s": 0.3475363643424051,
+      "limit": 1.66,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 61,
+      "from": 44,
+      "to": 45,
+      "p": -0.37281816761630415,
+      "q": 0.027144742794319915,
+      "s": 0.3738050603806059,
+      "limit": 1.53,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 61,
+      "from": 45,
+      "to": 44,
+      "p": 0.37857776317130226,
+      "q": -0.04044922940898685,
+      "s": 0.38073253463234197,
+      "limit": 1.53,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 62,
+      "from": 45,
+      "to": 46,
+      "p": -0.358125400718705,
+      "q": 0.06666267772627596,
+      "s": 0.36427697599707065,
+      "limit": 1.52,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 62,
+      "from": 46,
+      "to": 45,
+      "p": 0.363260926767426,
+      "q": -0.0812140525751715,
+      "s": 0.3722287243773806,
+      "limit": 1.52,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 63,
+      "from": 45,
+      "to": 47,
+      "p": -0.10045236273972975,
+      "q": -0.03237904398624645,
+      "s": 0.10554183847866934,
+      "limit": 1.48,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 63,
+      "from": 47,
+      "to": 45,
+      "p": 0.10106388394683735,
+      "q": -0.013238136790107081,
+      "s": 0.10192721375615736,
+      "limit": 1.48,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 64,
+      "from": 46,
+      "to": 48,
+      "p": 0.1830238665725087,
+      "q": -0.15767337586894042,
+      "s": 0.24157530749863412,
+      "limit": 1.5,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 64,
+      "from": 48,
+      "to": 46,
+      "p": -0.1819650854972058,
+      "q": 0.1448745187160921,
+      "s": 0.23259389182268897,
+      "limit": 1.5,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 65,
+      "from": 41,
+      "to": 48,
+      "p": -0.5866787714940029,
+      "q": 0.12266890962521265,
+      "s": 0.5993660336641968,
+      "limit": 0.89,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 65,
+      "from": 48,
+      "to": 41,
+      "p": 0.6131865079485097,
+      "q": -0.089885137549182,
+      "s": 0.6197394867864425,
+      "limit": 0.89,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 66,
+      "from": 41,
+      "to": 48,
+      "p": -0.5866787714940029,
+      "q": 0.12266890962521265,
+      "s": 0.5993660336641968,
+      "limit": 0.89,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 66,
+      "from": 48,
+      "to": 41,
+      "p": 0.6131865079485097,
+      "q": -0.089885137549182,
+      "s": 0.6197394867864425,
+      "limit": 0.89,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 67,
+      "from": 44,
+      "to": 48,
+      "p": -0.44147864917288737,
+      "q": 0.05058456114724713,
+      "s": 0.4443671854468745,
+      "limit": 1.38,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 67,
+      "from": 48,
+      "to": 44,
+      "p": 0.45547023902678,
+      "q": -0.05689896690659409,
+      "s": 0.4590104912462784,
+      "limit": 1.38,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 68,
+      "from": 47,
+      "to": 48,
+      "p": -0.3010638839468372,
+      "q": 0.05550443731930529,
+      "s": 0.3061375585897414,
+      "limit": 1.4,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 68,
+      "from": 48,
+      "to": 47,
+      "p": 0.3027297241780619,
+      "q": -0.0636049443426521,
+      "s": 0.30933941689632327,
+      "limit": 1.4,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 69,
+      "from": 48,
+      "to": 49,
+      "p": 0.39675960218943485,
+      "q": -0.06942873571103994,
+      "s": 0.40278844480937137,
+      "limit": 1.4,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 69,
+      "from": 49,
+      "to": 48,
+      "p": -0.39254471484528747,
+      "q": 0.062291623300444424,
+      "s": 0.3974564120584451,
+      "limit": 1.4,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 70,
+      "from": 48,
+      "to": 50,
+      "p": 0.49457621037327915,
+      "q": -0.05177087778820259,
+      "s": 0.49727844479140165,
+      "limit": 1.4,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 70,
+      "from": 50,
+      "to": 48,
+      "p": -0.4828642025653815,
+      "q": 0.05047963760246482,
+      "s": 0.48549565593481675,
+      "limit": 1.4,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 71,
+      "from": 50,
+      "to": 51,
+      "p": 0.23671017585141252,
+      "q": -0.016354369347798457,
+      "s": 0.23727446712272024,
+      "limit": 1.42,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 71,
+      "from": 51,
+      "to": 50,
+      "p": -0.2355551211563217,
+      "q": 0.005988661006228413,
+      "s": 0.2356312355432041,
+      "limit": 1.42,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 72,
+      "from": 51,
+      "to": 52,
+      "p": 0.055555121156321184,
+      "q": -0.05598866100623054,
+      "s": 0.07887396051907199,
+      "limit": 1.66,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 72,
+      "from": 52,
+      "to": 51,
+      "p": -0.05537322221740685,
+      "q": 0.01688253186696092,
+      "s": 0.057889667653021386,
+      "limit": 1.66,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 73,
+      "from": 52,
+      "to": 53,
+      "p": -0.17462677778259306,
+      "q": -0.12688253186696047,
+      "s": 0.21585571202009313,
+      "limit": 1.77,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 73,
+      "from": 53,
+      "to": 52,
+      "p": 0.17577300251877037,
+      "q": 0.10107415491882672,
+      "s": 0.2027612714672569,
+      "limit": 1.77,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 74,
+      "from": 48,
+      "to": 53,
+      "p": 0.2538198242159648,
+      "q": -0.09617951662770326,
+      "s": 0.27143139572231123,
+      "limit": 0.99,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 74,
+      "from": 53,
+      "to": 48,
+      "p": -0.24896328598996292,
+      "q": 0.04003789019152656,
+      "s": 0.25216215104949596,
+      "limit": 0.99,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 75,
+      "from": 48,
+      "to": 53,
+      "p": 0.24643687634421316,
+      "q": -0.1052884873572548,
+      "s": 0.2679865660667934,
+      "limit": 0.97,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 75,
+      "from": 53,
+      "to": 48,
+      "p": -0.24086762701238051,
+      "q": 0.04938690632865531,
+      "s": 0.24587858845229008,
+      "limit": 0.97,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 76,
+      "from": 53,
+      "to": 54,
+      "p": 0.04184620043105501,
+      "q": -0.04160957787181466,
+      "s": 0.05901238396461065,
+      "limit": 1.69,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 76,
+      "from": 54,
+      "to": 53,
+      "p": -0.041801089026741164,
+      "q": 0.02111133909707586,
+      "s": 0.04682968804394563,
+      "limit": 1.69,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 77,
+      "from": 53,
+      "to": 55,
+      "p": 0.10068884968581791,
+      "q": -0.06489179594981337,
+      "s": 0.11978810305136921,
+      "limit": 1.55,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 77,
+      "from": 55,
+      "to": 53,
+      "p": -0.1006515299370605,
+      "q": 0.05753374583581769,
+      "s": 0.11593473331392735,
+      "limit": 1.55,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 78,
+      "from": 54,
+      "to": 55,
+      "p": -0.11792897593537668,
+      "q": 0.11613547847298206,
+      "s": 0.16551342158663487,
+      "limit": 1.46,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 78,
+      "from": 55,
+      "to": 54,
+      "p": 0.11806145988053363,
+      "q": -0.11955684916534853,
+      "s": 0.16802484486369493,
+      "limit": 1.46,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 79,
+      "from": 55,
+      "to": 56,
+      "p": -0.0992354504798473,
+      "q": 0.08347879168445962,
+      "s": 0.12967799849255707,
+      "limit": 1.4,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 79,
+      "from": 56,
+      "to": 55,
+      "p": 0.09987359883870416,
+      "q": -0.10630390644782065,
+      "s": 0.14586039994138714,
+      "limit": 1.4,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 80,
+      "from": 49,
+      "to": 56,
+      "p": 0.22254471484528784,
+      "q": -0.10229162330044651,
+      "s": 0.2449280022843671,
+      "limit": 1.4,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 80,
+      "from": 56,
+      "to": 49,
+      "p": -0.21987359883870672,
+      "q": 0.07630390644781986,
+      "s": 0.23273737474991457,
+      "limit": 1.4,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 81,
+      "from": 55,
+      "to": 57,
+      "p": 0.04480903755303834,
+      "q": 0.10464901072621931,
+      "s": 0.11383876884614469,
+      "limit": 1.4,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 81,
+      "from": 57,
+      "to": 55,
+      "p": -0.04428261465981379,
+      "q": -0.127619311112868,
+      "s": 0.13508382038583508,
+      "limit": 1.4,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 82,
+      "from": 50,
+      "to": 57,
+      "p": 0.07615402671397103,
+      "q": -0.11412526825466635,
+      "s": 0.13720062914925635,
+      "limit": 1.4,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 82,
+      "from": 57,
+      "to": 50,
+      "p": -0.0757173853401885,
+      "q": 0.09761931111287223,
+      "s": 0.12354210757837318,
+      "limit": 1.4,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 83,
+      "from": 53,
+      "to": 58,
+      "p": -0.42847714005998744,
+      "q": -0.1339976483591221,
+      "s": 0.44894100873027964,
+      "limit": 1.25,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 83,
+      "from": 58,
+      "to": 53,
+      "p": 0.43803392575927025,
+      "q": 0.11339242761163511,
+      "s": 0.45247272045476705,
+      "limit": 1.25,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 84,
+      "from": 55,
+      "to": 58,
+      "p": -0.3919338968978818,
+      "q": -0.07905021290138443,
+      "s": 0.3998263569317481,
+      "limit": 1.12,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 84,
+      "from": 58,
+      "to": 55,
+      "p": 0.40452050865339584,
+      "q": 0.05626725424890669,
+      "s": 0.40841504113084914,
+      "limit": 1.12,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 85,
+      "from": 55,
+      "to": 58,
+      "p": -0.4110496201187668,
+      "q": -0.07705455222014639,
+      "s": 0.41820950995599054,
+      "limit": 1.17,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 85,
+      "from": 58,
+      "to": 55,
+      "p": 0.4245028005881465,
+      "q": 0.059561240961598635,
+      "s": 0.42866090226665793,
+      "limit": 1.17,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 86,
+      "from": 54,
+      "to": 58,
+      "p": -0.47026993503788683,
+      "q": -0.12724688650474028,
+      "s": 0.4871812618786652,
+      "limit": 1.33,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 86,
+      "from": 58,
+      "to": 54,
+      "p": 0.48093505696051797,
+      "q": 0.1151402539713979,
+      "s": 0.49452584067793126,
+      "limit": 1.33,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 87,
+      "from": 58,
+      "to": 59,
+      "p": -0.20929008068787525,
+      "q": 0.04625814041441989,
+      "s": 0.2143412079581001,
+      "limit": 1.76,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 87,
+      "from": 59,
+      "to": 58,
+      "p": 0.21065396635414946,
+      "q": -0.0821668170789632,
+      "s": 0.22611165244105164,
+      "limit": 1.76,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 88,
+      "from": 58,
+      "to": 60,
+      "p": -0.3061686970194766,
+      "q": 0.05208912269591398,
+      "s": 0.3105681048302192,
+      "limit": 1.76,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 88,
+      "from": 60,
+      "to": 58,
+      "p": 0.3090644896444575,
+      "q": -0.08244184849794689,
+      "s": 0.3198710945724033,
+      "limit": 1.76,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 89,
+      "from": 59,
+      "to": 60,
+      "p": -1.1600202898608996,
+      "q": 0.0299677187136711,
+      "s": 1.1604073151501015,
+      "limit": 1.86,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 89,
+      "from": 60,
+      "to": 59,
+      "p": 1.1632004904561954,
+      "q": -0.030026187228633316,
+      "s": 1.1635879652682142,
+      "limit": 1.86,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 90,
+      "from": 59,
+      "to": 61,
+      "p": 0.16936632350675407,
+      "q": 0.02219909836528998,
+      "s": 0.17081496277090685,
+      "limit": 1.76,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 90,
+      "from": 61,
+      "to": 59,
+      "p": -0.16904064589115006,
+      "q": -0.03707500147306106,
+      "s": 0.173058648144277,
+      "limit": 1.76,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 91,
+      "from": 60,
+      "to": 61,
+      "p": 0.6680365951198812,
+      "q": 0.026346182034599097,
+      "s": 0.6685559166794983,
+      "limit": 1.76,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 91,
+      "from": 61,
+      "to": 60,
+      "p": -0.6647563811319704,
+      "q": -0.022326703366835343,
+      "s": 0.6651312110695935,
+      "limit": 1.76,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 92,
+      "from": 62,
+      "to": 58,
+      "p": 0.9225335146971494,
+      "q": 0.5226810722805919,
+      "s": 1.0603129675052856,
+      "limit": 7.6,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 92,
+      "from": 58,
+      "to": 62,
+      "p": -0.9225335146971494,
+      "q": -0.4853510077845403,
+      "s": 1.042417232444353,
+      "limit": 7.6,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 93,
+      "from": 62,
+      "to": 63,
+      "p": -0.9225335146971521,
+      "q": -0.5226810722806102,
+      "s": 1.060312967505297,
+      "limit": 6.87,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 93,
+      "from": 63,
+      "to": 62,
+      "p": 0.924165739872831,
+      "q": 0.30810251493842516,
+      "s": 0.974171173083088,
+      "limit": 6.87,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 94,
+      "from": 63,
+      "to": 60,
+      "p": 0.19030157541270554,
+      "q": 0.020805743556548698,
+      "s": 0.19143554677618918,
+      "limit": 10.95,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 94,
+      "from": 60,
+      "to": 63,
+      "p": -0.19030157541270554,
+      "q": -0.019932477784710093,
+      "s": 0.1913426070565456,
+      "limit": 10.95,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 95,
+      "from": 37,
+      "to": 64,
+      "p": -1.6286071788462286,
+      "q": -0.6126707344280884,
+      "s": 1.740036428300892,
+      "limit": 2.97,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 95,
+      "from": 64,
+      "to": 37,
+      "p": 1.6516882362353897,
+      "q": -0.25548520970613,
+      "s": 1.6713308236542992,
+      "limit": 2.97,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 96,
+      "from": 63,
+      "to": 64,
+      "p": -1.1144673152855373,
+      "q": -0.32890825849499095,
+      "s": 1.1619888292690086,
+      "limit": 6.75,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 96,
+      "from": 64,
+      "to": 63,
+      "p": 1.1175655835831402,
+      "q": -0.05370138724357798,
+      "s": 1.1188550722061412,
+      "limit": 6.75,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 97,
+      "from": 48,
+      "to": 65,
+      "p": -0.5190722120749492,
+      "q": -0.45346677563844195,
+      "s": 0.6892518247754634,
+      "limit": 1.86,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 97,
+      "from": 65,
+      "to": 48,
+      "p": 0.5272569583079875,
+      "q": 0.4686750141184884,
+      "s": 0.7054474955254687,
+      "limit": 1.86,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 98,
+      "from": 48,
+      "to": 65,
+      "p": -0.5190722120749492,
+      "q": -0.45346677563844195,
+      "s": 0.6892518247754634,
+      "limit": 1.86,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 98,
+      "from": 65,
+      "to": 48,
+      "p": 0.5272569583079875,
+      "q": 0.4686750141184884,
+      "s": 0.7054474955254687,
+      "limit": 1.86,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 99,
+      "from": 61,
+      "to": 65,
+      "p": -0.03320722921823993,
+      "q": -0.053988205200952655,
+      "s": 0.06338332882685241,
+      "limit": 1.32,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 99,
+      "from": 65,
+      "to": 61,
+      "p": 0.03327586519661414,
+      "q": -0.01027510232297974,
+      "s": 0.03482615299356132,
+      "limit": 1.32,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 100,
+      "from": 61,
+      "to": 66,
+      "p": 0.09700425624136204,
+      "q": -0.020027925699120385,
+      "s": 0.09905020715147098,
+      "limit": 1.76,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 100,
+      "from": 66,
+      "to": 61,
+      "p": -0.09678551250444103,
+      "q": -0.013348938918370225,
+      "s": 0.09770173796301523,
+      "limit": 1.76,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 101,
+      "from": 64,
+      "to": 65,
+      "p": 1.661719163046956,
+      "q": 2.005519724525897,
+      "s": 2.6044999409291423,
+      "limit": 7.93,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 101,
+      "from": 65,
+      "to": 64,
+      "p": -1.6617191630469559,
+      "q": -1.8070589014668397,
+      "s": 2.4549485636583137,
+      "limit": 7.93,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 102,
+      "from": 65,
+      "to": 66,
+      "p": 0.1839293826725799,
+      "q": 0.029983993322450775,
+      "s": 0.1863573386423972,
+      "limit": 1.76,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 102,
+      "from": 66,
+      "to": 65,
+      "p": -0.18321448749555927,
+      "q": -0.05665106108162894,
+      "s": 0.19177301986967535,
+      "limit": 1.76,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 103,
+      "from": 64,
+      "to": 67,
+      "p": -4.4309701995142845,
+      "q": 0.303666536246301,
+      "s": 4.441363560239072,
+      "limit": 6.86,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 103,
+      "from": 67,
+      "to": 64,
+      "p": 4.456014227019659,
+      "q": -0.7173693467510524,
+      "s": 4.513389144651682,
+      "limit": 6.86,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 104,
+      "from": 46,
+      "to": 68,
+      "p": -0.8862847933399333,
+      "q": 0.23888742844411745,
+      "s": 0.9179149951788845,
+      "limit": 1.02,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 104,
+      "from": 68,
+      "to": 46,
+      "p": 0.9583728671173545,
+      "q": -0.07554366705939912,
+      "s": 0.9613456184221779,
+      "limit": 1.02,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 105,
+      "from": 48,
+      "to": 68,
+      "p": -0.7960539690736577,
+      "q": 0.23500073939810717,
+      "s": 0.8300164270636943,
+      "limit": 0.87,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 105,
+      "from": 68,
+      "to": 48,
+      "p": 0.864677856570202,
+      "q": -0.09608435983999455,
+      "s": 0.8699999999130462,
+      "limit": 0.87,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 106,
+      "from": 67,
+      "to": 68,
+      "p": -3.8239416345956943,
+      "q": 2.803091031654997,
+      "s": 4.741291907965493,
+      "limit": 7.93,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 106,
+      "from": 68,
+      "to": 67,
+      "p": 3.8239416345956943,
+      "q": -2.1429596064157583,
+      "s": 4.383469573240354,
+      "limit": 7.93,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 107,
+      "from": 68,
+      "to": 69,
+      "p": 1.2082199079112481,
+      "q": -0.10195932491054294,
+      "s": 1.2125143503518951,
+      "limit": 1.7,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 107,
+      "from": 69,
+      "to": 68,
+      "p": -1.167519667378251,
+      "q": 0.14531649454467715,
+      "s": 1.1765283920508571,
+      "limit": 1.7,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 108,
+      "from": 23,
+      "to": 69,
+      "p": -0.22212510232564728,
+      "q": 0.04083865247238523,
+      "s": 0.22584808305349754,
+      "limit": 0.72,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 108,
+      "from": 69,
+      "to": 23,
+      "p": 0.2222425077025895,
+      "q": -0.12828422374922033,
+      "s": 0.2566097704548203,
+      "limit": 0.72,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 109,
+      "from": 69,
+      "to": 70,
+      "p": 0.30428260875953983,
+      "q": -0.18041813501468593,
+      "s": 0.3537493596258354,
+      "limit": 1.66,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 109,
+      "from": 70,
+      "to": 69,
+      "p": -0.3032318565832098,
+      "q": 0.1755122989854515,
+      "s": 0.3503628489752571,
+      "limit": 1.66,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 110,
+      "from": 23,
+      "to": 71,
+      "p": -0.1186738437901956,
+      "q": 0.0982256983216692,
+      "s": 0.15405118957904648,
+      "limit": 1.46,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 110,
+      "from": 71,
+      "to": 23,
+      "p": 0.11998620267821722,
+      "q": -0.1460821537103349,
+      "s": 0.18904148874199053,
+      "limit": 1.46,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 111,
+      "from": 70,
+      "to": 71,
+      "p": 0.2431988189364834,
+      "q": -0.149890596929039,
+      "s": 0.2856796397712726,
+      "limit": 1.59,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 111,
+      "from": 71,
+      "to": 70,
+      "p": -0.23998664949273996,
+      "q": 0.115869240866281,
+      "s": 0.26649441441365984,
+      "limit": 1.59,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 112,
+      "from": 70,
+      "to": 72,
+      "p": 0.06003303764672674,
+      "q": -0.025621702056415396,
+      "s": 0.06527202482963916,
+      "limit": 1.88,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 112,
+      "from": 72,
+      "to": 70,
+      "p": -0.05999999999999963,
+      "q": 0.013491323564389895,
+      "s": 0.061498095999136575,
+      "limit": 1.88,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 113,
+      "from": 69,
+      "to": 73,
+      "p": 0.08134051685197241,
+      "q": 0.1316520197484668,
+      "s": 0.1547531388553935,
+      "limit": 1.51,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 113,
+      "from": 73,
+      "to": 69,
+      "p": -0.08022467116186362,
+      "q": -0.16212465760071046,
+      "s": 0.1808878173487003,
+      "limit": 1.51,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 114,
+      "from": 69,
+      "to": 74,
+      "p": -0.10034615454894791,
+      "q": 0.15173363071739168,
+      "s": 0.18191329094775655,
+      "limit": 1.51,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 114,
+      "from": 74,
+      "to": 69,
+      "p": 0.10196040830440531,
+      "q": -0.1830448602052368,
+      "s": 0.20952647973264793,
+      "limit": 1.51,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 115,
+      "from": 68,
+      "to": 74,
+      "p": 1.0780752600145584,
+      "q": -0.02843862370485704,
+      "s": 1.078450287020076,
+      "limit": 1.45,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 115,
+      "from": 74,
+      "to": 68,
+      "p": -1.0343135148172846,
+      "q": 0.031605707127510485,
+      "s": 1.0347962928309684,
+      "limit": 1.45,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 116,
+      "from": 73,
+      "to": 74,
+      "p": -0.5997753288381352,
+      "q": 0.1010870172501673,
+      "s": 0.608234354619524,
+      "limit": 1.51,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 116,
+      "from": 74,
+      "to": 73,
+      "p": 0.604378574165092,
+      "q": -0.09617833043648706,
+      "s": 0.611983441079397,
+      "limit": 1.51,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 117,
+      "from": 75,
+      "to": 76,
+      "p": -0.6991821481258846,
+      "q": -0.09047933944601398,
+      "s": 0.7050121893446336,
+      "limit": 1.52,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 117,
+      "from": 76,
+      "to": 75,
+      "p": 0.7218131750340961,
+      "q": 0.12847864651326898,
+      "s": 0.7331582518547304,
+      "limit": 1.52,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 118,
+      "from": 68,
+      "to": 76,
+      "p": 0.3859698654072392,
+      "q": -0.10789514838728397,
+      "s": 0.40076688990982823,
+      "limit": 1.5,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 118,
+      "from": 76,
+      "to": 68,
+      "p": -0.38161805339880184,
+      "q": 0.010940347314725313,
+      "s": 0.3817748418626581,
+      "limit": 1.5,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 119,
+      "from": 74,
+      "to": 76,
+      "p": -0.45474468402602397,
+      "q": -0.03323413914868949,
+      "s": 0.4559574932544511,
+      "limit": 1.41,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 119,
+      "from": 76,
+      "to": 74,
+      "p": 0.4672001174800096,
+      "q": 0.023305463890189594,
+      "s": 0.4677810325574047,
+      "limit": 1.41,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 120,
+      "from": 76,
+      "to": 77,
+      "p": 0.4247547172784324,
+      "q": 0.20561642609515207,
+      "s": 0.47190537667039156,
+      "limit": 1.51,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 120,
+      "from": 77,
+      "to": 76,
+      "p": -0.42395870647839723,
+      "q": -0.2164021842608795,
+      "s": 0.47599463248204327,
+      "limit": 1.51,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 121,
+      "from": 77,
+      "to": 78,
+      "p": -0.2860412935216001,
+      "q": -0.04359781573912469,
+      "s": 0.2893447617233339,
+      "limit": 1.74,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 121,
+      "from": 78,
+      "to": 77,
+      "p": 0.28647236597302017,
+      "q": 0.03865967605439734,
+      "s": 0.28906917341496474,
+      "limit": 1.74,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 122,
+      "from": 76,
+      "to": 79,
+      "p": -0.9985541013233609,
+      "q": -0.05522744803939352,
+      "s": 1.0000801789289941,
+      "limit": 1.41,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 122,
+      "from": 79,
+      "to": 76,
+      "p": 1.014481855608983,
+      "q": 0.04946236893761628,
+      "s": 1.015686940597725,
+      "limit": 1.41,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 123,
+      "from": 76,
+      "to": 79,
+      "p": -0.46877285658357615,
+      "q": -0.05645567162209089,
+      "s": 0.4721601782529181,
+      "limit": 1.57,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 123,
+      "from": 79,
+      "to": 76,
+      "p": 0.47489218820149953,
+      "q": 0.05357531355581004,
+      "s": 0.477904702464217,
+      "limit": 1.57,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 124,
+      "from": 78,
+      "to": 79,
+      "p": -0.6764723659730211,
+      "q": -0.1462776913267004,
+      "s": 0.6921069461470578,
+      "limit": 1.75,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 124,
+      "from": 79,
+      "to": 78,
+      "p": 0.6834680737533395,
+      "q": 0.15759170701976039,
+      "s": 0.7014012788422205,
+      "limit": 1.75,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 125,
+      "from": 67,
+      "to": 80,
+      "p": -2.4756476056723353,
+      "q": 0.8652512502949342,
+      "s": 2.622497053117146,
+      "limit": 6.84,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 125,
+      "from": 80,
+      "to": 67,
+      "p": 2.4881121692473127,
+      "q": -1.5946915686385015,
+      "s": 2.9552907413388776,
+      "limit": 6.84,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 126,
+      "from": 80,
+      "to": 79,
+      "p": -2.4881122194753615,
+      "q": 1.594697090365737,
+      "s": 2.955293763185575,
+      "limit": 7.93,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 126,
+      "from": 79,
+      "to": 80,
+      "p": 2.4881122194753615,
+      "q": -1.328224857298907,
+      "s": 2.8204403358783026,
+      "limit": 7.93,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 127,
+      "from": 76,
+      "to": 81,
+      "p": -0.37482630605451944,
+      "q": 0.1633423252723845,
+      "s": 0.4088709759029928,
+      "limit": 1.41,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 127,
+      "from": 81,
+      "to": 76,
+      "p": 0.3799540954983728,
+      "q": -0.23526201999793014,
+      "s": 0.4468929768294564,
+      "limit": 1.41,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 128,
+      "from": 81,
+      "to": 82,
+      "p": -0.4281815476576167,
+      "q": 0.011018270137522556,
+      "s": 0.4283232891535263,
+      "limit": 1.5,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 128,
+      "from": 82,
+      "to": 81,
+      "p": 0.4301406150155929,
+      "q": -0.044747991773893304,
+      "s": 0.4324619422027665,
+      "limit": 1.5,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 129,
+      "from": 82,
+      "to": 83,
+      "p": -0.237574554625049,
+      "q": 0.05518577901771361,
+      "s": 0.24389985488122437,
+      "limit": 1.22,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 129,
+      "from": 83,
+      "to": 82,
+      "p": 0.24117801930730376,
+      "q": -0.07511931537250234,
+      "s": 0.2526059154870045,
+      "limit": 1.22,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 130,
+      "from": 82,
+      "to": 84,
+      "p": -0.3925660603905418,
+      "q": -0.004315062083865933,
+      "s": 0.392589775123268,
+      "limit": 1.54,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 130,
+      "from": 84,
+      "to": 82,
+      "p": 0.39881849945963416,
+      "q": -0.011670276055444274,
+      "s": 0.3989892114511926,
+      "limit": 1.54,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 131,
+      "from": 83,
+      "to": 84,
+      "p": -0.3511780193073005,
+      "q": 0.005119315372506133,
+      "s": 0.35121533086481566,
+      "limit": 1.22,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 131,
+      "from": 84,
+      "to": 83,
+      "p": 0.354649819453928,
+      "q": -0.01112830403265546,
+      "s": 0.3548243700612275,
+      "limit": 1.22,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 132,
+      "from": 84,
+      "to": 85,
+      "p": 0.211575722636086,
+      "q": -0.02278634803367357,
+      "s": 0.2127992106792074,
+      "limit": 1.56,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 132,
+      "from": 85,
+      "to": 84,
+      "p": -0.21014203493394493,
+      "q": -0.0022076075967249944,
+      "s": 0.21015363041708426,
+      "limit": 1.56,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 133,
+      "from": 85,
+      "to": 86,
+      "p": 0.00014203493397180363,
+      "q": -0.0977923924032741,
+      "s": 0.09779249554990613,
+      "limit": 1.41,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 133,
+      "from": 86,
+      "to": 85,
+      "p": 6.728713003445463e-10,
+      "q": 0.049999815142732315,
+      "s": 0.04999981514273232,
+      "limit": 1.41,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 134,
+      "from": 84,
+      "to": 87,
+      "p": -0.49749060555338526,
+      "q": 0.09780787195036325,
+      "s": 0.5070140850403789,
+      "limit": 1.86,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 134,
+      "from": 87,
+      "to": 84,
+      "p": 0.5022471871517564,
+      "q": -0.1037429096921425,
+      "s": 0.512849713184324,
+      "limit": 1.86,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 135,
+      "from": 84,
+      "to": 88,
+      "p": -0.7075534359962385,
+      "q": 0.027777036833577143,
+      "s": 0.7080984596546847,
+      "limit": 1.68,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 135,
+      "from": 88,
+      "to": 84,
+      "p": 0.7185504229339972,
+      "q": -0.0002949676026217096,
+      "s": 0.7185504834766399,
+      "limit": 1.68,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 136,
+      "from": 87,
+      "to": 88,
+      "p": -0.9822471871517546,
+      "q": 0.0037429096921416938,
+      "s": 0.9822543184127508,
+      "limit": 1.86,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 136,
+      "from": 88,
+      "to": 87,
+      "p": 0.9945118272017622,
+      "q": 0.03763909743423294,
+      "s": 0.9952238321603093,
+      "limit": 1.86,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 137,
+      "from": 88,
+      "to": 89,
+      "p": 0.5253695346587022,
+      "q": -0.044194475364464886,
+      "s": 0.5272250938643205,
+      "limit": 1.51,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 137,
+      "from": 89,
+      "to": 88,
+      "p": -0.5126350924219322,
+      "q": 0.032131921935259176,
+      "s": 0.5136411182817207,
+      "limit": 1.51,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 138,
+      "from": 88,
+      "to": 89,
+      "p": 0.9998582357105134,
+      "q": -0.05267410955720733,
+      "s": 1.0012447519641665,
+      "limit": 1.69,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 138,
+      "from": 89,
+      "to": 88,
+      "p": -0.9786813240069672,
+      "q": 0.02438383700963284,
+      "s": 0.9789850384287507,
+      "limit": 1.69,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 139,
+      "from": 89,
+      "to": 90,
+      "p": -0.13868358357109997,
+      "q": -0.016810089144406983,
+      "s": 0.139698659439399,
+      "limit": 1.51,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 139,
+      "from": 90,
+      "to": 89,
+      "p": 0.1391348923213806,
+      "q": -0.004987918448969269,
+      "s": 0.13922427084289485,
+      "limit": 1.51,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 140,
+      "from": 88,
+      "to": 91,
+      "p": 1.1199094473497837,
+      "q": 0.002000321965728774,
+      "s": 1.1199112337820638,
+      "limit": 1.86,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 140,
+      "from": 91,
+      "to": 88,
+      "p": -1.1088492886236776,
+      "q": -0.006538378369126796,
+      "s": 1.108868565373252,
+      "limit": 1.86,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 141,
+      "from": 88,
+      "to": 91,
+      "p": 0.3538377402817029,
+      "q": -0.03061448510775524,
+      "s": 0.35515967274744864,
+      "limit": 1.66,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 141,
+      "from": 91,
+      "to": 88,
+      "p": -0.349456704690177,
+      "q": 0.002188227258403057,
+      "s": 0.34946355574144206,
+      "limit": 1.66,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 142,
+      "from": 90,
+      "to": 91,
+      "p": -0.23913489232138097,
+      "q": 0.023135841527622818,
+      "s": 0.24025145970160044,
+      "limit": 1.51,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 142,
+      "from": 91,
+      "to": 90,
+      "p": 0.24122096694729211,
+      "q": -0.0521146894952623,
+      "s": 0.2467863362428605,
+      "limit": 1.51,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 143,
+      "from": 91,
+      "to": 92,
+      "p": 0.35365613215056513,
+      "q": 0.04248118984393011,
+      "s": 0.35619841563130794,
+      "limit": 1.51,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 143,
+      "from": 92,
+      "to": 91,
+      "p": -0.3506559139899178,
+      "q": -0.05633372618217232,
+      "s": 0.35515216277206113,
+      "limit": 1.51,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 144,
+      "from": 91,
+      "to": 93,
+      "p": 0.29799288772093585,
+      "q": 0.00803817825924345,
+      "s": 0.29810128051048296,
+      "limit": 1.51,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 144,
+      "from": 93,
+      "to": 91,
+      "p": -0.29407335505843946,
+      "q": -0.03913500479549614,
+      "s": 0.2966659514600058,
+      "limit": 1.51,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 145,
+      "from": 92,
+      "to": 93,
+      "p": 0.23065591398991966,
+      "q": -0.013666273817825918,
+      "s": 0.23106042001733879,
+      "limit": 1.51,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 145,
+      "from": 93,
+      "to": 92,
+      "p": -0.22955149554367418,
+      "q": -0.0027771872849486796,
+      "s": 0.22956829457822164,
+      "limit": 1.51,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 146,
+      "from": 93,
+      "to": 94,
+      "p": 0.8581763636089599,
+      "q": 0.07459458075795532,
+      "s": 0.8614122256710505,
+      "limit": 1.51,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 146,
+      "from": 94,
+      "to": 93,
+      "p": -0.8489682173501736,
+      "q": -0.05598453983420589,
+      "s": 0.850812143055786,
+      "limit": 1.51,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 147,
+      "from": 79,
+      "to": 95,
+      "p": -0.0827221701324203,
+      "q": 0.142132149918221,
+      "s": 0.16445213732813793,
+      "limit": 1.59,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 147,
+      "from": 95,
+      "to": 79,
+      "p": 0.0838677759106459,
+      "q": -0.18948959033186236,
+      "s": 0.20721995241852398,
+      "limit": 1.59,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 148,
+      "from": 81,
+      "to": 95,
+      "p": -0.49177254784075763,
+      "q": 0.16497427142554089,
+      "s": 0.5187068045073038,
+      "limit": 1.5,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 148,
+      "from": 95,
+      "to": 81,
+      "p": 0.49606733561651284,
+      "q": -0.20813937740530056,
+      "s": 0.5379635692984537,
+      "limit": 1.5,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 149,
+      "from": 93,
+      "to": 95,
+      "p": 0.7077086659129315,
+      "q": -0.12122618527332818,
+      "s": 0.7180162559470256,
+      "limit": 1.49,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 149,
+      "from": 95,
+      "to": 93,
+      "p": -0.6947583858836982,
+      "q": 0.13874049033177294,
+      "s": 0.7084759264881358,
+      "limit": 1.49,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 150,
+      "from": 79,
+      "to": 96,
+      "p": -0.008387815420173502,
+      "q": 0.18664879006191037,
+      "s": 0.18683716514413826,
+      "limit": 1.86,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 150,
+      "from": 96,
+      "to": 79,
+      "p": 0.009056188078127105,
+      "q": -0.21082501127237438,
+      "s": 0.21101943019661293,
+      "limit": 1.86,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 151,
+      "from": 79,
+      "to": 97,
+      "p": -0.34055709647951654,
+      "q": 0.1345547062295821,
+      "s": 0.3661749649158007,
+      "limit": 1.76,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 151,
+      "from": 97,
+      "to": 79,
+      "p": 0.3435432146211847,
+      "q": -0.15238360828958625,
+      "s": 0.3758227033956456,
+      "limit": 1.76,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 152,
+      "from": 79,
+      "to": 98,
+      "p": -0.4392910364093584,
+      "q": 0.06034246206713907,
+      "s": 0.44341608833908175,
+      "limit": 1.4,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 152,
+      "from": 98,
+      "to": 79,
+      "p": 0.44755954832330547,
+      "q": -0.08342503152093697,
+      "s": 0.45526836610907917,
+      "limit": 1.4,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 153,
+      "from": 91,
+      "to": 99,
+      "p": -0.10994083313708056,
+      "q": -0.038298516055364516,
+      "s": 0.11642063014310824,
+      "limit": 0.98,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 153,
+      "from": 99,
+      "to": 91,
+      "p": 0.11066109550357073,
+      "q": -0.010924792480696707,
+      "s": 0.11119905192400108,
+      "limit": 0.98,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 154,
+      "from": 93,
+      "to": 99,
+      "p": -1.3422601789197766,
+      "q": -0.07145620340418352,
+      "s": 1.344160844883785,
+      "limit": 1.5,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 154,
+      "from": 99,
+      "to": 93,
+      "p": 1.3723975516686233,
+      "q": 0.1035601400114749,
+      "s": 1.376299292459757,
+      "limit": 1.5,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 155,
+      "from": 94,
+      "to": 95,
+      "p": 0.4289682173501753,
+      "q": -0.254015460165789,
+      "s": 0.4985354405654876,
+      "limit": 1.49,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 155,
+      "from": 95,
+      "to": 94,
+      "p": -0.4249322041717896,
+      "q": 0.25154705847304176,
+      "s": 0.4938049217745155,
+      "limit": 1.49,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 156,
+      "from": 95,
+      "to": 96,
+      "p": 0.15975547852833058,
+      "q": -0.14265858106764526,
+      "s": 0.21418049321086596,
+      "limit": 1.86,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 156,
+      "from": 96,
+      "to": 95,
+      "p": -0.15905618807812746,
+      "q": 0.12082501127237534,
+      "s": 0.19974372159072806,
+      "limit": 1.86,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 157,
+      "from": 97,
+      "to": 99,
+      "p": -0.6835432146211842,
+      "q": 0.07238360828958885,
+      "s": 0.6873650507580982,
+      "limit": 1.6,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 157,
+      "from": 99,
+      "to": 97,
+      "p": 0.7009157654907865,
+      "q": -0.0467332470069311,
+      "s": 0.7024719970855394,
+      "limit": 1.6,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 158,
+      "from": 98,
+      "to": 99,
+      "p": -0.8675595483233041,
+      "q": 0.15858965690244362,
+      "s": 0.8819355130412712,
+      "limit": 1.75,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 158,
+      "from": 99,
+      "to": 98,
+      "p": 0.880177283566695,
+      "q": -0.12577916071127992,
+      "s": 0.8891189165550805,
+      "limit": 1.75,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 159,
+      "from": 99,
+      "to": 100,
+      "p": 0.24637973681884556,
+      "q": 0.06928112074231874,
+      "s": 0.25593524260295875,
+      "limit": 1.76,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 159,
+      "from": 100,
+      "to": 99,
+      "p": -0.2446935844651086,
+      "q": -0.09788292257081307,
+      "s": 0.2635450944513804,
+      "limit": 1.76,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 160,
+      "from": 91,
+      "to": 101,
+      "p": 0.02537683963213824,
+      "q": 0.03424394993445256,
+      "s": 0.04262196730359306,
+      "limit": 1.76,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 160,
+      "from": 101,
+      "to": 91,
+      "p": -0.02534965412251805,
+      "q": -0.05020096989685724,
+      "s": 0.056238264044300504,
+      "limit": 1.76,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 161,
+      "from": 100,
+      "to": 101,
+      "p": 0.024693584465109233,
+      "q": -0.0521170774291855,
+      "s": 0.05767116154106141,
+      "limit": 1.76,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 161,
+      "from": 101,
+      "to": 100,
+      "p": -0.024650345877480967,
+      "q": 0.020200969896858142,
+      "s": 0.03187034258763485,
+      "limit": 1.76,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 162,
+      "from": 99,
+      "to": 102,
+      "p": 1.5087910738472077,
+      "q": -0.06041103443853679,
+      "s": 1.509999999206273,
+      "limit": 1.51,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 162,
+      "from": 102,
+      "to": 99,
+      "p": -1.4763614760163977,
+      "q": 0.10764074728941198,
+      "s": 1.480280290466079,
+      "limit": 1.51,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 163,
+      "from": 99,
+      "to": 103,
+      "p": 0.6586359804421139,
+      "q": -0.007918954022875332,
+      "s": 0.658683584557685,
+      "limit": 1.41,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 163,
+      "from": 103,
+      "to": 99,
+      "p": -0.6412034233872289,
+      "q": 0.02738321776508135,
+      "s": 0.6417878705449892,
+      "limit": 1.41,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 164,
+      "from": 102,
+      "to": 103,
+      "p": 0.3234715732527337,
+      "q": -0.06863477129271915,
+      "s": 0.3306729358943706,
+      "limit": 1.53,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 164,
+      "from": 103,
+      "to": 102,
+      "p": -0.31888283337840756,
+      "q": 0.040347793971565626,
+      "s": 0.32142527265573434,
+      "limit": 1.53,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 165,
+      "from": 102,
+      "to": 104,
+      "p": 0.4436800336742415,
+      "q": -0.09746966060493772,
+      "s": 0.454260175471742,
+      "limit": 1.45,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 165,
+      "from": 104,
+      "to": 102,
+      "p": -0.43368996494331613,
+      "q": 0.08391887006455763,
+      "s": 0.44173449315787744,
+      "limit": 1.45,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 166,
+      "from": 99,
+      "to": 105,
+      "p": 0.6820415124385144,
+      "q": -0.013837499059111913,
+      "s": 0.6821818680305327,
+      "limit": 1.24,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 166,
+      "from": 105,
+      "to": 99,
+      "p": -0.656970229672847,
+      "q": 0.04120792284120574,
+      "s": 0.658261327727279,
+      "limit": 1.24,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 167,
+      "from": 103,
+      "to": 104,
+      "p": 0.5800862567656396,
+      "q": -0.08773103484727171,
+      "s": 0.5866828783625314,
+      "limit": 1.61,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 167,
+      "from": 104,
+      "to": 103,
+      "p": -0.5769027529639806,
+      "q": 0.08929215917685146,
+      "s": 0.5837721097036787,
+      "limit": 1.61,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 168,
+      "from": 104,
+      "to": 105,
+      "p": 0.022030312512909666,
+      "q": 0.10018170749195814,
+      "s": 0.1025753829406487,
+      "limit": 1.64,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 168,
+      "from": 105,
+      "to": 104,
+      "p": -0.021871388560521537,
+      "q": -0.11477400164255036,
+      "s": 0.1168393302386207,
+      "limit": 1.64,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 169,
+      "from": 104,
+      "to": 106,
+      "p": 0.25780692795055643,
+      "q": -0.05542063297027341,
+      "s": 0.2636965275807195,
+      "limit": 1.54,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 169,
+      "from": 106,
+      "to": 104,
+      "p": -0.25446035630663866,
+      "q": 0.016939087901830133,
+      "s": 0.2550235393657759,
+      "limit": 1.54,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 170,
+      "from": 104,
+      "to": 107,
+      "p": 0.4207554774438319,
+      "q": -0.03455540470244096,
+      "s": 0.42217205946525693,
+      "limit": 1.37,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 170,
+      "from": 107,
+      "to": 104,
+      "p": -0.41641039818013525,
+      "q": 0.02674362479741692,
+      "s": 0.41726830838184176,
+      "limit": 1.37,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 171,
+      "from": 105,
+      "to": 106,
+      "p": 0.24884161823336717,
+      "q": -0.08643392119865846,
+      "s": 0.2634254613714793,
+      "limit": 1.54,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 171,
+      "from": 106,
+      "to": 105,
+      "p": -0.24553964369336184,
+      "q": 0.048090500214941184,
+      "s": 0.2502047418335359,
+      "limit": 1.54,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 172,
+      "from": 107,
+      "to": 108,
+      "p": 0.3964103981801361,
+      "q": -0.03674362479742495,
+      "s": 0.3981096554325052,
+      "limit": 1.38,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 172,
+      "from": 108,
+      "to": 107,
+      "p": -0.39482755085280274,
+      "q": 0.03313263460801778,
+      "s": 0.3962153030720683,
+      "limit": 1.38,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 173,
+      "from": 102,
+      "to": 109,
+      "p": 0.791971174679476,
+      "q": -0.0022352941834391377,
+      "s": 0.7919743291693713,
+      "limit": 1.59,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 173,
+      "from": 109,
+      "to": 102,
+      "p": -0.7693644362662668,
+      "q": 0.05832338958200743,
+      "s": 0.771571936739307,
+      "limit": 1.59,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 174,
+      "from": 108,
+      "to": 109,
+      "p": 0.31482755085280134,
+      "q": -0.06313263460802507,
+      "s": 0.32109518266165815,
+      "limit": 1.38,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 174,
+      "from": 109,
+      "to": 108,
+      "p": -0.3121125932887565,
+      "q": 0.04959034624862148,
+      "s": 0.3160276464654491,
+      "limit": 1.38,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 175,
+      "from": 109,
+      "to": 110,
+      "p": 3.3111062390499615e-05,
+      "q": -0.0498009272081485,
+      "s": 0.04980093821539669,
+      "limit": 1.54,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 175,
+      "from": 110,
+      "to": 109,
+      "p": 1.1336518295282372e-09,
+      "q": 0.02916712200732777,
+      "s": 0.02916712200732779,
+      "limit": 1.54,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 176,
+      "from": 109,
+      "to": 111,
+      "p": 0.6914439184926353,
+      "q": -0.06604951753597696,
+      "s": 0.6945914131251447,
+      "limit": 1.35,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 176,
+      "from": 111,
+      "to": 109,
+      "p": -0.6800000000000019,
+      "q": 0.03242609118626315,
+      "s": 0.6807726870179374,
+      "limit": 1.35,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 177,
+      "from": 16,
+      "to": 112,
+      "p": -0.02917850592353285,
+      "q": 0.09943235346663659,
+      "s": 0.10362518093515591,
+      "limit": 1.51,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 177,
+      "from": 112,
+      "to": 16,
+      "p": 0.029272884094555,
+      "q": -0.10772855539605002,
+      "s": 0.11163486637665254,
+      "limit": 1.51,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 178,
+      "from": 31,
+      "to": 112,
+      "p": 0.09036502679713776,
+      "q": -0.1335016816219013,
+      "s": 0.16120960599146356,
+      "limit": 1.39,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 178,
+      "from": 112,
+      "to": 31,
+      "p": -0.08927303854065578,
+      "q": 0.08004006695539512,
+      "s": 0.11990032413845071,
+      "limit": 1.39,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 179,
+      "from": 31,
+      "to": 113,
+      "p": 0.09908813689923153,
+      "q": 0.04873499246182225,
+      "s": 0.11042444640755379,
+      "limit": 1.76,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 179,
+      "from": 113,
+      "to": 31,
+      "p": -0.09892479739110374,
+      "q": -0.06558649667036426,
+      "s": 0.11869163443293983,
+      "limit": 1.76,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 180,
+      "from": 26,
+      "to": 114,
+      "p": 0.20170244365703321,
+      "q": 0.012985117512141514,
+      "s": 0.20211998677523899,
+      "limit": 1.75,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 180,
+      "from": 114,
+      "to": 26,
+      "p": -0.2010789065716949,
+      "q": -0.03146236286112929,
+      "s": 0.20352544544816448,
+      "limit": 1.75,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 181,
+      "from": 113,
+      "to": 114,
+      "p": 0.0189247973911029,
+      "q": 0.03558649667037355,
+      "s": 0.0403056658742267,
+      "limit": 1.75,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 181,
+      "from": 114,
+      "to": 113,
+      "p": -0.018921093428299056,
+      "q": -0.03853763713887648,
+      "s": 0.04293200732286034,
+      "limit": 1.75,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 182,
+      "from": 67,
+      "to": 115,
+      "p": 1.8435750132483786,
+      "q": -2.9509729351988754,
+      "s": 3.4795129104157705,
+      "limit": 72.18,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 182,
+      "from": 115,
+      "to": 67,
+      "p": -1.840000000000005,
+      "q": 2.8110987394313374,
+      "s": 3.359743460866093,
+      "limit": 72.18,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 183,
+      "from": 11,
+      "to": 116,
+      "p": 0.20136624231139666,
+      "q": 0.047549638467352384,
+      "s": 0.20690416056954494,
+      "limit": 1.7,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 183,
+      "from": 116,
+      "to": 11,
+      "p": -0.19999999999999957,
+      "q": -0.07999999999999914,
+      "s": 0.21540659228537945,
+      "limit": 1.7,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 184,
+      "from": 74,
+      "to": 117,
+      "p": 0.3127183902610059,
+      "q": 0.17085186734150404,
+      "s": 0.35634695478074974,
+      "limit": 1.51,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 184,
+      "from": 117,
+      "to": 74,
+      "p": -0.31084353619573724,
+      "q": -0.17643617611676748,
+      "s": 0.35742611577412414,
+      "limit": 1.51,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 185,
+      "from": 75,
+      "to": 117,
+      "p": 0.01918105174477197,
+      "q": -0.039520329486263876,
+      "s": 0.0439291382653755,
+      "limit": 1.51,
+      "violation": 0.0
+    },
+    {
+      "branch_id": 185,
+      "from": 117,
+      "to": 75,
+      "p": -0.01915646380426448,
+      "q": 0.026436176116760295,
+      "s": 0.0326472282615303,
+      "limit": 1.51,
+      "violation": 0.0
+    }
+  ]
+}

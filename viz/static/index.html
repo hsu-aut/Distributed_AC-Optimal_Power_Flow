@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Distributed OPF – Live Netz</title>
+  <style>
+    :root {
+      --bg: #0f1419;
+      --panel: #1a222c;
+      --text: #e7eef7;
+      --muted: #8fa3b8;
+      --accent: #3d9cf0;
+      --line: #4a5d73;
+      --gen: #f0b429;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      height: 100vh;
+      display: grid;
+      grid-template-rows: auto 1fr;
+    }
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 20px;
+      align-items: center;
+      padding: 12px 16px;
+      background: var(--panel);
+      border-bottom: 1px solid #243040;
+    }
+    header h1 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin: 0;
+      letter-spacing: 0.02em;
+    }
+    .meta { color: var(--muted); font-size: 0.85rem; display: flex; gap: 14px; flex-wrap: wrap; }
+    .meta strong { color: var(--text); font-weight: 600; }
+    .controls { margin-left: auto; display: flex; gap: 8px; align-items: center; }
+    select, button {
+      background: #243040;
+      color: var(--text);
+      border: 1px solid #334155;
+      border-radius: 6px;
+      padding: 6px 10px;
+      font-size: 0.85rem;
+    }
+    button { cursor: pointer; }
+    button:hover { border-color: var(--accent); }
+    main { position: relative; overflow: hidden; }
+    canvas { width: 100%; height: 100%; display: block; }
+    .legend {
+      position: absolute;
+      left: 12px;
+      bottom: 12px;
+      background: rgba(26, 34, 44, 0.92);
+      border: 1px solid #334155;
+      border-radius: 8px;
+      padding: 10px 12px;
+      font-size: 0.75rem;
+      color: var(--muted);
+      max-width: 220px;
+    }
+    .legend .bar {
+      height: 10px;
+      border-radius: 3px;
+      margin: 6px 0 4px;
+      background: linear-gradient(90deg, #2b6cb0, #48bb78, #ecc94b, #e53e3e);
+    }
+    .waiting {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      pointer-events: none;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+    .waiting.hidden { display: none; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Distributed OPF Live</h1>
+    <div class="meta">
+      <span>Iter <strong id="iter">–</strong></span>
+      <span>prim <strong id="prim">–</strong></span>
+      <span>dual <strong id="dual">–</strong></span>
+      <span>Mode <strong id="mode">–</strong></span>
+      <span id="convWrap">Status <strong id="conv">warte…</strong></span>
+    </div>
+    <div class="controls">
+      <label>
+        Farbe
+        <select id="colorMode">
+          <option value="v">Spannung V</option>
+          <option value="va">Winkel θ</option>
+          <option value="prim">prim. Residuum</option>
+        </select>
+      </label>
+      <select id="topoSelect">
+        <option value="topology_ieee118_full.yaml">IEEE 118</option>
+        <option value="topology_3bus.yaml">3-Bus</option>
+      </select>
+      <button id="reloadBtn" type="button">Neu laden</button>
+    </div>
+  </header>
+  <main>
+    <canvas id="net"></canvas>
+    <div class="waiting" id="waiting">Warte auf logs/live_snapshot.json … starte ADMM mit LIVE_VIZ=1</div>
+    <div class="legend">
+      <div>Busfarbe = <span id="legendLabel">Spannung V</span></div>
+      <div class="bar"></div>
+      <div>niedrig → hoch</div>
+      <div style="margin-top:8px">◆ Generator · ● Lastbus</div>
+      <div>Leitung = |S| (Dicke)</div>
+    </div>
+  </main>
+  <script>
+    const canvas = document.getElementById("net");
+    const ctx = canvas.getContext("2d");
+    const waitingEl = document.getElementById("waiting");
+    let topology = null;
+    let layout = null;
+    let state = null;
+    let hoverId = null;
+
+    const colorModeEl = document.getElementById("colorMode");
+    const topoSelect = document.getElementById("topoSelect");
+    const legendLabel = document.getElementById("legendLabel");
+
+    function resize() {
+      const dpr = window.devicePixelRatio || 1;
+      const rect = canvas.parentElement.getBoundingClientRect();
+      canvas.width = Math.floor(rect.width * dpr);
+      canvas.height = Math.floor(rect.height * dpr);
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      draw();
+    }
+    window.addEventListener("resize", resize);
+
+    async function fetchJson(url) {
+      const r = await fetch(url);
+      if (!r.ok) throw new Error(await r.text());
+      return r.json();
+    }
+
+    async function loadTopoAndLayout() {
+      const name = topoSelect.value;
+      topology = await fetchJson(`/api/topology?topology=${encodeURIComponent(name)}`);
+      layout = await fetchJson(`/api/layout?topology=${encodeURIComponent(name)}`);
+      draw();
+    }
+
+    function busValue(busId) {
+      const b = state?.buses?.[String(busId)];
+      if (!b) return null;
+      const mode = colorModeEl.value;
+      if (mode === "v") return b.v;
+      if (mode === "va") return b.va;
+      return b.prim_res;
+    }
+
+    function colorScale(t) {
+      // blue -> green -> yellow -> red
+      const stops = [
+        [43, 108, 176],
+        [72, 187, 120],
+        [236, 201, 75],
+        [229, 62, 62],
+      ];
+      const x = Math.min(1, Math.max(0, t));
+      const seg = Math.min(stops.length - 2, Math.floor(x * (stops.length - 1)));
+      const local = x * (stops.length - 1) - seg;
+      const a = stops[seg], b = stops[seg + 1];
+      const r = Math.round(a[0] + (b[0] - a[0]) * local);
+      const g = Math.round(a[1] + (b[1] - a[1]) * local);
+      const bl = Math.round(a[2] + (b[2] - a[2]) * local);
+      return `rgb(${r},${g},${bl})`;
+    }
+
+    function project() {
+      const pad = 40;
+      const w = canvas.clientWidth;
+      const h = canvas.clientHeight;
+      const bb = layout?.bbox || { xmin: -1, xmax: 1, ymin: -1, ymax: 1 };
+      let xmin = bb.xmin, xmax = bb.xmax, ymin = bb.ymin, ymax = bb.ymax;
+      if (xmax === xmin) { xmin -= 1; xmax += 1; }
+      if (ymax === ymin) { ymin -= 1; ymax += 1; }
+      const sx = (w - 2 * pad) / (xmax - xmin);
+      const sy = (h - 2 * pad) / (ymax - ymin);
+      const s = Math.min(sx, sy);
+      const ox = pad + ((w - 2 * pad) - s * (xmax - xmin)) / 2;
+      const oy = pad + ((h - 2 * pad) - s * (ymax - ymin)) / 2;
+      return (x, y) => ({
+        x: ox + (x - xmin) * s,
+        // y flip for screen coords
+        y: h - (oy + (y - ymin) * s),
+      });
+    }
+
+    function valueRange() {
+      const mode = colorModeEl.value;
+      const vals = [];
+      if (state?.buses) {
+        for (const b of Object.values(state.buses)) {
+          if (mode === "v") vals.push(b.v);
+          else if (mode === "va") vals.push(b.va);
+          else vals.push(b.prim_res);
+        }
+      }
+      if (!vals.length) {
+        if (mode === "v") return [0.94, 1.06];
+        if (mode === "va") return [-0.5, 0.5];
+        return [0, 1];
+      }
+      let lo = Math.min(...vals), hi = Math.max(...vals);
+      if (hi - lo < 1e-9) { lo -= 0.01; hi += 0.01; }
+      return [lo, hi];
+    }
+
+    function draw() {
+      const w = canvas.clientWidth;
+      const h = canvas.clientHeight;
+      ctx.clearRect(0, 0, w, h);
+      if (!topology || !layout) return;
+
+      const toScreen = project();
+      const busMeta = Object.fromEntries(topology.buses.map(b => [b.id, b]));
+      const [lo, hi] = valueRange();
+
+      // edges from topology geometry; thickness from live |S| if present
+      const flowMap = new Map();
+      if (state?.edges) {
+        for (const e of state.edges) {
+          flowMap.set(`${e.from}-${e.to}`, e);
+          flowMap.set(`${e.to}-${e.from}`, e);
+        }
+      }
+
+      for (const ln of topology.lines) {
+        const a = layout.buses[String(ln.from)];
+        const b = layout.buses[String(ln.to)];
+        if (!a || !b) continue;
+        const pa = toScreen(a.x, a.y);
+        const pb = toScreen(b.x, b.y);
+        const fl = flowMap.get(`${ln.from}-${ln.to}`);
+        const sAbs = fl ? Math.abs(fl.s ?? 0) : 0;
+        const width = 1 + Math.min(6, sAbs * 8);
+        ctx.beginPath();
+        ctx.strokeStyle = "#4a5d73";
+        ctx.lineWidth = width;
+        ctx.moveTo(pa.x, pa.y);
+        ctx.lineTo(pb.x, pb.y);
+        ctx.stroke();
+      }
+
+      for (const b of topology.buses) {
+        const c = layout.buses[String(b.id)];
+        if (!c) continue;
+        const p = toScreen(c.x, c.y);
+        const val = busValue(b.id);
+        let t = 0.5;
+        if (val != null) t = (val - lo) / (hi - lo);
+        const col = colorScale(t);
+        const r = b.is_generator ? 7 : 5;
+        ctx.beginPath();
+        if (b.is_generator) {
+          // diamond
+          ctx.moveTo(p.x, p.y - r);
+          ctx.lineTo(p.x + r, p.y);
+          ctx.lineTo(p.x, p.y + r);
+          ctx.lineTo(p.x - r, p.y);
+          ctx.closePath();
+        } else {
+          ctx.arc(p.x, p.y, r, 0, Math.PI * 2);
+        }
+        ctx.fillStyle = col;
+        ctx.fill();
+        ctx.lineWidth = hoverId === b.id ? 2.5 : 1;
+        ctx.strokeStyle = b.is_slack ? "#f0b429" : "#0f1419";
+        ctx.stroke();
+
+        if (topology.buses.length <= 40 || hoverId === b.id) {
+          ctx.fillStyle = "#c5d4e4";
+          ctx.font = "10px Segoe UI, sans-serif";
+          ctx.fillText(String(b.id), p.x + r + 3, p.y + 3);
+        }
+      }
+
+      if (hoverId != null) {
+        const live = state?.buses?.[String(hoverId)];
+        const meta = busMeta[hoverId];
+        const lines = [
+          `Bus ${hoverId}` + (meta?.is_generator ? " (Gen)" : "") + (meta?.is_slack ? " [Slack]" : ""),
+        ];
+        if (live) {
+          lines.push(`V=${live.v.toFixed(4)} pu`);
+          lines.push(`θ=${live.va.toFixed(4)} rad`);
+          lines.push(`Pg=${live.pg.toFixed(3)}  Qg=${live.qg.toFixed(3)}`);
+          lines.push(`prim=${live.prim_res.toExponential(2)}`);
+        }
+        ctx.fillStyle = "rgba(26,34,44,0.95)";
+        const tw = 180, th = 18 + lines.length * 14;
+        ctx.fillRect(12, 12, tw, th);
+        ctx.strokeStyle = "#334155";
+        ctx.strokeRect(12, 12, tw, th);
+        ctx.fillStyle = "#e7eef7";
+        ctx.font = "12px Segoe UI, sans-serif";
+        lines.forEach((t, i) => ctx.fillText(t, 20, 30 + i * 14));
+      }
+    }
+
+    canvas.addEventListener("mousemove", (ev) => {
+      if (!topology || !layout) return;
+      const rect = canvas.getBoundingClientRect();
+      const mx = ev.clientX - rect.left;
+      const my = ev.clientY - rect.top;
+      const toScreen = project();
+      let best = null, bestD = 12;
+      for (const b of topology.buses) {
+        const c = layout.buses[String(b.id)];
+        if (!c) continue;
+        const p = toScreen(c.x, c.y);
+        const d = Math.hypot(p.x - mx, p.y - my);
+        if (d < bestD) { bestD = d; best = b.id; }
+      }
+      if (best !== hoverId) {
+        hoverId = best;
+        draw();
+      }
+    });
+
+    function applyState(snap) {
+      state = snap;
+      const waiting = !snap || snap.waiting || !snap.buses || Object.keys(snap.buses).length === 0;
+      waitingEl.classList.toggle("hidden", !waiting);
+      document.getElementById("iter").textContent = snap?.iteration ?? "–";
+      document.getElementById("prim").textContent =
+        snap?.residuals?.prim_max != null ? Number(snap.residuals.prim_max).toExponential(2) : "–";
+      document.getElementById("dual").textContent =
+        snap?.residuals?.dual_max != null ? Number(snap.residuals.dual_max).toExponential(2) : "–";
+      document.getElementById("mode").textContent = snap?.mode ?? "–";
+      document.getElementById("conv").textContent = snap?.converged ? "konvergiert" : (waiting ? "warte…" : "läuft");
+      if (snap?.topology) {
+        const opt = [...topoSelect.options].find(o => o.value === snap.topology);
+        if (opt && topoSelect.value !== snap.topology) {
+          topoSelect.value = snap.topology;
+          loadTopoAndLayout();
+        }
+      }
+      draw();
+    }
+
+    function connectStream() {
+      const es = new EventSource("/api/stream?interval_ms=400");
+      es.addEventListener("state", (ev) => {
+        try { applyState(JSON.parse(ev.data)); } catch (_) {}
+      });
+      es.onerror = () => {
+        // Browser reconnects automatically
+      };
+    }
+
+    colorModeEl.addEventListener("change", () => {
+      legendLabel.textContent =
+        colorModeEl.value === "v" ? "Spannung V" :
+        colorModeEl.value === "va" ? "Winkel θ" : "prim. Residuum";
+      draw();
+    });
+    topoSelect.addEventListener("change", loadTopoAndLayout);
+    document.getElementById("reloadBtn").addEventListener("click", async () => {
+      await loadTopoAndLayout();
+      applyState(await fetchJson("/api/state"));
+    });
+
+    (async function init() {
+      resize();
+      try {
+        await loadTopoAndLayout();
+        applyState(await fetchJson("/api/state"));
+      } catch (e) {
+        waitingEl.textContent = "API-Fehler: " + e.message;
+      }
+      connectStream();
+    })();
+  </script>
+</body>
+</html>

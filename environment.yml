@@ -1,0 +1,23 @@
+name: distributed_opf
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - numpy>=1.24,<2.0
+  - pandas>=2.0,<3.0
+  - matplotlib-base>=3.7,<4.0
+  - pyyaml>=6.0,<7.0
+  - openmpi>=5.0,<6.0
+  - mpi4py>=4.1.2,<5.0
+  - pip:
+      - pandapower>=2.13,<3.0
+      - gurobipy>=13.0.2,<14.0
+      - fastapi>=0.110,<1.0
+      - uvicorn>=0.27,<1.0
+      - sse-starlette>=2.0,<3.0
+# Hinweis:
+# - Env anlegen:  conda env create -f environment.yml
+# - Aktivieren:   conda activate distributed_opf
+# - Gurobi braucht eine gültige Lizenz (gurobi.lic / WLS)
+# - Diese Umgebung ist für Linux/WSL vorgesehen; OpenMPI ist enthalten.

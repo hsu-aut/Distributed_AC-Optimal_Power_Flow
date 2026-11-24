@@ -1,0 +1,143 @@
+{
+  "success": false,
+  "process_exit_code": 0,
+  "mpi_exit_code": 0,
+  "reason": "completed",
+  "started_at_utc": "2026-10-19T13:52:06.813946+00:00",
+  "finished_at_utc": "2026-10-19T13:53:06.615302+00:00",
+  "wall_total_s": 59.80107074300008,
+  "wall_total_scope": "process launch through process exit; excludes snapshot preparation",
+  "mode": "admm",
+  "admm": {
+    "status": "not_converged",
+    "raw_ac_feasible": false,
+    "postprocessing": "none",
+    "cpu_rank_sum_s": 927.305811021,
+    "wall_solve_s": 57.234786773,
+    "wall_iterations_s": 57.197636153000005,
+    "wall_total_s": 58.059009616,
+    "relaxation": 1.0,
+    "adaptive_rho": {
+      "enabled": false,
+      "metric": "normalized",
+      "mu": 10.0,
+      "tau": 2.0,
+      "period": 50,
+      "until": 0,
+      "rho_min": 1000000.0,
+      "rho_max": 100000000.0
+    },
+    "final_rho": {
+      "rho": 300000.0,
+      "rho_v": 300000.0,
+      "rho_theta": 300000.0
+    },
+    "rho_history": [],
+    "edge_penalty": {
+      "mode": "admittance",
+      "exponent": 1.0,
+      "min_factor": 0.0,
+      "max_factor": null,
+      "reference_admittance": 11.578045200593946,
+      "edges": 179,
+      "factor_min": 0.20988850617493857,
+      "factor_median": 1.0,
+      "factor_max": 21.25126142191491
+    },
+    "async_exchange": {
+      "tau": 1,
+      "conv_check_every": 10,
+      "staleness_histogram": {
+        "0": 76470,
+        "1": 77130
+      },
+      "blocking_waits_per_rank": [
+        3662,
+        567,
+        2442,
+        4242,
+        4429,
+        2560,
+        1146,
+        5152,
+        305,
+        2880,
+        2881,
+        2560,
+        870,
+        3123,
+        2603,
+        2880
+      ],
+      "blocking_wait_s_per_rank": [
+        10.69351460699886,
+        4.20756825000376,
+        15.022126147007384,
+        26.803328097995745,
+        26.60377004500151,
+        9.001349033001588,
+        8.788632700005337,
+        35.56749014399156,
+        3.087476942997455,
+        17.67408740700307,
+        19.974141922004947,
+        14.198864694994882,
+        0.8570786090003821,
+        23.202455765000877,
+        3.7347364549998474,
+        16.70857595399457
+      ]
+    },
+    "boyd_global_final": {
+      "r": 5.105833738585262e-05,
+      "s": 47.4408858585382,
+      "eps_pri": 0.0037244762026539075,
+      "eps_dual": 77.49048712821826,
+      "primal_ratio": 0.013708863906680505,
+      "dual_ratio": 0.6122156101566504
+    },
+    "boyd_consensus_final": {
+      "r": 5.105833738585262e-05,
+      "s": 55.55177598783239,
+      "eps_pri": 0.0037244762026539075,
+      "eps_dual": 92.14902822026866,
+      "members": 456.0,
+      "variables": 340.0,
+      "primal_ratio": 0.013708863906680505,
+      "dual_ratio": 0.6028471169011578,
+      "max_rank_primal_ratio": 0.03016984252974591,
+      "max_rank_dual_ratio": 1.242277925866938
+    },
+    "residual_trace": {
+      "file": "logs/residual_trace.npy",
+      "columns": [
+        "iteration",
+        "max_rank_primal_residual",
+        "max_rank_dual_residual",
+        "max_rank_primal_ratio",
+        "max_rank_dual_ratio",
+        "global_primal_residual",
+        "global_dual_residual",
+        "global_primal_ratio",
+        "global_dual_ratio",
+        "boyd_a_max_rank_primal_ratio",
+        "boyd_a_max_rank_dual_ratio",
+        "boyd_a_global_primal_ratio",
+        "boyd_a_global_dual_ratio"
+      ],
+      "rows": 320
+    },
+    "converged": false,
+    "convergence_kind": null,
+    "wall_iterations": 3200,
+    "abs_tol": 0.0001,
+    "slack_tol": 1e-06,
+    "phys_tol": 0.0001,
+    "phys_gate": true,
+    "last_phys_max_dP": 0.000261324122055262,
+    "last_phys_max_dQ": 7.940504806761006e-05,
+    "best_iterate": null,
+    "best_iterate_criteria_met": false,
+    "track_best_iterate": false
+  }
+}
