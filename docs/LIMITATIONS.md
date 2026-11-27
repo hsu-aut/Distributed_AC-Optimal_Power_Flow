@@ -79,6 +79,12 @@ Zu 5: Das Abbruchkriterium des Lösers ist eine eigene, dokumentierte Konvention
 17. **Umgebung nicht homogen.** Der Preflight meldet `ok: false`: 18 von 118 Knoten haben
     Python 3.13.5 mit NumPy 2.2.4 statt 3.11.2 mit NumPy 1.26.4, 13 Knoten ein selbst gebautes
     Open MPI (gleiche Version). Quellcode, Gurobi-Version, Lizenz und Hardware sind identisch.
+    Nach der glibc-Version laufen 99 Knoten unter Debian 12 und 19 unter Debian 13, darunter die
+    18 Knoten mit Python 3.13.5. pi120 ist nicht inventarisiert. Die Lösezeiten unterscheiden sich
+    zwischen den Betriebssystemen nicht systematisch: Je Lauf und je Kantenzahl normiert liegt der
+    Median der Debian-13-Knoten bei 0.999, der der Debian-12-Knoten bei 1.000. Die Knoten selbst
+    streuen unabhängig davon bis Faktor 1.8, die fünf langsamsten laufen unter Debian 12
+    (`tools/os_comparison.py`, `tab08_knoten_betriebssystem`).
 18. **Bitgleichheit nur innerhalb einer Plattform.** Iterationszahlen sind auf aarch64 und x86-64
     exakt gleich, die Endzustände nicht: Kosten unterscheiden sich relativ um ≤ 2.5e-8.
 19. **Aktive Grenzen bei Toleranz 1e-4.** Die verteilten Lösungen treffen bei 1e-4 nicht genau

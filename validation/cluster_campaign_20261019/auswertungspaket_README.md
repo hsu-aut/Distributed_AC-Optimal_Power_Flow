@@ -34,6 +34,7 @@ CSV (Semikolon, Excel) und Markdown.
 | tab05_varianten | Konvergenzprüfung alle K Iterationen und asynchrone Tests | Auswertung, Ausblick |
 | tab06_zweiggrenzen | PGLib-Variante mit aktiven Zweiggrenzen | Auswertung, FF2 |
 | tab07_zentral_verteilt | Zentral gegenüber verteilt, Jobzeit und CPU-Aufwand | Auswertung, FF3 |
+| tab08_knoten_betriebssystem | Normierte Lösezeit je Knoten, Debian 12 gegenüber Debian 13 (`tools/os_comparison.py`) | Limitationen |
 
 ## Gemessene Größen
 

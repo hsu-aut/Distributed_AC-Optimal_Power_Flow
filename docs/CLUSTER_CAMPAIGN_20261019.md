@@ -71,8 +71,8 @@ belegt die Größe des Effekts.
 Die Abweichung ist **kein Zufall**: Beide Kampagnen (mit und ohne Kühlung) liefern je
 Wiederholungsindex exakt dieselben Werte. Sie hängt an der Rangzuordnung, die der Kampagnenstarter
 je Wiederholung über die Bänke rotiert. Die naheliegende Ursache ist die uneinheitliche Software:
-19 der 118 Knoten haben Python 3.13.5 mit NumPy 2.2.4 statt 3.11.2 mit NumPy 1.26.4
-(`preflight_k118.json`, Preflight meldet `ok: false`). Je nach Platzierung rechnen andere Ränge auf
+19 der 118 Knoten laufen unter Debian 13 statt Debian 12, 18 davon mit Python 3.13.5 und NumPy 2.2.4
+statt 3.11.2 mit NumPy 1.26.4 (`preflight_k118.json`, Preflight meldet `ok: false`). Je nach Platzierung rechnen andere Ränge auf
 diesen Knoten.
 
 **Saubere Prüfung (offen, Aufwand ca. 10 Minuten):** dieselbe Konfiguration zweimal mit *identischem*

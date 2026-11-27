@@ -43,6 +43,7 @@ Vollständige Rohläufe liegen lokal unter `results/` gleichen Namens.
 | Wiederholungsprüfung nach Review: 50 Tests, 10 Referenzfälle bitgleich | `review_gate_20260915/` | `docs/FORMULATION.md` §4 |
 | Clusterkampagne 15.10.2026: 80 Läufe akzeptiert, Iterationen wie lokal, Zeitzerlegung, Kipppunkt 4–5 Busse, Thermik | `cluster_campaign_20261015/` | `docs/CLUSTER_CAMPAIGN_RESULTS.md` |
 | Messreihen 19.10.2026: Kühlung (kontrolliert), Konvergenzprüfung alle 10 Iterationen, PGLib auf dem Cluster, asynchroner Vorversuch | `cluster_campaign_20261019/` | `docs/CLUSTER_CAMPAIGN_20261019.md` |
+| Betriebssystem der Knoten (99 Debian 12, 19 Debian 13) ohne systematischen Einfluss auf die Lösezeit, Knotenstreuung bis Faktor 1.8 | `cluster_campaign_20261015/preflight_k118.json`, `cluster_campaign_20261019/tabellen/tab08_knoten_betriebssystem.md` | `docs/LIMITATIONS.md` (17) |
 | Abstimmungsentscheidungen | – | `docs/TUNING_PROTOCOL.md` |
 
 ## Noch einzutragen (Läufe in Arbeit)

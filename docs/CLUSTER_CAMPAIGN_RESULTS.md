@@ -256,6 +256,11 @@ sind 19 Knoten:
 | Python 3.13.5 statt 3.11.2, NumPy 2.2.4 statt 1.26.4 | 18 Knoten (pi2, pi3, pi92–pi100, pi102–pi108) |
 | selbst gebautes Open MPI statt Debian-Paket (gleiche Version 4.1.4) | 13 Knoten |
 
+Die Python-Abweichung fällt mit dem Betriebssystem zusammen: Die glibc-Version im Preflight weist
+19 Knoten als Debian 13 aus (pi2–pi4, pi92–pi100, pi102–pi108), die übrigen 99 als Debian 12. Auf die
+Lösezeiten wirkt sich das nicht systematisch aus, siehe `tab08_knoten_betriebssystem` und
+`docs/LIMITATIONS.md` (17).
+
 Die Läufe sind trotzdem akzeptiert und innerhalb der Plattform bitgleich reproduzierbar. Für die
 Arbeit ist das dennoch eine Einschränkung: Die Umgebung war nicht homogen, und NumPy 2 gegenüber
 NumPy 1 kann Gleitkommaoperationen anders ausführen. **Empfehlung:** Knoten vereinheitlichen und
